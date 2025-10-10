@@ -1,0 +1,34 @@
+{
+  "name": "input_SIT",
+  "primaryElement": {
+    "pattern": "",
+    "type": "Regex"
+  },
+  "supportingElements": [
+    {
+      "type": "Keyword",
+      "keywords": [
+        "Statement",
+        "Westpac",
+        "Banking",
+        "account",
+        "Australian",
+        "BALANCE",
+        "check",
+        "other",
+        "document",
+        "Electronic",
+        "Number",
+        "Balance",
+        "TRANSACTIONS",
+        "Please",
+        "entries",
+        "statement",
+        "promptly",
+        "inform",
+        "possible",
+        "error"
+      ]
+    }
+  ]
+}
