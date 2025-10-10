@@ -27,14 +27,54 @@ def suggest_keywords(text, top_n=20):
 	return [w for w, _ in common]
 
 def suggest_regex_patterns(text):
+	# Australian BSB (Bank State Branch) Number: 6 digits, often written as XXX-XXX or XXXXXX
+	bsb_regex = r"\\b\\d{3}[- ]?\\d{3}\\b"
+	if re.search(bsb_regex, text):
+		patterns["AU_BSB"] = bsb_regex
 	patterns = {}
-	email_regex = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+	# Email (generic, but relevant to AU)
+	email_regex = r"\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b"
 	if re.search(email_regex, text):
 		patterns["Email"] = email_regex
-	phone_regex = r"\\b(?:\\+?\\d{1,3}[ -]?)?(?:\\(\\d{2,4}\\)[ -]?|\\d{2,4}[ -]?)?\\d{3,4}[ -]?\\d{3,4}\\b"
-	if re.search(phone_regex, text):
-		patterns["Phone"] = phone_regex
-	# Add more pattern suggestions as needed
+	# Australian phone numbers (mobile: 04xx xxx xxx, landline: 0x xxxx xxxx)
+	au_mobile_regex = r"\\b04\\d{2}[ ]?\\d{3}[ ]?\\d{3}\\b"
+	if re.search(au_mobile_regex, text):
+		patterns["AU_Mobile"] = au_mobile_regex
+	au_landline_regex = r"\\b0[2378]\\d{1}[ ]?\\d{4}[ ]?\\d{4}\\b"
+	if re.search(au_landline_regex, text):
+		patterns["AU_Landline"] = au_landline_regex
+	# Australian BSB (Bank State Branch) Number: 6 digits, often written as XXX-XXX or XXXXXX
+	bsb_regex = r"\\b\\d{3}[- ]?\\d{3}\\b"
+	if re.search(bsb_regex, text):
+		patterns["AU_BSB"] = bsb_regex
+	# Australian Passport Number: 1 letter followed by 7 digits
+	au_passport_regex = r"\\b[A-Z]{1}\\d{7}\\b"
+	if re.search(au_passport_regex, text):
+		patterns["AU_Passport"] = au_passport_regex
+	# Australian TFN (Tax File Number): 8 or 9 digits
+	tfn_regex = r"\\b\\d{8,9}\\b"
+	if re.search(tfn_regex, text):
+		patterns["AU_TFN"] = tfn_regex
+	# Australian Medicare Number: 10 digits, optionally with 1 digit IRN
+	medicare_regex = r"\\b\\d{10}(?:\\d{1})?\\b"
+	if re.search(medicare_regex, text):
+		patterns["AU_Medicare"] = medicare_regex
+	# Australian Driver's License (varies by state, but often 8-10 digits)
+	au_dl_regex = r"\\b\\d{8,10}\\b"
+	if re.search(au_dl_regex, text):
+		patterns["AU_DriversLicense"] = au_dl_regex
+	# Australian ABN (Australian Business Number): 11 digits
+	abn_regex = r"\\b\\d{11}\\b"
+	if re.search(abn_regex, text):
+		patterns["AU_ABN"] = abn_regex
+	# Australian ACN (Australian Company Number): 9 digits
+	acn_regex = r"\\b\\d{9}\\b"
+	if re.search(acn_regex, text):
+		patterns["AU_ACN"] = acn_regex
+	# Australian bank account number (6-10 digits, not BSB)
+	au_bank_regex = r"\\b\\d{6,10}\\b"
+	if re.search(au_bank_regex, text):
+		patterns["AU_BankAccount"] = au_bank_regex
 	return patterns
 
 def create_sit_definition(name, regexes, keywords):
