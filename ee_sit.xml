@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SensitiveInformationType id="e_SIT" publisher="Custom">
+  <Rules>
+	<Rule id="e_SIT_Rule" minCount="1" patternProximity="300">
+	  <Match>
+		<Regex>
+		  <Pattern>[A-Za-z0-9]{8,}</Pattern>
+		</Regex>
+		<Keywords>
+		  <Keyword>Australia</Keyword><Keyword>PACKING</Keyword><Keyword>Deliver</Keyword><Keyword>Gordon</Keyword><Keyword>Drake</Keyword><Keyword>Parker</Keyword><Keyword>Reserve</Keyword><Keyword>Victoria</Keyword><Keyword>Street</Keyword><Keyword>Lobethal</Keyword><Keyword>Roseville</Keyword><Keyword>Order</Keyword><Keyword>13664</Keyword><Keyword>32074</Keyword><Keyword>BMPRO</Keyword><Keyword>Smartsense</Keyword><Keyword>Bottle</Keyword><Keyword>Level</Keyword><Keyword>Monitor</Keyword><Keyword>Wireless</Keyword>
+		</Keywords>
+	  </Match>
+	</Rule>
+  </Rules>
+</SensitiveInformationType>
