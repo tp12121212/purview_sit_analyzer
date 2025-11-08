@@ -11,22 +11,11 @@
 
 ---
 
-## 2. Differences between  using `\b` and Microsofts approad to word boundries 
-  
-  i.e. `(?:^|[\s,;\:\(\)\[\]"'])(Mention your regex here)(?:$|[\s,\;\:\(\)\[\]"']|\.\s|\.$)`
 
-| Feature | Using `\b` | Using Purview Portal Regex |
-|---------|-----------|---------------------------|
-| Matches start/end of string | Yes | Yes |
-| Matches punctuation like `.` | No, only non-word characters | Yes, handles `. ` or `.$` explicitly |
-| Customizable boundaries | No | Yes, can adjust included punctuation |
-| Alignment with Purview Word Match | Approximate | Exact |
-| Risk of false positives/negatives | Higher for some punctuation | Lower, matches portal behavior |
 
-- The portal regex ensures the term is matched **exactly like the portal Word Match checkbox**, including sentence-ending periods and common punctuation.
+
 
 ---
-
 
 # Differences Between `\b` and Microsoft Purview Word Boundary Approach
 

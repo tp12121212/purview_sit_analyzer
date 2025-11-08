@@ -1,0 +1,398 @@
+SIT,Description
+ABA routing number,Sensitive Information Type for ABA routing number as defined by Microsoft Purview.
+CEP_CommonExampleKeywords,"Keyword?based supporting pattern to exclude example/trivial keywords (like contoso, fabrikam, northwind, sandbox, onebox, localhost, 127.0.0.1, testacs.com, s?int.net) from matches. :contentReference[oaicite:2]{index=2}"
+CEP_PasswordPlaceHolder,(No public specific description found) — likely a placeholder SIT for generic password patterns in custom classification. 
+CEP_Regex_AzureConnectionString,Detects Azure IaaS database connection strings and Azure SQL connection strings via regex matching the pattern for connection strings. :contentReference[oaicite:3]{index=3}
+All credentials,Sensitive Information Type for All credentials as defined by Microsoft Purview.
+All full names,Sensitive Information Type for All full names as defined by Microsoft Purview.
+All medical terms and conditions,Sensitive Information Type for All medical terms and conditions as defined by Microsoft Purview.
+All Physical Addresses,Sensitive Information Type for All Physical Addresses as defined by Microsoft Purview.
+Amazon S3 Client Secret Access Key,Sensitive Information Type for Amazon S3 Client Secret Access Key as defined by Microsoft Purview.
+Argentina national identity (DNI) number,Sensitive Information Type for Argentina national identity (DNI) number as defined by Microsoft Purview.
+Argentina Unique Tax Identification Key (CUIT/CUIL),Sensitive Information Type for Argentina Unique Tax Identification Key (CUIT/CUIL) as defined by Microsoft Purview.
+ASP.NET machine Key,Sensitive Information Type for ASP.NET machine Key as defined by Microsoft Purview.
+Australia bank account number,Sensitive Information Type for Australia bank account number as defined by Microsoft Purview.
+Australia business number,Sensitive Information Type for Australia business number as defined by Microsoft Purview.
+Australia company number,Sensitive Information Type for Australia company number as defined by Microsoft Purview.
+Australia drivers license number,Sensitive Information Type for Australia drivers license number as defined by Microsoft Purview.
+Australia medical account number,Sensitive Information Type for Australia medical account number as defined by Microsoft Purview.
+Australia passport number,Sensitive Information Type for Australia passport number as defined by Microsoft Purview.
+Australia physical addresses,Sensitive Information Type for Australia physical addresses as defined by Microsoft Purview.
+Austria drivers license number,Sensitive Information Type for Austria drivers license number as defined by Microsoft Purview.
+Austria identity card,Sensitive Information Type for Austria identity card as defined by Microsoft Purview.
+Austria passport number,Sensitive Information Type for Austria passport number as defined by Microsoft Purview.
+Austria physical addresses,Sensitive Information Type for Austria physical addresses as defined by Microsoft Purview.
+Austria social security number,Sensitive Information Type for Austria social security number as defined by Microsoft Purview.
+Austria tax identification number,Sensitive Information Type for Austria tax identification number as defined by Microsoft Purview.
+Austria value added tax,Sensitive Information Type for Austria value added tax as defined by Microsoft Purview.
+Azure App Service deployment password,Sensitive Information Type for Azure App Service deployment password as defined by Microsoft Purview.
+Azure Batch shared access key,Sensitive Information Type for Azure Batch shared access key as defined by Microsoft Purview.
+Regex_austria_eu_telephone_number_1,Detects Austria EU telephone number format variant 1.
+Azure Bot Framework secret key,Sensitive Information Type for Azure Bot Framework secret key as defined by Microsoft Purview.
+Regex_belgium_eu_driver’s_license_number,Detects Belgium EU driver’s licence number formats.
+Azure Bot service app secret,Sensitive Information Type for Azure Bot service app secret as defined by Microsoft Purview.
+Azure Cognitive Search API key,Sensitive Information Type for Azure Cognitive Search API key as defined by Microsoft Purview.
+Azure Cognitive Service key,Sensitive Information Type for Azure Cognitive Service key as defined by Microsoft Purview.
+Regex_belgium_eu_gps_data_1,Detects Belgium EU GPS data format variant 1.
+Regex_belgium_eu_gps_data_2,Detects Belgium EU GPS data format variant 2.
+Azure Container Registry access key,Sensitive Information Type for Azure Container Registry access key as defined by Microsoft Purview.
+Azure Cosmos DB account access key,Sensitive Information Type for Azure Cosmos DB account access key as defined by Microsoft Purview.
+Azure Databricks personal access token,Sensitive Information Type for Azure Databricks personal access token as defined by Microsoft Purview.
+Azure DevOps app secret,Sensitive Information Type for Azure DevOps app secret as defined by Microsoft Purview.
+Azure DevOps personal access token,Sensitive Information Type for Azure DevOps personal access token as defined by Microsoft Purview.
+Azure DocumentDB auth key,Sensitive Information Type for Azure DocumentDB auth key as defined by Microsoft Purview.
+Azure EventGrid access key,Sensitive Information Type for Azure EventGrid access key as defined by Microsoft Purview.
+Regex_canada_health_service_number_Copy,Detects Canada health service number formats (copy variant).
+Azure Function Master / API key,Sensitive Information Type for Azure Function Master / API key as defined by Microsoft Purview.
+Regex_canada_phin_Copy,Detects Canada PHIN (Personal Health Identification Number) formats (copy variant).
+Regex_colombia_national_id_number,Detects Colombia national ID number formats.
+Azure IAAS database connection string and Azure SQL connection string,Sensitive Information Type for Azure IAAS database connection string and Azure SQL connection string as defined by Microsoft Purview.
+Azure IoT connection string,Sensitive Information Type for Azure IoT connection string as defined by Microsoft Purview.
+Azure IoT shared access key,Sensitive Information Type for Azure IoT shared access key as defined by Microsoft Purview.
+Regex_Finland_European_Health_Insurance_Number,Detects Finland European Health Insurance Number formats.
+Regex_France_Health_Insurance_Number,Detects France health insurance number formats.
+Azure Logic app shared access signature,Sensitive Information Type for Azure Logic app shared access signature as defined by Microsoft Purview.
+Azure Machine Learning web service API key,Sensitive Information Type for Azure Machine Learning web service API key as defined by Microsoft Purview.
+Azure Maps subscription key,Sensitive Information Type for Azure Maps subscription key as defined by Microsoft Purview.
+Regex_Ranker_CSCAN?AZURE0020_ServerName_21454193_CEP2.0,(No public description found) — as above.
+Azure publish setting password,Sensitive Information Type for Azure publish setting password as defined by Microsoft Purview.
+Azure Redis cache connection string,Sensitive Information Type for Azure Redis cache connection string as defined by Microsoft Purview.
+Regex_Ranker_CSCAN?AZURE0050_Partial_8305ad49?df2a?4e1e?a008?fc63cb1db966_49652976_CEP2.0,(No public description found) — as above.
+Azure Redis cache connection string password,Sensitive Information Type for Azure Redis cache connection string password as defined by Microsoft Purview.
+Azure SAS,Sensitive Information Type for Azure SAS as defined by Microsoft Purview.
+Azure service bus connection string,Sensitive Information Type for Azure service bus connection string as defined by Microsoft Purview.
+Azure service bus shared access signature,Sensitive Information Type for Azure service bus shared access signature as defined by Microsoft Purview.
+Azure Shared Access key / Web Hook token,Sensitive Information Type for Azure Shared Access key / Web Hook token as defined by Microsoft Purview.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_22118023_CEP2.0,(No public description found) — as above.
+Azure SignalR access key,Sensitive Information Type for Azure SignalR access key as defined by Microsoft Purview.
+Azure SQL connection string,Sensitive Information Type for Azure SQL connection string as defined by Microsoft Purview.
+Azure storage account access key,Sensitive Information Type for Azure storage account access key as defined by Microsoft Purview.
+Azure storage account key,Sensitive Information Type for Azure storage account key as defined by Microsoft Purview.
+Azure Storage account key (generic),Sensitive Information Type for Azure Storage account key (generic) as defined by Microsoft Purview.
+Azure Storage account shared access signature,Sensitive Information Type for Azure Storage account shared access signature as defined by Microsoft Purview.
+Azure Storage account shared access signature for high risk resources,Sensitive Information Type for Azure Storage account shared access signature for high risk resources as defined by Microsoft Purview.
+Azure subscription management certificate,Sensitive Information Type for Azure subscription management certificate as defined by Microsoft Purview.
+Belgium driver's license number,Sensitive Information Type for Belgium driver's license number as defined by Microsoft Purview.
+Belgium national number,Sensitive Information Type for Belgium national number as defined by Microsoft Purview.
+Belgium passport number,Sensitive Information Type for Belgium passport number as defined by Microsoft Purview.
+Belgium physical addresses,Sensitive Information Type for Belgium physical addresses as defined by Microsoft Purview.
+Belgium value added tax number,Sensitive Information Type for Belgium value added tax number as defined by Microsoft Purview.
+Blood test terms,Sensitive Information Type for Blood test terms as defined by Microsoft Purview.
+Brand medication names,Sensitive Information Type for Brand medication names as defined by Microsoft Purview.
+Brazil CPF number,Sensitive Information Type for Brazil CPF number as defined by Microsoft Purview.
+Brazil legal entity number (CNPJ),Sensitive Information Type for Brazil legal entity number (CNPJ) as defined by Microsoft Purview.
+Brazil national identification card (RG),Sensitive Information Type for Brazil national identification card (RG) as defined by Microsoft Purview.
+Brazil physical addresses,Sensitive Information Type for Brazil physical addresses as defined by Microsoft Purview.
+Bulgaria driver's license number,Sensitive Information Type for Bulgaria driver's license number as defined by Microsoft Purview.
+Bulgaria passport number,Sensitive Information Type for Bulgaria passport number as defined by Microsoft Purview.
+Bulgaria physical addresses,Sensitive Information Type for Bulgaria physical addresses as defined by Microsoft Purview.
+Bulgaria uniform civil number,Sensitive Information Type for Bulgaria uniform civil number as defined by Microsoft Purview.
+Canada bank account number,Sensitive Information Type for Canada bank account number as defined by Microsoft Purview.
+Canada driver's license number,Sensitive Information Type for Canada driver's license number as defined by Microsoft Purview.
+Canada health service number,Sensitive Information Type for Canada health service number as defined by Microsoft Purview.
+Canada passport number,Sensitive Information Type for Canada passport number as defined by Microsoft Purview.
+Canada personal health identification number (PHIN),Sensitive Information Type for Canada personal health identification number (PHIN) as defined by Microsoft Purview.
+Canada physical addresses,Sensitive Information Type for Canada physical addresses as defined by Microsoft Purview.
+Canada social insurance number,Sensitive Information Type for Canada social insurance number as defined by Microsoft Purview.
+CEP_AzureEmulatorStorageAccountFilter,Filter used to exclude Azure emulator storage account key content from detection (used in definition of Azure Storage Account Key SIT). :contentReference[oaicite:1]{index=1}
+CEP_Regex_AzureDocumentDBAuthKey,Detects Azure DocumentDB (Cosmos DB) authentication key strings. :contentReference[oaicite:4]{index=4}
+CEP_Regex_AzureIoTConnectionString,(No public specific description found) — likely detects Azure?IoT connection string patterns via regex.
+Australia tax file number,Sensitive Information Type for Australia tax file number as defined by Microsoft Purview.
+CEP_Regex_AzurePublishSettingPasswords,(No public specific description found) — likely detects passwords in Azure publish settings files via regex.
+CEP_Regex_AzureRedisCacheConnectionString,(No public specific description found) — likely detects Azure Redis Cache connection string patterns via regex.
+CEP_Regex_AzureSAS,(No public specific description found) — likely detects Azure Shared Access Signature (SAS) tokens via regex.
+CEP_Regex_AzureServiceBusConnectionString,(No public specific description found) — likely detects Azure Service Bus connection string patterns via regex.
+CEP_Regex_AzureStorageAccountKey,Detects Azure Storage Account Key values (pattern: DefaultEndpointsProtocol… AccountKey=… with 86?chars + ==). :contentReference[oaicite:5]{index=5}
+CEP_Regex_AzureStorageAccountKeyGeneric,(No public specific description found) — likely a generic variant for detecting Azure Storage Account Key patterns.
+CEP_Regex_SQLServerConnectionString,(No public specific description found) — likely detects Microsoft SQL Server connection string patterns via regex.
+Chile identity card number,Sensitive Information Type for Chile identity card number as defined by Microsoft Purview.
+China resident identity card (PRC) number,Sensitive Information Type for China resident identity card (PRC) number as defined by Microsoft Purview.
+Client secret / API key,Sensitive Information Type for Client secret / API key as defined by Microsoft Purview.
+Credit card number,Sensitive Information Type for Credit card number as defined by Microsoft Purview.
+Croatia driver's license number,Sensitive Information Type for Croatia driver's license number as defined by Microsoft Purview.
+Croatia identity card number,Sensitive Information Type for Croatia identity card number as defined by Microsoft Purview.
+Croatia passport number,Sensitive Information Type for Croatia passport number as defined by Microsoft Purview.
+Croatia personal identification (OIB) number,Sensitive Information Type for Croatia personal identification (OIB) number as defined by Microsoft Purview.
+Croatia physical addresses,Sensitive Information Type for Croatia physical addresses as defined by Microsoft Purview.
+Cyprus drivers license number,Sensitive Information Type for Cyprus drivers license number as defined by Microsoft Purview.
+Cyprus identity card,Sensitive Information Type for Cyprus identity card as defined by Microsoft Purview.
+Cyprus passport number,Sensitive Information Type for Cyprus passport number as defined by Microsoft Purview.
+Cyprus physical addresses,Sensitive Information Type for Cyprus physical addresses as defined by Microsoft Purview.
+Cyprus tax identification number,Sensitive Information Type for Cyprus tax identification number as defined by Microsoft Purview.
+Czech driver's license number,Sensitive Information Type for Czech driver's license number as defined by Microsoft Purview.
+Czech passport number,Sensitive Information Type for Czech passport number as defined by Microsoft Purview.
+Czech personal identity number,Sensitive Information Type for Czech personal identity number as defined by Microsoft Purview.
+Czech Republic physical addresses,Sensitive Information Type for Czech Republic physical addresses as defined by Microsoft Purview.
+Denmark driver's license number,Sensitive Information Type for Denmark driver's license number as defined by Microsoft Purview.
+Denmark passport number,Sensitive Information Type for Denmark passport number as defined by Microsoft Purview.
+Denmark personal identification number,Sensitive Information Type for Denmark personal identification number as defined by Microsoft Purview.
+Denmark physical addresses,Sensitive Information Type for Denmark physical addresses as defined by Microsoft Purview.
+Diseases,Sensitive Information Type for Diseases as defined by Microsoft Purview.
+Drug Enforcement Agency (DEA) number,Sensitive Information Type for Drug Enforcement Agency (DEA) number as defined by Microsoft Purview.
+Ecuador Unique Identification Number,Sensitive Information Type for Ecuador Unique Identification Number as defined by Microsoft Purview.
+Estonia driver's license number,Sensitive Information Type for Estonia driver's license number as defined by Microsoft Purview.
+Estonia passport number,Sensitive Information Type for Estonia passport number as defined by Microsoft Purview.
+Estonia Personal Identification Code,Sensitive Information Type for Estonia Personal Identification Code as defined by Microsoft Purview.
+Estonia physical addresses,Sensitive Information Type for Estonia physical addresses as defined by Microsoft Purview.
+EU debit card number,Sensitive Information Type for EU debit card number as defined by Microsoft Purview.
+EU driver's license number,Sensitive Information Type for EU driver's license number as defined by Microsoft Purview.
+EU national identification number,Sensitive Information Type for EU national identification number as defined by Microsoft Purview.
+EU passport number,Sensitive Information Type for EU passport number as defined by Microsoft Purview.
+EU social security number or equivalent identification,Sensitive Information Type for EU social security number or equivalent identification as defined by Microsoft Purview.
+EU Tax identification number,Sensitive Information Type for EU Tax identification number as defined by Microsoft Purview.
+Finland driver's license number,Sensitive Information Type for Finland driver's license number as defined by Microsoft Purview.
+Finland European health insurance number,Sensitive Information Type for Finland European health insurance number as defined by Microsoft Purview.
+Finland national ID,Sensitive Information Type for Finland national ID as defined by Microsoft Purview.
+Finland passport number,Sensitive Information Type for Finland passport number as defined by Microsoft Purview.
+Finland physical addresses,Sensitive Information Type for Finland physical addresses as defined by Microsoft Purview.
+France driver's license number,Sensitive Information Type for France driver's license number as defined by Microsoft Purview.
+France health insurance number,Sensitive Information Type for France health insurance number as defined by Microsoft Purview.
+France national id card (CNI),Sensitive Information Type for France national id card (CNI) as defined by Microsoft Purview.
+France passport number,Sensitive Information Type for France passport number as defined by Microsoft Purview.
+France physical addresses,Sensitive Information Type for France physical addresses as defined by Microsoft Purview.
+France social security number (INSEE),Sensitive Information Type for France social security number (INSEE) as defined by Microsoft Purview.
+France tax identification number,Sensitive Information Type for France tax identification number as defined by Microsoft Purview.
+France value added tax number,Sensitive Information Type for France value added tax number as defined by Microsoft Purview.
+General password,Sensitive Information Type for General password as defined by Microsoft Purview.
+General Symmetric key,Sensitive Information Type for General Symmetric key as defined by Microsoft Purview.
+Generic medication names,Sensitive Information Type for Generic medication names as defined by Microsoft Purview.
+Germany driver's license number,Sensitive Information Type for Germany driver's license number as defined by Microsoft Purview.
+Germany identity card number,Sensitive Information Type for Germany identity card number as defined by Microsoft Purview.
+Germany passport number,Sensitive Information Type for Germany passport number as defined by Microsoft Purview.
+Germany physical addresses,Sensitive Information Type for Germany physical addresses as defined by Microsoft Purview.
+Germany tax identification number,Sensitive Information Type for Germany tax identification number as defined by Microsoft Purview.
+Germany value added tax number,Sensitive Information Type for Germany value added tax number as defined by Microsoft Purview.
+GitHub Personal Access Token,Sensitive Information Type for GitHub Personal Access Token as defined by Microsoft Purview.
+Google API key,Sensitive Information Type for Google API key as defined by Microsoft Purview.
+Greece driver's license number,Sensitive Information Type for Greece driver's license number as defined by Microsoft Purview.
+Greece national ID card,Sensitive Information Type for Greece national ID card as defined by Microsoft Purview.
+Greece passport number,Sensitive Information Type for Greece passport number as defined by Microsoft Purview.
+Greece physical addresses,Sensitive Information Type for Greece physical addresses as defined by Microsoft Purview.
+Greece Social Security Number (AMKA),Sensitive Information Type for Greece Social Security Number (AMKA) as defined by Microsoft Purview.
+Greece tax identification number,Sensitive Information Type for Greece tax identification number as defined by Microsoft Purview.
+Hong Kong identity card (HKID) number,Sensitive Information Type for Hong Kong identity card (HKID) number as defined by Microsoft Purview.
+Http authorization header,Sensitive Information Type for Http authorization header as defined by Microsoft Purview.
+Hungary driver's license number,Sensitive Information Type for Hungary driver's license number as defined by Microsoft Purview.
+Hungary passport number,Sensitive Information Type for Hungary passport number as defined by Microsoft Purview.
+Hungary personal identification number,Sensitive Information Type for Hungary personal identification number as defined by Microsoft Purview.
+Hungary physical addresses,Sensitive Information Type for Hungary physical addresses as defined by Microsoft Purview.
+Hungary social security number (TAJ),Sensitive Information Type for Hungary social security number (TAJ) as defined by Microsoft Purview.
+Hungary tax identification number,Sensitive Information Type for Hungary tax identification number as defined by Microsoft Purview.
+Hungary value added tax number,Sensitive Information Type for Hungary value added tax number as defined by Microsoft Purview.
+Iceland physical addresses,Sensitive Information Type for Iceland physical addresses as defined by Microsoft Purview.
+Impairments Listed In The U.S. Disability Evaluation Under Social Security,Sensitive Information Type for Impairments Listed In The U.S. Disability Evaluation Under Social Security as defined by Microsoft Purview.
+India driver's License Number,Sensitive Information Type for India driver's License Number as defined by Microsoft Purview.
+India GST Number,Sensitive Information Type for India GST Number as defined by Microsoft Purview.
+India permanent account number (PAN),Sensitive Information Type for India permanent account number (PAN) as defined by Microsoft Purview.
+India unique identification (Aadhaar) number,Sensitive Information Type for India unique identification (Aadhaar) number as defined by Microsoft Purview.
+India Voter Id Card,Sensitive Information Type for India Voter Id Card as defined by Microsoft Purview.
+Indonesia driver's license number,Sensitive Information Type for Indonesia driver's license number as defined by Microsoft Purview.
+Indonesia identity card (KTP) number,Sensitive Information Type for Indonesia identity card (KTP) number as defined by Microsoft Purview.
+Indonesia passport number,Sensitive Information Type for Indonesia passport number as defined by Microsoft Purview.
+International banking account number (IBAN),Sensitive Information Type for International banking account number (IBAN) as defined by Microsoft Purview.
+International classification of diseases (ICD-10-CM),Sensitive Information Type for International classification of diseases (ICD-10-CM) as defined by Microsoft Purview.
+International classification of diseases (ICD-9-CM),Sensitive Information Type for International classification of diseases (ICD-9-CM) as defined by Microsoft Purview.
+IP address,Sensitive Information Type for IP address as defined by Microsoft Purview.
+IP Address v4,Sensitive Information Type for IP Address v4 as defined by Microsoft Purview.
+IP Address v6,Sensitive Information Type for IP Address v6 as defined by Microsoft Purview.
+Ireland driver's license number,Sensitive Information Type for Ireland driver's license number as defined by Microsoft Purview.
+Ireland passport number,Sensitive Information Type for Ireland passport number as defined by Microsoft Purview.
+Ireland personal public service (PPS) number,Sensitive Information Type for Ireland personal public service (PPS) number as defined by Microsoft Purview.
+Ireland physical addresses,Sensitive Information Type for Ireland physical addresses as defined by Microsoft Purview.
+Israel bank account number,Sensitive Information Type for Israel bank account number as defined by Microsoft Purview.
+Israel national identification number,Sensitive Information Type for Israel national identification number as defined by Microsoft Purview.
+Italy driver's license number,Sensitive Information Type for Italy driver's license number as defined by Microsoft Purview.
+Italy fiscal code,Sensitive Information Type for Italy fiscal code as defined by Microsoft Purview.
+Italy passport number,Sensitive Information Type for Italy passport number as defined by Microsoft Purview.
+Italy physical addresses,Sensitive Information Type for Italy physical addresses as defined by Microsoft Purview.
+Italy value added tax number,Sensitive Information Type for Italy value added tax number as defined by Microsoft Purview.
+Japan bank account number,Sensitive Information Type for Japan bank account number as defined by Microsoft Purview.
+Japan driver's license number,Sensitive Information Type for Japan driver's license number as defined by Microsoft Purview.
+Japan My Number - Corporate,Sensitive Information Type for Japan My Number - Corporate as defined by Microsoft Purview.
+Japan My Number - Personal,Sensitive Information Type for Japan My Number - Personal as defined by Microsoft Purview.
+Japan passport number,Sensitive Information Type for Japan passport number as defined by Microsoft Purview.
+Japan physical addresses,Sensitive Information Type for Japan physical addresses as defined by Microsoft Purview.
+Japan residence card number,Sensitive Information Type for Japan residence card number as defined by Microsoft Purview.
+Japan resident registration number,Sensitive Information Type for Japan resident registration number as defined by Microsoft Purview.
+Japan social insurance number (SIN),Sensitive Information Type for Japan social insurance number (SIN) as defined by Microsoft Purview.
+Lab test terms,Sensitive Information Type for Lab test terms as defined by Microsoft Purview.
+Latvia driver's license number,Sensitive Information Type for Latvia driver's license number as defined by Microsoft Purview.
+Latvia passport number,Sensitive Information Type for Latvia passport number as defined by Microsoft Purview.
+Latvia personal code,Sensitive Information Type for Latvia personal code as defined by Microsoft Purview.
+Latvia physical addresses,Sensitive Information Type for Latvia physical addresses as defined by Microsoft Purview.
+Liechtenstein physical addresses,Sensitive Information Type for Liechtenstein physical addresses as defined by Microsoft Purview.
+Lifestyles that relate to medical conditions,Sensitive Information Type for Lifestyles that relate to medical conditions as defined by Microsoft Purview.
+Lithuania driver's license number,Sensitive Information Type for Lithuania driver's license number as defined by Microsoft Purview.
+Lithuania passport number,Sensitive Information Type for Lithuania passport number as defined by Microsoft Purview.
+Lithuania personal code,Sensitive Information Type for Lithuania personal code as defined by Microsoft Purview.
+Lithuania physical addresses,Sensitive Information Type for Lithuania physical addresses as defined by Microsoft Purview.
+Luxemburg driver's license number,Sensitive Information Type for Luxemburg driver's license number as defined by Microsoft Purview.
+Luxemburg national identification number (natural persons),Sensitive Information Type for Luxemburg national identification number (natural persons) as defined by Microsoft Purview.
+Luxemburg national identification number (non-natural persons),Sensitive Information Type for Luxemburg national identification number (non-natural persons) as defined by Microsoft Purview.
+Luxemburg passport number,Sensitive Information Type for Luxemburg passport number as defined by Microsoft Purview.
+Luxemburg physical addresses,Sensitive Information Type for Luxemburg physical addresses as defined by Microsoft Purview.
+Malaysia identification card number,Sensitive Information Type for Malaysia identification card number as defined by Microsoft Purview.
+Malaysia passport number,Sensitive Information Type for Malaysia passport number as defined by Microsoft Purview.
+Malta driver's license number,Sensitive Information Type for Malta driver's license number as defined by Microsoft Purview.
+Malta identity card number,Sensitive Information Type for Malta identity card number as defined by Microsoft Purview.
+Malta passport number,Sensitive Information Type for Malta passport number as defined by Microsoft Purview.
+Malta physical addresses,Sensitive Information Type for Malta physical addresses as defined by Microsoft Purview.
+Malta tax identification number,Sensitive Information Type for Malta tax identification number as defined by Microsoft Purview.
+Medical specialities,Sensitive Information Type for Medical specialities as defined by Microsoft Purview.
+Medicare Beneficiary Identifier (MBI) card,Sensitive Information Type for Medicare Beneficiary Identifier (MBI) card as defined by Microsoft Purview.
+Mexico Unique Population Registry Code (CURP),Sensitive Information Type for Mexico Unique Population Registry Code (CURP) as defined by Microsoft Purview.
+Microsoft Bing maps key,Sensitive Information Type for Microsoft Bing maps key as defined by Microsoft Purview.
+Microsoft Entra client access token,Sensitive Information Type for Microsoft Entra client access token as defined by Microsoft Purview.
+Microsoft Entra client secret,Sensitive Information Type for Microsoft Entra client secret as defined by Microsoft Purview.
+Microsoft Entra user Credentials,Sensitive Information Type for Microsoft Entra user Credentials as defined by Microsoft Purview.
+Netherlands citizen's service (BSN) number,Sensitive Information Type for Netherlands citizen's service (BSN) number as defined by Microsoft Purview.
+Netherlands driver's license number,Sensitive Information Type for Netherlands driver's license number as defined by Microsoft Purview.
+Netherlands passport number,Sensitive Information Type for Netherlands passport number as defined by Microsoft Purview.
+Netherlands physical addresses,Sensitive Information Type for Netherlands physical addresses as defined by Microsoft Purview.
+Netherlands tax identification number,Sensitive Information Type for Netherlands tax identification number as defined by Microsoft Purview.
+Netherlands value added tax number,Sensitive Information Type for Netherlands value added tax number as defined by Microsoft Purview.
+New Zealand bank account number,Sensitive Information Type for New Zealand bank account number as defined by Microsoft Purview.
+New Zealand driver's license number,Sensitive Information Type for New Zealand driver's license number as defined by Microsoft Purview.
+New Zealand inland revenue number,Sensitive Information Type for New Zealand inland revenue number as defined by Microsoft Purview.
+New Zealand ministry of health number,Sensitive Information Type for New Zealand ministry of health number as defined by Microsoft Purview.
+New Zealand physical addresses,Sensitive Information Type for New Zealand physical addresses as defined by Microsoft Purview.
+New Zealand social welfare number,Sensitive Information Type for New Zealand social welfare number as defined by Microsoft Purview.
+Norway identification number,Sensitive Information Type for Norway identification number as defined by Microsoft Purview.
+Norway physical addresses,Sensitive Information Type for Norway physical addresses as defined by Microsoft Purview.
+Philippines national identification number,Sensitive Information Type for Philippines national identification number as defined by Microsoft Purview.
+Philippines passport number,Sensitive Information Type for Philippines passport number as defined by Microsoft Purview.
+Philippines unified multi-purpose identification number,Sensitive Information Type for Philippines unified multi-purpose identification number as defined by Microsoft Purview.
+Poland driver's license number,Sensitive Information Type for Poland driver's license number as defined by Microsoft Purview.
+Poland identity card,Sensitive Information Type for Poland identity card as defined by Microsoft Purview.
+Poland national ID (PESEL),Sensitive Information Type for Poland national ID (PESEL) as defined by Microsoft Purview.
+Poland passport number,Sensitive Information Type for Poland passport number as defined by Microsoft Purview.
+Poland physical addresses,Sensitive Information Type for Poland physical addresses as defined by Microsoft Purview.
+Poland REGON number,Sensitive Information Type for Poland REGON number as defined by Microsoft Purview.
+Poland tax identification number,Sensitive Information Type for Poland tax identification number as defined by Microsoft Purview.
+Portugal citizen card number,Sensitive Information Type for Portugal citizen card number as defined by Microsoft Purview.
+Portugal driver's license number,Sensitive Information Type for Portugal driver's license number as defined by Microsoft Purview.
+Portugal passport number,Sensitive Information Type for Portugal passport number as defined by Microsoft Purview.
+Portugal physical addresses,Sensitive Information Type for Portugal physical addresses as defined by Microsoft Purview.
+Portugal tax identification number,Sensitive Information Type for Portugal tax identification number as defined by Microsoft Purview.
+Qatari identification card number,Sensitive Information Type for Qatari identification card number as defined by Microsoft Purview.
+Regex_argentina_national_id,Detects Argentina national identity (DNI) number formats.
+Regex_australia_drivers_license_number_Copy,Detects Australian driver’s licence number formats (copy variant).
+Regex_australian_address,Detects Australian physical address formats.
+Regex_australian_suburb_state_postcode,Detects Australian suburb/state/postcode formats.
+Regex_austria_eu_driver’s_license_number,Detects Austria EU?driver’s licence number formats.
+Regex_austria_eu_formatted_mobile_number,Detects Austria EU mobile phone number in formatted form.
+Regex_austria_eu_formatted_telephone_number_1,Detects Austria EU telephone number format variant 1.
+Regex_austria_eu_formatted_telephone_number_2,Detects Austria EU telephone number format variant 2.
+Regex_austria_eu_gps_data_1,Detects Austria EU GPS data format variant 1.
+Regex_austria_eu_gps_data_2,Detects Austria EU GPS data format variant 2.
+Regex_austria_eu_mobile_number,Detects Austria EU mobile number formats.
+Regex_austria_eu_national_id_card,Detects Austria EU national ID card number formats.
+Regex_austria_eu_passport_number,Detects Austria EU passport number formats.
+Regex_austria_eu_ssn_or_equivalent,Detects Austria EU social security number or equivalent formats.
+Regex_austria_eu_tax_file_number,Detects Austria EU tax identification number formats.
+Regex_austria_eu_telephone_number_2,Detects Austria EU telephone number format variant 2.
+Regex_belgium_eu_formatted_mobile_number,Detects Belgium EU mobile phone number format.
+Regex_belgium_eu_formatted_telephone_number_1,Detects Belgium EU telephone number format variant 1.
+Regex_belgium_eu_formatted_telephone_number_2,Detects Belgium EU telephone number format variant 2.
+Regex_belgium_eu_mobile_number,Detects Belgium EU mobile number formats.
+Regex_belgium_eu_passport_number,Detects Belgium EU passport number formats.
+Regex_belgium_eu_ssn_or_equivalent,Detects Belgium EU social security number or equivalent formats.
+Regex_belgium_eu_tax_file_number,Detects Belgium EU tax identification number formats.
+Regex_bulgaria_eu_telephone_number,Detects Bulgaria EU telephone number formats.
+Regex_canada_bank_account_number_Copy,Detects Canada bank account number formats (copy variant).
+Regex_canada_bank_account_transit_number_Copy,Detects Canada bank account transit number formats (copy variant).
+Regex_canada_passport_number_Copy,Detects Canada passport number formats (copy variant).
+Regex_croatia_eu_driver’s_license_number,Detects Croatia EU driver’s licence number formats.
+Regex_Ecuador_Unique_Identification_Number,Detects Ecuador unique identification number formats.
+Regex_Filter_TrivialValue2_20601768_CEP2.0,(No public specific description found) — likely a filter for trivial values in credential scanning SITs.
+Regex_ipv4_address_Copy,Detects IPv4 address formats (copy variant).
+Regex_ipv6_address_Copy,Detects IPv6 address formats (copy variant).
+Regex_Ranker_CSCAN?AZURE0020_0eae114f?baad?4dba?a100?c5b34d217964_60068066_CEP2.0,(No public description found) — likely part of an internal ranking/filter for Azure credential scanning.
+Regex_Ranker_CSCAN?AZURE0020_UserName_58870012_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0030_9beb734f?ba2b?452b?b422?589f5ac467ef_43332040_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_17ba94a9?a24c?4c84?a838-22a1c0c192e7_26987408_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountKey_41560081_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountName_40041277_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_d37929c5?be80?4f59?951f?5dc6f21d8892_17911681_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_Endpoint_24827179_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_64844482_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0080_AccountEndpoint_38496415_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0080_Partial_1eb5757c?210e?46a5?876e?b0ad231103e9_10923418_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0090_b08f98f2?d980?4598?814b?67c29887ebff_33624151_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0130_AzureBatch_a5d6121e?e?4b7d?a7da?9aad47e4c66d_53046711_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0130_Prefix_a853ad91?d200?41b2?8dc4?4ce41dda3b81_3056034_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0140_RefreshToken_74aa94f2?34ed?40bf?ba88?0bc17398a9cf_9381496_CEP2.0,(No public description found) — as above.
+Regex_Russian_Passport_Number_Domestic,Detects Russian passport number domestic format.
+Regex_Russian_Passport_Number_International,Detects Russian passport number international format.
+Regex_Scanner_JsonWebToken_JwtToken_51810644_CEP2.0,(No public description found) — likely detects JSON Web Tokens (JWTs).
+Regex_Scanner_LoginCredentials_Login_2383799_CEP2.0,(No public description found) — likely detects login credentials.
+Regex_Scanner_PasswordContextInCode_Password_62074597_CEP2.0,(No public description found) — likely detects password contexts in code.
+Regex_Scanner_SymmetricKey128_SymmetricKey_61027830_CEP2.0,(No public description found) — likely detects 128?bit symmetric keys.
+Regex_Scanner_SymmetricKey360_SymmetricKey_31201899_CEP2.0,(No public description found) — likely detects 360?bit symmetric keys.
+Regex_swift,Detects SWIFT codes.
+Regex_Ukraine_Passport_Domestic,Detects Ukraine passport number domestic format.
+Regex_Ukraine_Passport_International,Detects Ukraine passport number international format.
+Romania driver's license number,Sensitive Information Type for Romania driver's license number as defined by Microsoft Purview.
+Romania passport number,Sensitive Information Type for Romania passport number as defined by Microsoft Purview.
+Romania personal numeric code (CNP),Sensitive Information Type for Romania personal numeric code (CNP) as defined by Microsoft Purview.
+Romania physical addresses,Sensitive Information Type for Romania physical addresses as defined by Microsoft Purview.
+Russia passport number domestic,Sensitive Information Type for Russia passport number domestic as defined by Microsoft Purview.
+Russia passport number international,Sensitive Information Type for Russia passport number international as defined by Microsoft Purview.
+Saudi Arabia National ID,Sensitive Information Type for Saudi Arabia National ID as defined by Microsoft Purview.
+Singapore national registration identity card (NRIC) number,Sensitive Information Type for Singapore national registration identity card (NRIC) number as defined by Microsoft Purview.
+Singapore passport number,Sensitive Information Type for Singapore passport number as defined by Microsoft Purview.
+Slack access token,Sensitive Information Type for Slack access token as defined by Microsoft Purview.
+Slovakia driver's license number,Sensitive Information Type for Slovakia driver's license number as defined by Microsoft Purview.
+Slovakia passport number,Sensitive Information Type for Slovakia passport number as defined by Microsoft Purview.
+Slovakia personal number,Sensitive Information Type for Slovakia personal number as defined by Microsoft Purview.
+Slovakia physical addresses,Sensitive Information Type for Slovakia physical addresses as defined by Microsoft Purview.
+Slovenia driver's license number,Sensitive Information Type for Slovenia driver's license number as defined by Microsoft Purview.
+Slovenia passport number,Sensitive Information Type for Slovenia passport number as defined by Microsoft Purview.
+Slovenia physical addresses,Sensitive Information Type for Slovenia physical addresses as defined by Microsoft Purview.
+Slovenia tax identification number,Sensitive Information Type for Slovenia tax identification number as defined by Microsoft Purview.
+Slovenia Unique Master Citizen Number,Sensitive Information Type for Slovenia Unique Master Citizen Number as defined by Microsoft Purview.
+South Africa identification number,Sensitive Information Type for South Africa identification number as defined by Microsoft Purview.
+South Korea driver's license number,Sensitive Information Type for South Korea driver's license number as defined by Microsoft Purview.
+South Korea passport number,Sensitive Information Type for South Korea passport number as defined by Microsoft Purview.
+South Korea resident registration number,Sensitive Information Type for South Korea resident registration number as defined by Microsoft Purview.
+Spain DNI,Sensitive Information Type for Spain DNI as defined by Microsoft Purview.
+Spain driver's license number,Sensitive Information Type for Spain driver's license number as defined by Microsoft Purview.
+Spain passport number,Sensitive Information Type for Spain passport number as defined by Microsoft Purview.
+Spain physical addresses,Sensitive Information Type for Spain physical addresses as defined by Microsoft Purview.
+Spain social security number (SSN),Sensitive Information Type for Spain social security number (SSN) as defined by Microsoft Purview.
+Spain tax identification number,Sensitive Information Type for Spain tax identification number as defined by Microsoft Purview.
+SQL Server connection string,Sensitive Information Type for SQL Server connection string as defined by Microsoft Purview.
+Surgical procedures,Sensitive Information Type for Surgical procedures as defined by Microsoft Purview.
+Sweden driver's license number,Sensitive Information Type for Sweden driver's license number as defined by Microsoft Purview.
+Sweden national ID,Sensitive Information Type for Sweden national ID as defined by Microsoft Purview.
+Sweden passport number,Sensitive Information Type for Sweden passport number as defined by Microsoft Purview.
+Sweden physical addresses,Sensitive Information Type for Sweden physical addresses as defined by Microsoft Purview.
+Sweden tax identification number,Sensitive Information Type for Sweden tax identification number as defined by Microsoft Purview.
+SWIFT code,Sensitive Information Type for SWIFT code as defined by Microsoft Purview.
+Switzerland physical addresses,Sensitive Information Type for Switzerland physical addresses as defined by Microsoft Purview.
+Switzerland SSN AHV number,Sensitive Information Type for Switzerland SSN AHV number as defined by Microsoft Purview.
+Taiwan national identification number,Sensitive Information Type for Taiwan national identification number as defined by Microsoft Purview.
+Taiwan passport number,Sensitive Information Type for Taiwan passport number as defined by Microsoft Purview.
+Taiwan-resident certificate (ARC/TARC) number,Sensitive Information Type for Taiwan-resident certificate (ARC/TARC) number as defined by Microsoft Purview.
+Thai population identification code,Sensitive Information Type for Thai population identification code as defined by Microsoft Purview.
+Turkey national identification number,Sensitive Information Type for Turkey national identification number as defined by Microsoft Purview.
+Turkey physical addresses,Sensitive Information Type for Turkey physical addresses as defined by Microsoft Purview.
+Types of medication,Sensitive Information Type for Types of medication as defined by Microsoft Purview.
+U.A.E. identity card number,Sensitive Information Type for U.A.E. identity card number as defined by Microsoft Purview.
+U.A.E. passport number,Sensitive Information Type for U.A.E. passport number as defined by Microsoft Purview.
+U.K. driver's license number,Sensitive Information Type for U.K. driver's license number as defined by Microsoft Purview.
+U.K. electoral roll number,Sensitive Information Type for U.K. electoral roll number as defined by Microsoft Purview.
+U.K. national health service number,Sensitive Information Type for U.K. national health service number as defined by Microsoft Purview.
+U.K. national insurance number (NINO),Sensitive Information Type for U.K. national insurance number (NINO) as defined by Microsoft Purview.
+U.K. physical addresses,Sensitive Information Type for U.K. physical addresses as defined by Microsoft Purview.
+U.K. Unique Taxpayer Reference Number,Sensitive Information Type for U.K. Unique Taxpayer Reference Number as defined by Microsoft Purview.
+U.S. bank account number,Sensitive Information Type for U.S. bank account number as defined by Microsoft Purview.
+U.S. driver's license number,Sensitive Information Type for U.S. driver's license number as defined by Microsoft Purview.
+U.S. individual taxpayer identification number (ITIN),Sensitive Information Type for U.S. individual taxpayer identification number (ITIN) as defined by Microsoft Purview.
+U.S. physical addresses,Sensitive Information Type for U.S. physical addresses as defined by Microsoft Purview.
+U.S. social security number (SSN),Sensitive Information Type for U.S. social security number (SSN) as defined by Microsoft Purview.
+U.S./U.K. passport number,Sensitive Information Type for U.S./U.K. passport number as defined by Microsoft Purview.
+Ukraine passport domestic,Sensitive Information Type for Ukraine passport domestic as defined by Microsoft Purview.
+Ukraine passport international,Sensitive Information Type for Ukraine passport international as defined by Microsoft Purview.
+User login credentials,Sensitive Information Type for User login credentials as defined by Microsoft Purview.
+X.509 certificate private key,Sensitive Information Type for X.509 certificate private key as defined by Microsoft Purview.
