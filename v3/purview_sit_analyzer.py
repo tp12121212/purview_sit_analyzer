@@ -88,8 +88,8 @@ def extract_text_from_file(filepath):
     return text
 
 # ---- Analyze Files ----
-regex_results = []
-keyword_counter = Counter()
+regex_results = []  # Stores regex matches
+keyword_results = []  # Stores keyword matches per file
 
 for root, dirs, files in os.walk(input_folder):
     for file in files:
@@ -98,11 +98,14 @@ for root, dirs, files in os.walk(input_folder):
         text = extract_text_from_file(filepath)
         lines = text.split('\n')
 
-        # Regex Detection
+        # ---- CHANGE 1: Add File_Name to regex results ----
         for pattern in regex_patterns:
             name = pattern['name']
             regex = pattern['pattern']
-            matches = re.findall(regex, text)
+            try:
+                matches = re.findall(regex, text)
+            except re.error:
+                continue
             if matches:
                 first_line = None
                 for i, line in enumerate(lines, start=1):
@@ -110,6 +113,7 @@ for root, dirs, files in os.walk(input_folder):
                         first_line = i
                         break
                 regex_results.append({
+                    'File_Name': file,  # <-- Added column
                     'Regex_Name': name,
                     'Regex_Pattern': regex,
                     'Detected_Text': matches[0],
@@ -117,19 +121,27 @@ for root, dirs, files in os.walk(input_folder):
                     'Match_Count': len(matches)
                 })
 
-        # Keyword Extraction
+        # ---- CHANGE 2: Track keywords per file ----
         words = [w for w in re.findall(r'\b\w+\b', text) if w.lower() not in stop_words and len(w) >= min_keyword_length]
+        local_counter = Counter()
         for i in range(len(words)):
             for j in range(min_phrase_words, max_phrase_words + 1):
                 if i + j <= len(words):
                     phrase = " ".join(words[i:i+j])
-                    keyword_counter[phrase] += 1
+                    local_counter[phrase] += 1
+
+        # Add File_Name for each keyword occurrence
+        for keyword, count in local_counter.items():
+            keyword_results.append({
+                'File_Name': file,  # <-- Added column
+                'Keyword': keyword,
+                'Count': count
+            })
 
 # ---- Save Outputs ----
 regex_df = pd.DataFrame(regex_results)
 regex_df.to_csv(os.path.join(output_folder, 'regex_detections.csv'), index=False)
 
-keywords_df = pd.DataFrame(keyword_counter.items(), columns=['Keyword', 'Count'])
+keywords_df = pd.DataFrame(keyword_results)
 keywords_df.to_csv(os.path.join(output_folder, 'keywords.csv'), index=False)
 
-print(f"Analysis complete. Files saved in {output_folder}")
