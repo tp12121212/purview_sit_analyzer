@@ -1,4 +1,4 @@
-**# Note this code is under active development and still in concept stage.
+# Note this code is under active development and still in concept stage.
 
 # Purview SIT Analyzer
 
