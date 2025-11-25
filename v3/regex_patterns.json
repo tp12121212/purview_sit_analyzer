@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Credit Card Number",
+        "pattern": "\\b(?:\\d[ -]*?){13,16}\\b"
+    },
+    {
+        "name": "Email Address",
+        "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+    },
+    {
+        "name": "Bank Account",
+        "pattern": "\\b\\d{8,12}\\b"
+    }
+]
