@@ -1,3 +1,5 @@
+**# Note this code is under active development and still in concept stage.
+
 # Purview SIT Analyzer
 
 A Python-based utility for analyzing and managing **Sensitive Information Types (SITs)** in **Microsoft Purview**.  
