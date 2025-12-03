@@ -1,7 +1,7 @@
 SIT,Description
 ABA routing number,Sensitive Information Type for ABA routing number as defined by Microsoft Purview.
 CEP_CommonExampleKeywords,"Keyword?based supporting pattern to exclude example/trivial keywords (like contoso, fabrikam, northwind, sandbox, onebox, localhost, 127.0.0.1, testacs.com, s?int.net) from matches. :contentReference[oaicite:2]{index=2}"
-CEP_PasswordPlaceHolder,(No public specific description found) — likely a placeholder SIT for generic password patterns in custom classification. 
+CEP_PasswordPlaceHolder,(No public specific description found) â€” likely a placeholder SIT for generic password patterns in custom classification. 
 CEP_Regex_AzureConnectionString,Detects Azure IaaS database connection strings and Azure SQL connection strings via regex matching the pattern for connection strings. :contentReference[oaicite:3]{index=3}
 All credentials,Sensitive Information Type for All credentials as defined by Microsoft Purview.
 All full names,Sensitive Information Type for All full names as defined by Microsoft Purview.
@@ -29,7 +29,7 @@ Azure App Service deployment password,Sensitive Information Type for Azure App S
 Azure Batch shared access key,Sensitive Information Type for Azure Batch shared access key as defined by Microsoft Purview.
 Regex_austria_eu_telephone_number_1,Detects Austria EU telephone number format variant 1.
 Azure Bot Framework secret key,Sensitive Information Type for Azure Bot Framework secret key as defined by Microsoft Purview.
-Regex_belgium_eu_driver’s_license_number,Detects Belgium EU driver’s licence number formats.
+Regex_belgium_eu_driverâ€™s_license_number,Detects Belgium EU driverâ€™s licence number formats.
 Azure Bot service app secret,Sensitive Information Type for Azure Bot service app secret as defined by Microsoft Purview.
 Azure Cognitive Search API key,Sensitive Information Type for Azure Cognitive Search API key as defined by Microsoft Purview.
 Azure Cognitive Service key,Sensitive Information Type for Azure Cognitive Service key as defined by Microsoft Purview.
@@ -54,16 +54,16 @@ Regex_France_Health_Insurance_Number,Detects France health insurance number form
 Azure Logic app shared access signature,Sensitive Information Type for Azure Logic app shared access signature as defined by Microsoft Purview.
 Azure Machine Learning web service API key,Sensitive Information Type for Azure Machine Learning web service API key as defined by Microsoft Purview.
 Azure Maps subscription key,Sensitive Information Type for Azure Maps subscription key as defined by Microsoft Purview.
-Regex_Ranker_CSCAN?AZURE0020_ServerName_21454193_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0020_ServerName_21454193_CEP2.0,(No public description found) â€” as above.
 Azure publish setting password,Sensitive Information Type for Azure publish setting password as defined by Microsoft Purview.
 Azure Redis cache connection string,Sensitive Information Type for Azure Redis cache connection string as defined by Microsoft Purview.
-Regex_Ranker_CSCAN?AZURE0050_Partial_8305ad49?df2a?4e1e?a008?fc63cb1db966_49652976_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0050_Partial_8305ad49?df2a?4e1e?a008?fc63cb1db966_49652976_CEP2.0,(No public description found) â€” as above.
 Azure Redis cache connection string password,Sensitive Information Type for Azure Redis cache connection string password as defined by Microsoft Purview.
 Azure SAS,Sensitive Information Type for Azure SAS as defined by Microsoft Purview.
 Azure service bus connection string,Sensitive Information Type for Azure service bus connection string as defined by Microsoft Purview.
 Azure service bus shared access signature,Sensitive Information Type for Azure service bus shared access signature as defined by Microsoft Purview.
 Azure Shared Access key / Web Hook token,Sensitive Information Type for Azure Shared Access key / Web Hook token as defined by Microsoft Purview.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_22118023_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_22118023_CEP2.0,(No public description found) â€” as above.
 Azure SignalR access key,Sensitive Information Type for Azure SignalR access key as defined by Microsoft Purview.
 Azure SQL connection string,Sensitive Information Type for Azure SQL connection string as defined by Microsoft Purview.
 Azure storage account access key,Sensitive Information Type for Azure storage account access key as defined by Microsoft Purview.
@@ -96,15 +96,15 @@ Canada physical addresses,Sensitive Information Type for Canada physical address
 Canada social insurance number,Sensitive Information Type for Canada social insurance number as defined by Microsoft Purview.
 CEP_AzureEmulatorStorageAccountFilter,Filter used to exclude Azure emulator storage account key content from detection (used in definition of Azure Storage Account Key SIT). :contentReference[oaicite:1]{index=1}
 CEP_Regex_AzureDocumentDBAuthKey,Detects Azure DocumentDB (Cosmos DB) authentication key strings. :contentReference[oaicite:4]{index=4}
-CEP_Regex_AzureIoTConnectionString,(No public specific description found) — likely detects Azure?IoT connection string patterns via regex.
+CEP_Regex_AzureIoTConnectionString,(No public specific description found) â€” likely detects Azure?IoT connection string patterns via regex.
 Australia tax file number,Sensitive Information Type for Australia tax file number as defined by Microsoft Purview.
-CEP_Regex_AzurePublishSettingPasswords,(No public specific description found) — likely detects passwords in Azure publish settings files via regex.
-CEP_Regex_AzureRedisCacheConnectionString,(No public specific description found) — likely detects Azure Redis Cache connection string patterns via regex.
-CEP_Regex_AzureSAS,(No public specific description found) — likely detects Azure Shared Access Signature (SAS) tokens via regex.
-CEP_Regex_AzureServiceBusConnectionString,(No public specific description found) — likely detects Azure Service Bus connection string patterns via regex.
-CEP_Regex_AzureStorageAccountKey,Detects Azure Storage Account Key values (pattern: DefaultEndpointsProtocol… AccountKey=… with 86?chars + ==). :contentReference[oaicite:5]{index=5}
-CEP_Regex_AzureStorageAccountKeyGeneric,(No public specific description found) — likely a generic variant for detecting Azure Storage Account Key patterns.
-CEP_Regex_SQLServerConnectionString,(No public specific description found) — likely detects Microsoft SQL Server connection string patterns via regex.
+CEP_Regex_AzurePublishSettingPasswords,(No public specific description found) â€” likely detects passwords in Azure publish settings files via regex.
+CEP_Regex_AzureRedisCacheConnectionString,(No public specific description found) â€” likely detects Azure Redis Cache connection string patterns via regex.
+CEP_Regex_AzureSAS,(No public specific description found) â€” likely detects Azure Shared Access Signature (SAS) tokens via regex.
+CEP_Regex_AzureServiceBusConnectionString,(No public specific description found) â€” likely detects Azure Service Bus connection string patterns via regex.
+CEP_Regex_AzureStorageAccountKey,Detects Azure Storage Account Key values (pattern: DefaultEndpointsProtocolâ€¦ AccountKey=â€¦ with 86?chars + ==). :contentReference[oaicite:5]{index=5}
+CEP_Regex_AzureStorageAccountKeyGeneric,(No public specific description found) â€” likely a generic variant for detecting Azure Storage Account Key patterns.
+CEP_Regex_SQLServerConnectionString,(No public specific description found) â€” likely detects Microsoft SQL Server connection string patterns via regex.
 Chile identity card number,Sensitive Information Type for Chile identity card number as defined by Microsoft Purview.
 China resident identity card (PRC) number,Sensitive Information Type for China resident identity card (PRC) number as defined by Microsoft Purview.
 Client secret / API key,Sensitive Information Type for Client secret / API key as defined by Microsoft Purview.
@@ -276,10 +276,10 @@ Portugal physical addresses,Sensitive Information Type for Portugal physical add
 Portugal tax identification number,Sensitive Information Type for Portugal tax identification number as defined by Microsoft Purview.
 Qatari identification card number,Sensitive Information Type for Qatari identification card number as defined by Microsoft Purview.
 Regex_argentina_national_id,Detects Argentina national identity (DNI) number formats.
-Regex_australia_drivers_license_number_Copy,Detects Australian driver’s licence number formats (copy variant).
+Regex_australia_drivers_license_number_Copy,Detects Australian driverâ€™s licence number formats (copy variant).
 Regex_australian_address,Detects Australian physical address formats.
 Regex_australian_suburb_state_postcode,Detects Australian suburb/state/postcode formats.
-Regex_austria_eu_driver’s_license_number,Detects Austria EU?driver’s licence number formats.
+Regex_austria_eu_driverâ€™s_license_number,Detects Austria EU?driverâ€™s licence number formats.
 Regex_austria_eu_formatted_mobile_number,Detects Austria EU mobile phone number in formatted form.
 Regex_austria_eu_formatted_telephone_number_1,Detects Austria EU telephone number format variant 1.
 Regex_austria_eu_formatted_telephone_number_2,Detects Austria EU telephone number format variant 2.
@@ -302,33 +302,33 @@ Regex_bulgaria_eu_telephone_number,Detects Bulgaria EU telephone number formats.
 Regex_canada_bank_account_number_Copy,Detects Canada bank account number formats (copy variant).
 Regex_canada_bank_account_transit_number_Copy,Detects Canada bank account transit number formats (copy variant).
 Regex_canada_passport_number_Copy,Detects Canada passport number formats (copy variant).
-Regex_croatia_eu_driver’s_license_number,Detects Croatia EU driver’s licence number formats.
+Regex_croatia_eu_driverâ€™s_license_number,Detects Croatia EU driverâ€™s licence number formats.
 Regex_Ecuador_Unique_Identification_Number,Detects Ecuador unique identification number formats.
-Regex_Filter_TrivialValue2_20601768_CEP2.0,(No public specific description found) — likely a filter for trivial values in credential scanning SITs.
+Regex_Filter_TrivialValue2_20601768_CEP2.0,(No public specific description found) â€” likely a filter for trivial values in credential scanning SITs.
 Regex_ipv4_address_Copy,Detects IPv4 address formats (copy variant).
 Regex_ipv6_address_Copy,Detects IPv6 address formats (copy variant).
-Regex_Ranker_CSCAN?AZURE0020_0eae114f?baad?4dba?a100?c5b34d217964_60068066_CEP2.0,(No public description found) — likely part of an internal ranking/filter for Azure credential scanning.
-Regex_Ranker_CSCAN?AZURE0020_UserName_58870012_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0030_9beb734f?ba2b?452b?b422?589f5ac467ef_43332040_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_17ba94a9?a24c?4c84?a838-22a1c0c192e7_26987408_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountKey_41560081_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountName_40041277_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_d37929c5?be80?4f59?951f?5dc6f21d8892_17911681_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_Endpoint_24827179_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_64844482_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0080_AccountEndpoint_38496415_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0080_Partial_1eb5757c?210e?46a5?876e?b0ad231103e9_10923418_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0090_b08f98f2?d980?4598?814b?67c29887ebff_33624151_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0130_AzureBatch_a5d6121e?e?4b7d?a7da?9aad47e4c66d_53046711_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0130_Prefix_a853ad91?d200?41b2?8dc4?4ce41dda3b81_3056034_CEP2.0,(No public description found) — as above.
-Regex_Ranker_CSCAN?AZURE0140_RefreshToken_74aa94f2?34ed?40bf?ba88?0bc17398a9cf_9381496_CEP2.0,(No public description found) — as above.
+Regex_Ranker_CSCAN?AZURE0020_0eae114f?baad?4dba?a100?c5b34d217964_60068066_CEP2.0,(No public description found) â€” likely part of an internal ranking/filter for Azure credential scanning.
+Regex_Ranker_CSCAN?AZURE0020_UserName_58870012_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0030_9beb734f?ba2b?452b?b422?589f5ac467ef_43332040_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_17ba94a9?a24c?4c84?a838-22a1c0c192e7_26987408_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountKey_41560081_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_AccountName_40041277_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_d37929c5?be80?4f59?951f?5dc6f21d8892_17911681_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_Endpoint_24827179_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0070_combined_ranker_CEP2.0_EndpointSuffix_64844482_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0080_AccountEndpoint_38496415_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0080_Partial_1eb5757c?210e?46a5?876e?b0ad231103e9_10923418_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0090_b08f98f2?d980?4598?814b?67c29887ebff_33624151_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0130_AzureBatch_a5d6121e?e?4b7d?a7da?9aad47e4c66d_53046711_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0130_Prefix_a853ad91?d200?41b2?8dc4?4ce41dda3b81_3056034_CEP2.0,(No public description found) â€” as above.
+Regex_Ranker_CSCAN?AZURE0140_RefreshToken_74aa94f2?34ed?40bf?ba88?0bc17398a9cf_9381496_CEP2.0,(No public description found) â€” as above.
 Regex_Russian_Passport_Number_Domestic,Detects Russian passport number domestic format.
 Regex_Russian_Passport_Number_International,Detects Russian passport number international format.
-Regex_Scanner_JsonWebToken_JwtToken_51810644_CEP2.0,(No public description found) — likely detects JSON Web Tokens (JWTs).
-Regex_Scanner_LoginCredentials_Login_2383799_CEP2.0,(No public description found) — likely detects login credentials.
-Regex_Scanner_PasswordContextInCode_Password_62074597_CEP2.0,(No public description found) — likely detects password contexts in code.
-Regex_Scanner_SymmetricKey128_SymmetricKey_61027830_CEP2.0,(No public description found) — likely detects 128?bit symmetric keys.
-Regex_Scanner_SymmetricKey360_SymmetricKey_31201899_CEP2.0,(No public description found) — likely detects 360?bit symmetric keys.
+Regex_Scanner_JsonWebToken_JwtToken_51810644_CEP2.0,(No public description found) â€” likely detects JSON Web Tokens (JWTs).
+Regex_Scanner_LoginCredentials_Login_2383799_CEP2.0,(No public description found) â€” likely detects login credentials.
+Regex_Scanner_PasswordContextInCode_Password_62074597_CEP2.0,(No public description found) â€” likely detects password contexts in code.
+Regex_Scanner_SymmetricKey128_SymmetricKey_61027830_CEP2.0,(No public description found) â€” likely detects 128?bit symmetric keys.
+Regex_Scanner_SymmetricKey360_SymmetricKey_31201899_CEP2.0,(No public description found) â€” likely detects 360?bit symmetric keys.
 Regex_swift,Detects SWIFT codes.
 Regex_Ukraine_Passport_Domestic,Detects Ukraine passport number domestic format.
 Regex_Ukraine_Passport_International,Detects Ukraine passport number international format.
