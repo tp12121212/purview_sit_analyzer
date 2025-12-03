@@ -646,5 +646,9 @@
     {
         "name": "Regex_Notion_Integration_Token",
         "pattern": "(secret_)([a-zA-Z0-9]{43})"
-    }
+    },
+    {
+        "name": "temp_robert_ferguson",
+        "pattern": "Robert Ferguson"
+   }
 ]
