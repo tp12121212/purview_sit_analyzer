@@ -15,3 +15,6 @@ with this project.
   ```bash
   python3 -m venv .venv
   source .venv/bin/activate
+  
+  
+  pip install -r v3/requirements.txt
