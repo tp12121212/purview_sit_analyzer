@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+venv/
+env/
+*/.venv/
+*/venv/
+*/env/
+purview_env/
+*/purview_env/
+adresss_extraction/adresss_extraction/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# macOS metadata
+.DS_Store
+*/.DS_Store
