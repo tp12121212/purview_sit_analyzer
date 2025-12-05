@@ -18,6 +18,4 @@ This tool helps security engineers extract, test, and validate SITs—including 
 ---
 
 ## 🧰 Requirements
-b
-The code can be run using https://colab.research.google.com/ and connecting it to the repo address https://github.com/tp12121212/purview_sit_analyzer.git
-and uploading a pdf to analyze.  Currently only text based PDF's are supported but OCR version is coming.
+Constantly changing, but primarily python or jupyter notebook running in google colab
