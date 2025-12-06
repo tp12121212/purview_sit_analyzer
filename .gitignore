@@ -9,6 +9,11 @@ purview_env/
 */purview_env/
 adresss_extraction/adresss_extraction/
 
+# Other
+v3/output*/
+v3/input*/
+tmp/
+
 # Python caches
 __pycache__/
 *.py[cod]

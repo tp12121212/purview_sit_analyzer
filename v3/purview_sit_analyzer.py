@@ -18,7 +18,6 @@ from pdf2image import convert_from_path
 from PIL import Image
 from pptx import Presentation
 
-# ---- Configure Logging ----
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
@@ -27,17 +26,11 @@ DEFAULT_LOCAL_STOPWORDS = Path(__file__).resolve().parent.parent / "english.txt"
 
 
 def load_stopwords(local_path: Optional[Path] = None, remote_url: Optional[str] = None) -> set:
-    """Load stopwords from a local file first, then optionally from a URL."""
     stopwords: set = set()
-    local_candidates: Sequence[Path] = []
-    if local_path:
-        local_candidates = [local_path]
-    else:
-        local_candidates = [DEFAULT_LOCAL_STOPWORDS, Path("english.txt")]
-
+    local_candidates: Sequence[Path] = [local_path] if local_path else [DEFAULT_LOCAL_STOPWORDS, Path("english.txt")]
     for candidate in local_candidates:
         try:
-            if candidate.is_file():
+            if candidate and candidate.is_file():
                 stopwords = set(candidate.read_text(encoding="utf-8").split())
                 logger.info("Loaded %d stop words from %s", len(stopwords), candidate)
                 break
@@ -74,7 +67,6 @@ def precompile_patterns(patterns: Iterable[Dict]) -> List[Tuple[str, str, re.Pat
 
 
 def extract_text_from_file(filepath: Path, ocr: bool = True) -> str:
-    """Extract text from supported file types; optionally OCR images/PDFs."""
     ext = filepath.suffix.lower()
     text = ""
     try:
@@ -113,7 +105,6 @@ def extract_text_from_file(filepath: Path, ocr: bool = True) -> str:
 
 
 def build_line_index(text: str) -> List[int]:
-    """Return list of character offsets for the start of each line."""
     offsets = [0]
     running = 0
     for line in text.splitlines(keepends=True):
@@ -123,14 +114,10 @@ def build_line_index(text: str) -> List[int]:
 
 
 def line_number_from_offset(line_offsets: Sequence[int], offset: int) -> int:
-    """Map a character offset to a 1-based line number."""
     return bisect_right(line_offsets, offset)
 
 
-def find_regex_matches(
-    text: str, patterns: Sequence[Tuple[str, str, re.Pattern]]
-) -> List[Dict]:
-    """Collect regex detections with first-line metadata."""
+def find_regex_matches(text: str, patterns: Sequence[Tuple[str, str, re.Pattern]]) -> List[Dict]:
     results = []
     line_offsets = build_line_index(text)
     for name, raw_pattern, compiled in patterns:
@@ -151,7 +138,6 @@ def find_regex_matches(
 
 
 def normalize_for_stopwords(token: str) -> str:
-    """Trim outer punctuation for stopword/length checks without touching interiors (e.g., emails)."""
     return token.strip(".,;:!?\"'()[]{}").lower()
 
 
@@ -164,7 +150,8 @@ def contiguous_phrases(
 ) -> Counter:
     """
     Build phrases only from tokens that are next to each other in the original text
-    and separated by literal spaces (no skipping stopwords or merging across lines).
+    and separated by literal spaces. Multi-word phrases must be composed solely of
+    alphabetic tokens before any cleaning/normalisation.
     """
     tokens_with_separators: List[Tuple[str, str]] = []
     prev_end = 0
@@ -176,8 +163,9 @@ def contiguous_phrases(
     phrases = Counter()
     run: List[str] = []
     for token, separator in tokens_with_separators:
-        normalized = normalize_for_stopwords(token)
-        token_ok = normalized and len(normalized) >= min_keyword_length and normalized not in stop_words
+        token_alpha = token.isalpha()  # no non-alphabet characters allowed
+        normalized = normalize_for_stopwords(token) if token_alpha else ""
+        token_ok = token_alpha and normalized and len(normalized) >= min_keyword_length and normalized not in stop_words
         separator_ok = separator == "" or set(separator) <= {" "}
 
         if token_ok and (not run or separator_ok):
@@ -212,10 +200,14 @@ def analyze_files(
             filepath = Path(root) / file
             logger.info("Processing file: %s", filepath)
             text = extract_text_from_file(filepath, ocr=ocr)
+            print(f"\n=== RAW TEXT: {filepath} ===\n{text[:1000]}\n")  # raw (first 1000 chars)
+            normalized_tokens = [normalize_for_stopwords(tok) for tok in re.findall(r"\S+", text)]
+            print(f"=== NORMALIZED TOKENS: {filepath} ===\n{' '.join(normalized_tokens)[:1000]}\n")
 
             regex_matches = find_regex_matches(text, compiled_patterns)
             for match in regex_matches:
                 match["File_Name"] = file
+                match["File_Path"] = str(filepath)
                 regex_results.append(match)
 
             phrase_counts = contiguous_phrases(
@@ -226,7 +218,9 @@ def analyze_files(
                 max_phrase_words=max_phrase_words,
             )
             for keyword, count in phrase_counts.items():
-                keyword_results.append({"File_Name": file, "Keyword": keyword, "Count": count})
+                keyword_results.append(
+                    {"File_Name": file, "File_Path": str(filepath), "Keyword": keyword, "Count": count}
+                )
 
     return regex_results, keyword_results
 
@@ -261,11 +255,8 @@ def main() -> None:
         ocr=not args.no_ocr,
     )
 
-    regex_df = pd.DataFrame(regex_results)
-    regex_df.to_csv(output_folder / "regex_detections.csv", index=False)
-
-    keywords_df = pd.DataFrame(keyword_results)
-    keywords_df.to_csv(output_folder / "keywords.csv", index=False)
+    pd.DataFrame(regex_results).to_csv(output_folder / "regex_detections.csv", index=False)
+    pd.DataFrame(keyword_results).to_csv(output_folder / "keywords.csv", index=False)
 
 
 if __name__ == "__main__":
