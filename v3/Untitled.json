@@ -1,0 +1,7098 @@
+[
+  {
+    "name": "CEP_AzureConnectionString",
+    "pattern": "\\\\b\\(\\(Server\\|server\\|data\\ source\\)\\\\s\\{0,2\\}=\\\\s\\{0,2\\}\\[\\\\x20\\-\\\\x7F\\]\\{1,200\\}\\?\\(\\(cloudapp\\\\\\.\\(azure\\\\\\.com\\|net\\)\\)\\|\\(database\\\\\\.windows\\\\\\.net\\)\\)\\[\\\\x20\\-\\\\x7F\\]\\{1,300\\}\\?\\(Password\\|password\\|pwd\\)\\\\s\\{0,2\\}=\\\\s\\{0,2\\}\\[\\^;\"\\\\"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0020_0eae114f_baad_4dba_a100_c5b34d217964_60068066_CEP2_0",
+    "pattern": "\\(\\?i\\)\\(\\^\\|\\[\\^a\\-z\\]\\)\\(DB_\\[a\\-z\\]\\*\\?NAME\\|initial\\ catalog\\|database\\(name\\)\\?\\)\\(\\\\s\\{0,4\\}=\\\\s\\{0,4\\}\\|\\[\"\\\\"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0020_UserName_58870012_CEP2_0",
+    "pattern": "\\(\\?i\\)\\(DB_USER\\|user\\ id\\|uid\\|user\\(name\\)\\?\\)\\(\\\\s\\{0,4\\}=\\\\s\\{0,4\\}\\|\\[\"\\\\"
+  },
+  {
+    "name": "_Braintree_Access_Token",
+    "pattern": "access_token$production$[0-9a-z]{16}$[0-9a-f]{32}"
+  },
+  {
+    "name": "_Cloudinary_Credentials",
+    "pattern": "cloudinary://[0-9]+:[A-Za-z0-9\\-_.]+@[A-Za-z0-9\\-_.]+"
+  },
+  {
+    "name": "_Discord_Webhook",
+    "pattern": "https://discordapp\\.com/api/webhooks/[0-9]+/[A-Za-z0-9\\-_]+"
+  },
+  {
+    "name": "_Dropbox_Access_Token",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])([a-zA-Z0-9]{64})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "_Dynatrace_Token",
+    "pattern": "dt0[a-zA-Z][0-9]{2}\\.[A-Z0-9]{24}\\.[A-Z0-9]{64}"
+  },
+  {
+    "name": "Abbysale",
+    "pattern": "(?:abbysale).{0,40}\\\\b([a-z0-9A-Z]{40})\\\\b"
+  },
+  {
+    "name": "Abstract",
+    "pattern": "(?:abstract).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Abuseipdb",
+    "pattern": "(?:abuseipdb).{0,40}\\\\b([a-z0-9]{80})\\\\b"
+  },
+  {
+    "name": "access_key_secret",
+    "pattern": "access[_-]?key[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "access_secret",
+    "pattern": "access[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "access_token",
+    "pattern": "access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "account_sid",
+    "pattern": "account[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "Accuweather",
+    "pattern": "(?:accuweather).{0,40}([a-z0-9A-Z\\\\%]{35})\\\\b"
+  },
+  {
+    "name": "Adafruitio",
+    "pattern": "\\\\b(aio\\\\_[a-zA-Z0-9]{28})\\\\b"
+  },
+  {
+    "name": "admin_email",
+    "pattern": "admin[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "Adobeio - 1",
+    "pattern": "(?:adobe).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "adzerk_api_key",
+    "pattern": "adzerk[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Adzuna - 1",
+    "pattern": "(?:adzuna).{0,40}\\\\b([a-z0-9]{8})\\\\b"
+  },
+  {
+    "name": "Adzuna - 2",
+    "pattern": "(?:adzuna).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Aeroworkflow - 1",
+    "pattern": "(?:aeroworkflow).{0,40}\\\\b([0-9]{1,})\\\\b"
+  },
+  {
+    "name": "Aeroworkflow - 2",
+    "pattern": "(?:aeroworkflow).{0,40}\\\\b([a-zA-Z0-9^!]{20})\\\\b"
+  },
+  {
+    "name": "Agora",
+    "pattern": "(?:agora).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Airbrakeprojectkey - 1",
+    "pattern": "(?:airbrake).{0,40}\\\\b([0-9]{6})\\\\b"
+  },
+  {
+    "name": "Airbrakeprojectkey - 2",
+    "pattern": "(?:airbrake).{0,40}\\\\b([a-zA-Z-0-9]{32})\\\\b"
+  },
+  {
+    "name": "Airbrakeuserkey",
+    "pattern": "(?:airbrake).{0,40}\\\\b([a-zA-Z-0-9]{40})\\\\b"
+  },
+  {
+    "name": "Airship",
+    "pattern": "(?:airship).{0,40}\\\\b([0-9Aa-zA-Z]{91})\\\\b"
+  },
+  {
+    "name": "Airvisual",
+    "pattern": "(?:airvisual).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Alconost",
+    "pattern": "(?:alconost).{0,40}\\\\b([0-9Aa-z]{32})\\\\b"
+  },
+  {
+    "name": "Alegra - 1",
+    "pattern": "(?:alegra).{0,40}\\\\b([a-z0-9-]{20})\\\\b"
+  },
+  {
+    "name": "Alegra - 2",
+    "pattern": "(?:alegra).{0,40}\\\\b([a-zA-Z0-9.-@]{25,30})\\\\b"
+  },
+  {
+    "name": "Aletheiaapi",
+    "pattern": "(?:aletheiaapi).{0,40}\\\\b([A-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "algolia_admin_key_1",
+    "pattern": "algolia[_-]?admin[_-]?key[_-]?1(=| =|:| :)"
+  },
+  {
+    "name": "algolia_admin_key_2",
+    "pattern": "algolia[_-]?admin[_-]?key[_-]?2(=| =|:| :)"
+  },
+  {
+    "name": "algolia_admin_key_mcm",
+    "pattern": "algolia[_-]?admin[_-]?key[_-]?mcm(=| =|:| :)"
+  },
+  {
+    "name": "algolia_api_key",
+    "pattern": "algolia[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "algolia_api_key_mcm",
+    "pattern": "algolia[_-]?api[_-]?key[_-]?mcm(=| =|:| :)"
+  },
+  {
+    "name": "algolia_api_key_search",
+    "pattern": "algolia[_-]?api[_-]?key[_-]?search(=| =|:| :)"
+  },
+  {
+    "name": "algolia_search_api_key",
+    "pattern": "algolia[_-]?search[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "algolia_search_key",
+    "pattern": "algolia[_-]?search[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "algolia_search_key_1",
+    "pattern": "algolia[_-]?search[_-]?key[_-]?1(=| =|:| :)"
+  },
+  {
+    "name": "Algoliaadminkey - 1",
+    "pattern": "(?:algolia).{0,40}\\\\b([A-Z0-9]{10})\\\\b"
+  },
+  {
+    "name": "Algoliaadminkey - 2",
+    "pattern": "(?:algolia).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "alias_pass",
+    "pattern": "alias[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Alibaba - 2",
+    "pattern": "\\\\b(LTAI[a-zA-Z0-9]{17,21})[\\\\\"' ;\\\\s]*"
+  },
+  {
+    "name": "alicloud_access_key",
+    "pattern": "alicloud[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "alicloud_secret_key",
+    "pattern": "alicloud[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Alienvault",
+    "pattern": "(?:alienvault).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Allsports",
+    "pattern": "(?:allsports).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Amadeus - 1",
+    "pattern": "(?:amadeus).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Amadeus - 2",
+    "pattern": "(?:amadeus).{0,40}\\\\b([0-9A-Za-z]{16})\\\\b"
+  },
+  {
+    "name": "Amazon SNS Topic",
+    "pattern": "arn:aws:sns:[a-z0-9\\\\-]+:[0-9]+:[A-Za-z0-9\\\\-_]+"
+  },
+  {
+    "name": "amazon_bucket_name",
+    "pattern": "amazon[_-]?bucket[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "Amazon_MWS",
+    "pattern": "amzn\\.mws\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+  },
+  {
+    "name": "Amazon_MWS_Auth_Token",
+    "pattern": "amzn\\.mws\\.[0-9a-f]{8}\\-[0-9a-f]{4}\\-[0-9a-f]{4}\\-[0-9a-f]{4}\\-[0-9a-f]{12}"
+  },
+  {
+    "name": "amazon_secret_access_key",
+    "pattern": "amazon[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Amazon_SNS_Topic",
+    "pattern": "arn:aws:sns:[a-z0-9-]+:[0-9]+:[A-Za-z0-9\\-_]+"
+  },
+  {
+    "name": "Ambee",
+    "pattern": "(?:ambee).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Amplitudeapikey",
+    "pattern": "(?:amplitude).{0,40}\\\\b([a-f0-9]{32})"
+  },
+  {
+    "name": "anaconda_token",
+    "pattern": "anaconda[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "android_docs_deploy_token",
+    "pattern": "android[_-]?docs[_-]?deploy[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "ansible_vault_password",
+    "pattern": "ansible[_-]?vault[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "aos_key",
+    "pattern": "aos[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "aos_sec",
+    "pattern": "aos[_-]?sec(=| =|:| :)"
+  },
+  {
+    "name": "Apacta",
+    "pattern": "(?:apacta).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Api2cart",
+    "pattern": "(?:api2cart).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "api_key",
+    "pattern": "api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "api_key_secret",
+    "pattern": "api[_-]?key[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "api_key_sid",
+    "pattern": "api[_-]?key[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "api_secret",
+    "pattern": "api[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "apiary_api_key",
+    "pattern": "apiary[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Apideck - 1",
+    "pattern": "\\\\b(sk_live_[a-z0-9A-Z-]{93})\\\\b"
+  },
+  {
+    "name": "Apideck - 2",
+    "pattern": "(?:apideck).{0,40}\\\\b([a-z0-9A-Z]{40})\\\\b"
+  },
+  {
+    "name": "Apiflash - 1",
+    "pattern": "(?:apiflash).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Apiflash - 2",
+    "pattern": "(?:apiflash).{0,40}\\\\b([a-zA-Z0-9\\\\S]{21,30})\\\\b"
+  },
+  {
+    "name": "Apifonica",
+    "pattern": "(?:apifonica).{0,40}\\\\b([0-9a-z]{11}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Apify",
+    "pattern": "\\\\b(apify\\\\_api\\\\_[a-zA-Z-0-9]{36})\\\\b"
+  },
+  {
+    "name": "apigw_access_token",
+    "pattern": "apigw[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "apikey_patterns",
+    "pattern": "apikey[:](?:['\"]?[a-zA-Z0-9-_|]+['\"]?)"
+  },
+  {
+    "name": "Apimatic - 1",
+    "pattern": "(?:apimatic).{0,40}\\\\b([a-z0-9-\\\\S]{8,32})\\\\b"
+  },
+  {
+    "name": "Apimatic - 2",
+    "pattern": "(?:apimatic).{0,40}\\\\b([a-zA-Z0-9]{3,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,5})\\\\b"
+  },
+  {
+    "name": "Apiscience",
+    "pattern": "(?:apiscience).{0,40}\\\\b([a-bA-Z0-9\\\\S]{22})\\\\b"
+  },
+  {
+    "name": "Apollo",
+    "pattern": "(?:apollo).{0,40}\\\\b([a-zA-Z0-9]{22})\\\\b"
+  },
+  {
+    "name": "app_bucket_perm",
+    "pattern": "app[_-]?bucket[_-]?perm(=| =|:| :)"
+  },
+  {
+    "name": "app_report_token_key",
+    "pattern": "app[_-]?report[_-]?token[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "app_secrete",
+    "pattern": "app[_-]?secrete(=| =|:| :)"
+  },
+  {
+    "name": "app_token",
+    "pattern": "app[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "appclientsecret",
+    "pattern": "appclientsecret(=| =|:| :)"
+  },
+  {
+    "name": "Appcues - 1",
+    "pattern": "(?:appcues).{0,40}\\\\b([0-9]{5})\\\\b"
+  },
+  {
+    "name": "Appcues - 2",
+    "pattern": "(?:appcues).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Appcues - 3",
+    "pattern": "(?:appcues).{0,40}\\\\b([a-z0-9-]{39})\\\\b"
+  },
+  {
+    "name": "Appfollow",
+    "pattern": "(?:appfollow).{0,40}\\\\b([0-9A-Za-z]{20})\\\\b"
+  },
+  {
+    "name": "apple_id_password",
+    "pattern": "apple[_-]?id[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Appsynergy",
+    "pattern": "(?:appsynergy).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Apptivo - 1",
+    "pattern": "(?:apptivo).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Apptivo - 2",
+    "pattern": "(?:apptivo).{0,40}\\\\b([a-zA-Z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "argentina_national_id",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{2}\\.\\d{3}\\.\\d{3}|\\d{8}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "argos_token",
+    "pattern": "argos[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "artifactory",
+    "pattern": "(artifactory.{0,50}(\"|')?[a-zA-Z0-9=]{112}(\"|')?)"
+  },
+  {
+    "name": "Artifactory - 2",
+    "pattern": "\\\\b([A-Za-z0-9](?:[A-Za-z0-9\\\\-]{0,61}[A-Za-z0-9])\\\\.jfrog\\\\.io)"
+  },
+  {
+    "name": "Artifactory API Token",
+    "pattern": "(?:\\\\s|=|:|\"|^)AKC[a-zA-Z0-9]{10,}"
+  },
+  {
+    "name": "Artifactory Password",
+    "pattern": "(?:\\\\s|=|:|\"|^)AP[\\\\dABCDEF][a-zA-Z0-9]{8,}"
+  },
+  {
+    "name": "artifactory_key",
+    "pattern": "artifactory[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "artifacts_aws_access_key_id",
+    "pattern": "artifacts[_-]?aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "artifacts_aws_secret_access_key",
+    "pattern": "artifacts[_-]?aws[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "artifacts_bucket",
+    "pattern": "artifacts[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "artifacts_key",
+    "pattern": "artifacts[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "artifacts_secret",
+    "pattern": "artifacts[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Artsy - 1",
+    "pattern": "(?:artsy).{0,40}\\\\b([0-9a-zA-Z]{20})\\\\b"
+  },
+  {
+    "name": "Artsy - 2",
+    "pattern": "(?:artsy).{0,40}\\\\b([0-9a-zA-Z]{32})\\\\b"
+  },
+  {
+    "name": "Asanaoauth",
+    "pattern": "(?:asana).{0,40}\\\\b([a-z\\\\/:0-9]{51})\\\\b"
+  },
+  {
+    "name": "Asanapersonalaccesstoken",
+    "pattern": "(?:asana).{0,40}\\\\b([0-9]{1,}\\\\/[0-9]{16,}:[A-Za-z0-9]{32,})\\\\b"
+  },
+  {
+    "name": "Assemblyai",
+    "pattern": "(?:assemblyai).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "assistant_iam_apikey",
+    "pattern": "assistant[_-]?iam[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "Asymmetric Private Key",
+    "pattern": "-----BEGIN ((EC|PGP|DSA|RSA|OPENSSH) )?PRIVATE KEY( BLOCK)?-----"
+  },
+  {
+    "name": "Audd",
+    "pattern": "(?:audd).{0,40}\\\\b([a-z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "auspost_tracking",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((EBA|EA|LP|33|62|99)\\d{11,20})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "australia_bank_account_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(([0-9]{6,10}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "australia_bank_account_number_bsb",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{3}-\\d{3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "australia_drivers_license_number_Copy",
+    "pattern": "(?i)\\b((\\d{2}[ -]?\\d{2}[ -]?\\d{4})|(\\d{3}[ -]?\\d{3}[ -]?\\d{3,4})|(\\d{1}[ -]?\\d{3}[ -]?\\d{3}[ -]?\\d{3})|([A-Za-z]\\d{5})|([A-Za-z]{2}\\d{4})|(\\d{7})|(\\d{4}[A-Za-z]{2}))\\b"
+  },
+  {
+    "name": "australia_drivers_license_number_Custom_v2",
+    "pattern": "(?i)\\b((\\d{2}[ -]?\\d{2}[ -]?\\d{4})|(\\d{3}[ -]?\\d{3}[ -]?\\d{3,4})|(\\d{1}[ -]?\\d{3}[ -]?\\d{3}[ -]?\\d{3})|([A-Za-z]\\d{5})|([A-Za-z]{2}\\d{4})|(\\d{7}))\\b"
+  },
+  {
+    "name": "australia_passport_number_Copy",
+    "pattern": "(?i)\\b(([AC-FNUX]|P[A-FUWXZ])\\d{7})\\b"
+  },
+  {
+    "name": "australia_passport_number_custom",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((([AC-FNUX]|P[A-FUWXZ])\\d{7}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "australian_address",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((((Unit\\s[0-9]+|U[0-9]+|Level\\s[0-9]+|L[0-9]+)\\s*)?[0-9]{1,5}(/[0-9]{1,5})?\\s[A-Za-z0-9\\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "australian_mobile_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((?:\\+61[\\s\\-]?4\\d{2}[\\s\\-]?\\d{3}[\\s\\-]?\\d{3}|61[\\s\\-]?4\\d{2}[\\s\\-]?\\d{3}[\\s\\-]?\\d{3}|04\\d{2}[\\s\\-]?\\d{3}[\\s\\-]?\\d{3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "austria_eu_drivers_license_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{8}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "austria_eu_national_id_card",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"'#|])([a-zA-Z0-9+/]{22}[a-zA-Z0-9+/=]{2})(?:$|[\\s,;:\\(\\)\\[\\]\"'#|]|\\.\\s|\\.$)"
+  },
+  {
+    "name": "austria_eu_passport_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(([a-zA-Z]\\s?\\d{7}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "austria_eu_ssn_or_equivalent",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\\d{2}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "austria_eu_tax_file_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{2}-?\\d{3}/?\\d{4}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "auth0_api_clientsecret",
+    "pattern": "auth0[_-]?api[_-]?clientsecret(=| =|:| :)"
+  },
+  {
+    "name": "auth0_client_secret",
+    "pattern": "auth0[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Auth0managementapitoken",
+    "pattern": "(?:auth0).{0,40}\\\\b(ey[a-zA-Z0-9._-]+)\\\\b"
+  },
+  {
+    "name": "Auth0oauth - 1",
+    "pattern": "(?:auth0).{0,40}\\\\b([a-zA-Z0-9_-]{32,60})\\\\b"
+  },
+  {
+    "name": "auth_token",
+    "pattern": "auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "author_email_addr",
+    "pattern": "author[_-]?email[_-]?addr(=| =|:| :)"
+  },
+  {
+    "name": "author_npm_api_key",
+    "pattern": "author[_-]?npm[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Autodesk - 1",
+    "pattern": "(?:autodesk).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Autodesk - 2",
+    "pattern": "(?:autodesk).{0,40}\\\\b([0-9A-Za-z]{16})\\\\b"
+  },
+  {
+    "name": "Autoklose",
+    "pattern": "(?:autoklose).{0,40}\\\\b([a-zA-Z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Autopilot",
+    "pattern": "(?:autopilot).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "Avazapersonalaccesstoken",
+    "pattern": "(?:avaza).{0,40}\\\\b([0-9]+-[0-9a-f]{40})\\\\b"
+  },
+  {
+    "name": "Aviationstack",
+    "pattern": "(?:aviationstack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Aws - 1",
+    "pattern": "\\\\b((?:AKIA|ABIA|ACCA|ASIA)[0-9A-Z]{16})\\\\b"
+  },
+  {
+    "name": "AWS Access Key ID Value",
+    "pattern": "(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}"
+  },
+  {
+    "name": "AWS API Gateway",
+    "pattern": "[0-9a-z]+.execute-api.[0-9a-z._-]+.amazonaws.com"
+  },
+  {
+    "name": "AWS API Key",
+    "pattern": "AKIA[0-9A-Z]{16}"
+  },
+  {
+    "name": "AWS AppSync GraphQL Key",
+    "pattern": "da2-[a-z0-9]{26}"
+  },
+  {
+    "name": "AWS ARN",
+    "pattern": "arn:aws:[a-z0-9-]+:[a-z]{2}-[a-z]+-[0-9]+:[0-9]+:.+"
+  },
+  {
+    "name": "AWS client ID",
+    "pattern": "(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}"
+  },
+  {
+    "name": "AWS cred file info",
+    "pattern": "(aws_access_key_id|aws_secret_access_key)"
+  },
+  {
+    "name": "AWS EC2 External",
+    "pattern": "ec2-[0-9a-z._-]+.compute(-1)?.amazonaws.com"
+  },
+  {
+    "name": "AWS EC2 Internal",
+    "pattern": "[0-9a-z._-]+.compute(-1)?.internal"
+  },
+  {
+    "name": "AWS ElasticCache",
+    "pattern": "[0-9a-z._-]+.cache.amazonaws.com"
+  },
+  {
+    "name": "AWS ELB",
+    "pattern": "[0-9a-z._-]+.elb.amazonaws.com"
+  },
+  {
+    "name": "AWS MWS ID",
+    "pattern": "mzn\\\\.mws\\\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+  },
+  {
+    "name": "AWS MWS key",
+    "pattern": "amzn\\\\.mws\\\\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}"
+  },
+  {
+    "name": "AWS RDS",
+    "pattern": "[0-9a-z._-]+.rds.amazonaws.com"
+  },
+  {
+    "name": "AWS S3 Bucket",
+    "pattern": "s3://[0-9a-z._/-]+"
+  },
+  {
+    "name": "aws_access",
+    "pattern": "aws[_-]?access(=| =|:| :)"
+  },
+  {
+    "name": "AWS_Access_Key",
+    "pattern": "(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}"
+  },
+  {
+    "name": "aws_access_key",
+    "pattern": "aws[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "AWS_Access_Key_ID",
+    "pattern": "AKIA[0-9A-Z]{16}"
+  },
+  {
+    "name": "aws_access_key_id - 1",
+    "pattern": "aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "AWS_API_Key",
+    "pattern": "AKIA[0-9A-Z]{16}"
+  },
+  {
+    "name": "aws_config_accesskeyid",
+    "pattern": "aws[_-]?config[_-]?accesskeyid(=| =|:| :)"
+  },
+  {
+    "name": "aws_config_secretaccesskey",
+    "pattern": "aws[_-]?config[_-]?secretaccesskey(=| =|:| :)"
+  },
+  {
+    "name": "aws_key",
+    "pattern": "aws[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "aws_patterns",
+    "pattern": "(?:accesskeyid|secretaccesskey|aws_access_key_id|aws_secret_access_key)"
+  },
+  {
+    "name": "AWS_S3_URL",
+    "pattern": "(?:https://)?s3\\.amazonaws\\.com[/]+.*|[a-zA-Z0-9_\\-]*\\.s3\\.am"
+  },
+  {
+    "name": "aws_secret",
+    "pattern": "aws[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "aws_secret_access_key",
+    "pattern": "aws[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "aws_secret_key",
+    "pattern": "aws[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "aws_secrets",
+    "pattern": "aws[_-]?secrets(=| =|:| :)"
+  },
+  {
+    "name": "aws_ses_access_key_id",
+    "pattern": "aws[_-]?ses[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "aws_ses_secret_access_key",
+    "pattern": "aws[_-]?ses[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "awsaccesskeyid",
+    "pattern": "awsaccesskeyid(=| =|:| :)"
+  },
+  {
+    "name": "awscn_access_key_id",
+    "pattern": "awscn[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "awscn_secret_access_key",
+    "pattern": "awscn[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "awssecretkey",
+    "pattern": "awssecretkey(=| =|:| :)"
+  },
+  {
+    "name": "Axonaut",
+    "pattern": "(?:axonaut).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Aylien - 1",
+    "pattern": "(?:aylien).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Aylien - 2",
+    "pattern": "(?:aylien).{0,40}\\\\b([a-z0-9]{8})\\\\b"
+  },
+  {
+    "name": "Ayrshare",
+    "pattern": "(?:ayrshare).{0,40}\\\\b([A-Z]{7}-[A-Z0-9]{7}-[A-Z0-9]{7}-[A-Z0-9]{7})\\\\b"
+  },
+  {
+    "name": "b2_app_key",
+    "pattern": "b2[_-]?app[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "b2_bucket",
+    "pattern": "b2[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "Bannerbear",
+    "pattern": "(?:bannerbear).{0,40}\\\\b([0-9a-zA-Z]{22}tt)\\\\b"
+  },
+  {
+    "name": "Baremetrics",
+    "pattern": "(?:baremetrics).{0,40}\\\\b([a-zA-Z0-9_]{25})\\\\b"
+  },
+  {
+    "name": "Baseapiio",
+    "pattern": "(?:baseapi|base-api).{0,40}\\\\b([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Beamer",
+    "pattern": "(?:beamer).{0,40}\\\\b([a-zA-Z0-9_+/]{45}=)"
+  },
+  {
+    "name": "Bearer token",
+    "pattern": "(bearer).+"
+  },
+  {
+    "name": "Beebole",
+    "pattern": "(?:beebole).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "belgium_eu_drivers_license_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{10}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "belgium_eu_passport_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(([a-zA-Z]{2}\\d{6}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "belgium_eu_ssn_or_equivalent",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{11}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "belgium_eu_tax_file_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{2}[01]\\d[0123]\\d{6}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Besttime",
+    "pattern": "(?:besttime).{0,40}\\\\b([0-9A-Za-z_]{36})\\\\b"
+  },
+  {
+    "name": "Billomat - 1",
+    "pattern": "(?:billomat).{0,40}\\\\b([0-9a-z]{1,})\\\\b"
+  },
+  {
+    "name": "Billomat - 2",
+    "pattern": "(?:billomat).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "bintray_api_key",
+    "pattern": "bintray[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "bintray_apikey",
+    "pattern": "bintray[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "bintray_gpg_password",
+    "pattern": "bintray[_-]?gpg[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "bintray_key",
+    "pattern": "bintray[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "bintray_token",
+    "pattern": "bintray[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "bintraykey",
+    "pattern": "bintraykey(=| =|:| :)"
+  },
+  {
+    "name": "Bitbar",
+    "pattern": "(?:bitbar).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Bitcoinaverage",
+    "pattern": "(?:bitcoinaverage).{0,40}\\\\b([a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "Bitfinex",
+    "pattern": "(?:bitfinex).{0,40}\\\\b([A-Za-z0-9_-]{43})\\\\b"
+  },
+  {
+    "name": "Bitly Secret Key",
+    "pattern": "R_[0-9a-f]{32}"
+  },
+  {
+    "name": "Bitly_Secret_Key",
+    "pattern": "R_[0-9a-f]{32}"
+  },
+  {
+    "name": "Bitlyaccesstoken",
+    "pattern": "(?:bitly).{0,40}\\\\b([a-zA-Z-0-9]{40})\\\\b"
+  },
+  {
+    "name": "Bitmex - 1",
+    "pattern": "(?:bitmex).{0,40}([ \\\\r\\\\n]{1}[0-9a-zA-Z\\\\-\\\\_]{24}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Bitmex - 2",
+    "pattern": "(?:bitmex).{0,40}([ \\\\r\\\\n]{1}[0-9a-zA-Z\\\\-\\\\_]{48}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Blablabus",
+    "pattern": "(?:blablabus).{0,40}\\\\b([0-9A-Za-z]{22})\\\\b"
+  },
+  {
+    "name": "Blazemeter",
+    "pattern": "(?:blazemeter|runscope).{0,40}\\\\b([0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Blitapp",
+    "pattern": "(?:blitapp).{0,40}\\\\b([a-zA-Z0-9_-]{39})\\\\b"
+  },
+  {
+    "name": "Blogger",
+    "pattern": "(?:blogger).{0,40}\\\\b([0-9A-Za-z-]{39})\\\\b"
+  },
+  {
+    "name": "bluemix_api_key",
+    "pattern": "bluemix[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_auth",
+    "pattern": "bluemix[_-]?auth(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_pass",
+    "pattern": "bluemix[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_pass_prod",
+    "pattern": "bluemix[_-]?pass[_-]?prod(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_password",
+    "pattern": "bluemix[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_pwd",
+    "pattern": "bluemix[_-]?pwd(=| =|:| :)"
+  },
+  {
+    "name": "bluemix_username",
+    "pattern": "bluemix[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Bombbomb",
+    "pattern": "(?:bombbomb).{0,40}\\\\b([a-zA-Z0-9-._]{704})\\\\b"
+  },
+  {
+    "name": "Boostnote",
+    "pattern": "(?:boostnote).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Borgbase",
+    "pattern": "(?:borgbase).{0,40}\\\\b([a-zA-Z0-9/_.-]{148,152})\\\\b"
+  },
+  {
+    "name": "brackets_repo_oauth_token",
+    "pattern": "brackets[_-]?repo[_-]?oauth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Braintree API Key",
+    "pattern": "access_token$production$[0-9a-z]{16}$[0-9a-f]{32}"
+  },
+  {
+    "name": "Braintree_Access_Token",
+    "pattern": "access_token$production$[0-9a-z]{16}$[0-9a-f]{32}"
+  },
+  {
+    "name": "Brandfetch",
+    "pattern": "(?:brandfetch).{0,40}\\\\b([0-9A-Za-z]{40})\\\\b"
+  },
+  {
+    "name": "browser_stack_access_key",
+    "pattern": "browser[_-]?stack[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "browserstack_access_key",
+    "pattern": "browserstack[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Browshot",
+    "pattern": "(?:browshot).{0,40}\\\\b([a-zA-Z-0-9]{28})\\\\b"
+  },
+  {
+    "name": "bucketeer_aws_access_key_id",
+    "pattern": "bucketeer[_-]?aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "bucketeer_aws_secret_access_key",
+    "pattern": "bucketeer[_-]?aws[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Buddyns",
+    "pattern": "(?:buddyns).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Bugherd",
+    "pattern": "(?:bugherd).{0,40}\\\\b([0-9a-z]{22})\\\\b"
+  },
+  {
+    "name": "Bugsnag",
+    "pattern": "(?:bugsnag).{0,40}\\\\b([0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Buildkite",
+    "pattern": "(?:buildkite).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "built_branch_deploy_key",
+    "pattern": "built[_-]?branch[_-]?deploy[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Bulbul",
+    "pattern": "(?:bulbul).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "bundlesize_github_token",
+    "pattern": "bundlesize[_-]?github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Buttercms",
+    "pattern": "(?:buttercms).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "bx_password",
+    "pattern": "bx[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "bx_username",
+    "pattern": "bx[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "cache_s3_secret_key",
+    "pattern": "cache[_-]?s3[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Caflou",
+    "pattern": "(?:caflou).{0,40}\\\\b([a-bA-Z0-9\\\\S]{155})\\\\b"
+  },
+  {
+    "name": "Calendarific",
+    "pattern": "(?:calendarific).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Calendlyapikey",
+    "pattern": "(?:calendly).{0,40}\\\\b([a-zA-Z-0-9]{20}.[a-zA-Z-0-9]{171}.[a-zA-Z-0-9_]{43})\\\\b"
+  },
+  {
+    "name": "Calorieninja",
+    "pattern": "(?:calorieninja).{0,40}\\\\b([0-9A-Za-z]{40})\\\\b"
+  },
+  {
+    "name": "Campayn",
+    "pattern": "(?:campayn).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "canada_bank_account_number_Copy",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{7}|\\d{12}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "canada_bank_account_transit_number_Copy",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((\\d{5}-\\d{3})|(0\\d{8})))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "canada_health_service_number_Copy",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{10}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "canada_passport_number_Copy",
+    "pattern": "(?ix)\\b([A-Z]{2}\\d{6})\\b"
+  },
+  {
+    "name": "canada_phin_Copy",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{9}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Cannyio",
+    "pattern": "(?:canny).{0,40}\\\\b([a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[0-9]{4}-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Capsulecrm",
+    "pattern": "(?:capsulecrm).{0,40}\\\\b([a-zA-Z0-9-._+=]{64})\\\\b"
+  },
+  {
+    "name": "Captaindata - 1",
+    "pattern": "(?:captaindata).{0,40}\\\\b([0-9a-f]{8}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Captaindata - 2",
+    "pattern": "(?:captaindata).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Carboninterface",
+    "pattern": "(?:carboninterface).{0,40}\\\\b([a-zA-Z0-9]{21})\\\\b"
+  },
+  {
+    "name": "cargo_token",
+    "pattern": "cargo[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Cashboard - 1",
+    "pattern": "(?:cashboard).{0,40}\\\\b([0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{3})\\\\b"
+  },
+  {
+    "name": "Cashboard - 2",
+    "pattern": "(?:cashboard).{0,40}\\\\b([0-9a-z]{1,})\\\\b"
+  },
+  {
+    "name": "Caspio - 1",
+    "pattern": "(?:caspio).{0,40}\\\\b([a-z0-9]{8})\\\\b"
+  },
+  {
+    "name": "Caspio - 2",
+    "pattern": "(?:caspio).{0,40}\\\\b([a-z0-9]{50})\\\\b"
+  },
+  {
+    "name": "cattle_access_key",
+    "pattern": "cattle[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "cattle_agent_instance_auth",
+    "pattern": "cattle[_-]?agent[_-]?instance[_-]?auth(=| =|:| :)"
+  },
+  {
+    "name": "cattle_secret_key",
+    "pattern": "cattle[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Censys - 1",
+    "pattern": "(?:censys).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Censys - 2",
+    "pattern": "(?:censys).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "censys_secret",
+    "pattern": "censys[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Centralstationcrm",
+    "pattern": "(?:centralstation).{0,40}\\\\b([a-z0-9]{30})\\\\b"
+  },
+  {
+    "name": "CEP_AzureEmulatorStorageAccountFilter",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_AzurePublishSettingPasswords",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((userpwd=\"[a-z0-9]{60}\"))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_AzureServiceBusConnectionString",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((EndPoint\\s{0,2}=\\s{0,2}[\\x20-\\x7F]{1,200}?servicebus\\.windows\\.net[\\x20-\\x7F]{1,200}?SharedAccessKey\\s{0,2}=\\s{0,2}[a-zA-Z0-9/+]{43}=))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_AzureStorageAccountKey",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((DefaultEndpointsProtocol\\s{0,2}=\\s{0,2}[\\x20-\\x7F]{1,200}?AccountKey\\s{0,2}=\\s{0,2}[a-zA-Z0-9/+]{86}==))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_AzureStorageAccountKeyGeneric",
+    "pattern": "\\\\b\\(\\(>\\|\\\\"
+  },
+  {
+    "name": "CEP_CommonExampleKeywords",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((contoso|fabrikam|northwind|sandbox|onebox|localhost|127\\.0\\.0\\.1|testacs\\.com|s-int\\.net))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_PasswordPlaceHolder",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((Password|pwd)\\s{0,2}=\\s{0,2}\\*+|(Password|pwd)=<[a-zA-Z0-9\\*\\-\\_\\s]{1,200}>))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "CEP_SQLServerConnectionString",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((User Id|User ID|uid|UserId)[\\x20-\\x7F]{1,200}(Password|[^a-z]pwd)=[^$%>@\";\\[\\{][^;/\"]{7,128}(;|\")))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "certificate_password",
+    "pattern": "certificate[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Cexio - 1",
+    "pattern": "(?:cexio|cex.io).{0,40}\\\\b([a-z]{2}[0-9]{9})\\\\b"
+  },
+  {
+    "name": "Cexio - 2",
+    "pattern": "(?:cexio|cex.io).{0,40}\\\\b([0-9A-Za-z]{24,27})\\\\b"
+  },
+  {
+    "name": "cf_password",
+    "pattern": "cf[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Chatbot",
+    "pattern": "(?:chatbot).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "Chatfule",
+    "pattern": "(?:chatfuel).{0,40}\\\\b([a-zA-Z0-9]{128})\\\\b"
+  },
+  {
+    "name": "Checio",
+    "pattern": "(?:checio).{0,40}\\\\b(pk_[a-z0-9]{45})\\\\b"
+  },
+  {
+    "name": "Checklyhq",
+    "pattern": "(?:checklyhq).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Checkout - 1",
+    "pattern": "(?:checkout).{0,40}\\\\b((sk_|sk_test_)[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12})\\\\b"
+  },
+  {
+    "name": "Checkout - 2",
+    "pattern": "(?:checkout).{0,40}\\\\b(cus_[0-9a-zA-Z]{26})\\\\b"
+  },
+  {
+    "name": "Checkvist - 1",
+    "pattern": "(?:checkvist).{0,40}\\\\b([\\\\w\\\\.-]+@[\\\\w-]+\\\\.[\\\\w\\\\.-]{2,5})\\\\b"
+  },
+  {
+    "name": "Checkvist - 2",
+    "pattern": "(?:checkvist).{0,40}\\\\b([0-9a-zA-Z]{14})\\\\b"
+  },
+  {
+    "name": "cheverny_token",
+    "pattern": "cheverny[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "chrome_client_secret",
+    "pattern": "chrome[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "chrome_refresh_token",
+    "pattern": "chrome[_-]?refresh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "ci_deploy_password",
+    "pattern": "ci[_-]?deploy[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ci_project_url",
+    "pattern": "ci[_-]?project[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "ci_registry_user",
+    "pattern": "ci[_-]?registry[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "ci_server_name",
+    "pattern": "ci[_-]?server[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "ci_user_token",
+    "pattern": "ci[_-]?user[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Cicero",
+    "pattern": "(?:cicero).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Circleci",
+    "pattern": "(?:circle).{0,40}([a-fA-F0-9]{40})"
+  },
+  {
+    "name": "claimr_database",
+    "pattern": "claimr[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "claimr_db",
+    "pattern": "claimr[_-]?db(=| =|:| :)"
+  },
+  {
+    "name": "claimr_superuser",
+    "pattern": "claimr[_-]?superuser(=| =|:| :)"
+  },
+  {
+    "name": "claimr_token",
+    "pattern": "claimr[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Clearbit",
+    "pattern": "(?:clearbit).{0,40}\\\\b([0-9a-z_]{35})\\\\b"
+  },
+  {
+    "name": "cli_e2e_cma_token",
+    "pattern": "cli[_-]?e2e[_-]?cma[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Clickhelp - 1",
+    "pattern": "\\\\b([0-9A-Za-z]{3,20}.try.clickhelp.co)\\\\b"
+  },
+  {
+    "name": "Clickhelp - 2",
+    "pattern": "(?:clickhelp).{0,40}\\\\b([0-9A-Za-z]{24})\\\\b"
+  },
+  {
+    "name": "Clicksendsms - 2",
+    "pattern": "(?:sms).{0,40}\\\\b([a-zA-Z0-9]{3,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,5})\\\\b"
+  },
+  {
+    "name": "Clickuppersonaltoken",
+    "pattern": "(?:clickup).{0,40}\\\\b(pk_[0-9]{8}_[0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Cliengo",
+    "pattern": "(?:cliengo).{0,40}\\\\b([0-9a-f]{8}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{4}\\\\-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "client_secret",
+    "pattern": "client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Clinchpad",
+    "pattern": "(?:clinchpad).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Clockify",
+    "pattern": "(?:clockify).{0,40}\\\\b([a-zA-Z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Clockworksms - 1",
+    "pattern": "(?:clockwork|textanywhere).{0,40}\\\\b([0-9a-zA-Z]{24})\\\\b"
+  },
+  {
+    "name": "Clockworksms - 2",
+    "pattern": "(?:clockwork|textanywhere).{0,40}\\\\b([0-9]{5})\\\\b"
+  },
+  {
+    "name": "clojars_password",
+    "pattern": "clojars[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Closecrm",
+    "pattern": "\\\\b(api_[a-z0-9A-Z.]{45})\\\\b"
+  },
+  {
+    "name": "cloud_api_key",
+    "pattern": "cloud[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_archived_database",
+    "pattern": "cloudant[_-]?archived[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_audited_database",
+    "pattern": "cloudant[_-]?audited[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_database",
+    "pattern": "cloudant[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_instance",
+    "pattern": "cloudant[_-]?instance(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_order_database",
+    "pattern": "cloudant[_-]?order[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_parsed_database",
+    "pattern": "cloudant[_-]?parsed[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_password",
+    "pattern": "cloudant[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_processed_database",
+    "pattern": "cloudant[_-]?processed[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "cloudant_service_database",
+    "pattern": "cloudant[_-]?service[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "Cloudelements - 1",
+    "pattern": "(?:cloudelements).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Cloudelements - 2",
+    "pattern": "(?:cloudelements).{0,40}\\\\b([a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "cloudflare_api_key",
+    "pattern": "cloudflare[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "cloudflare_auth_email",
+    "pattern": "cloudflare[_-]?auth[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "cloudflare_auth_key",
+    "pattern": "cloudflare[_-]?auth[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "cloudflare_email",
+    "pattern": "cloudflare[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "Cloudflareapitoken",
+    "pattern": "(?:cloudflare).{0,40}\\\\b([A-Za-z0-9_-]{40})\\\\b"
+  },
+  {
+    "name": "Cloudflarecakey",
+    "pattern": "(?:cloudflare).{0,40}\\\\b(v[A-Za-z0-9._-]{173,})\\\\b"
+  },
+  {
+    "name": "Cloudimage",
+    "pattern": "(?:cloudimage).{0,40}\\\\b([a-z0-9_]{30})\\\\b"
+  },
+  {
+    "name": "Cloudinary Credentials",
+    "pattern": "cloudinary://[0-9]+:[A-Za-z0-9\\\\-_\\\\.]+@[A-Za-z0-9\\\\-_\\\\.]+"
+  },
+  {
+    "name": "cloudinary_url",
+    "pattern": "cloudinary[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "cloudinary_url_staging",
+    "pattern": "cloudinary[_-]?url[_-]?staging(=| =|:| :)"
+  },
+  {
+    "name": "Cloudmersive",
+    "pattern": "(?:cloudmersive).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Cloudplan",
+    "pattern": "(?:cloudplan).{0,40}\\\\b([A-Z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Cloverly",
+    "pattern": "(?:cloverly).{0,40}\\\\b([a-z0-9:_]{28})\\\\b"
+  },
+  {
+    "name": "Cloze - 1",
+    "pattern": "(?:cloze).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "Cloze - 2",
+    "pattern": "(?:cloze).{0,40}\\\\b([\\\\w\\\\.-]+@[\\\\w-]+\\\\.[\\\\w\\\\.-]{2,5})\\\\b"
+  },
+  {
+    "name": "clu_repo_url",
+    "pattern": "clu[_-]?repo[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "clu_ssh_private_key_base64",
+    "pattern": "clu[_-]?ssh[_-]?private[_-]?key[_-]?base64(=| =|:| :)"
+  },
+  {
+    "name": "Clustdoc",
+    "pattern": "(?:clustdoc).{0,40}\\\\b([0-9a-zA-Z]{60})\\\\b"
+  },
+  {
+    "name": "cn_access_key_id",
+    "pattern": "cn[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "cn_secret_access_key",
+    "pattern": "cn[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "cocoapods_trunk_email",
+    "pattern": "cocoapods[_-]?trunk[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "cocoapods_trunk_token",
+    "pattern": "cocoapods[_-]?trunk[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Codacy",
+    "pattern": "(?:codacy).{0,40}\\\\b([0-9A-Za-z]{20})\\\\b"
+  },
+  {
+    "name": "codacy_project_token",
+    "pattern": "codacy[_-]?project[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "codeclimate",
+    "pattern": "(codeclima.{0,50}(\"|')?[0-9a-f]{64}(\"|')?)"
+  },
+  {
+    "name": "codeclimate_repo_token",
+    "pattern": "codeclimate[_-]?repo[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "codecov_token",
+    "pattern": "codecov[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "coding_token",
+    "pattern": "coding[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Coinapi",
+    "pattern": "(?:coinapi).{0,40}\\\\b([A-Z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Coinbase",
+    "pattern": "(?:coinbase).{0,40}\\\\b([a-zA-Z-0-9]{64})\\\\b"
+  },
+  {
+    "name": "Coinlayer",
+    "pattern": "(?:coinlayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Coinlib",
+    "pattern": "(?:coinlib).{0,40}\\\\b([a-z0-9]{16})\\\\b"
+  },
+  {
+    "name": "colombia_national_id_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((\\d{2}((\\.\\d{3}){2}|(,\\d{3}){2}|\\d{6}))|(1((\\.\\d{3}){3}|(,\\d{3}){3}|\\d{9}))))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Column",
+    "pattern": "(?:column).{0,40}\\\\b((?:test|live)_[a-zA-Z0-9]{27})\\\\b"
+  },
+  {
+    "name": "Commercejs",
+    "pattern": "(?:commercejs).{0,40}\\\\b([a-z0-9_]{48})\\\\b"
+  },
+  {
+    "name": "Commodities",
+    "pattern": "(?:commodities).{0,40}\\\\b([a-zA-Z0-9]{60})\\\\b"
+  },
+  {
+    "name": "Companyhub - 1",
+    "pattern": "(?:companyhub).{0,40}\\\\b([0-9a-zA-Z]{20})\\\\b"
+  },
+  {
+    "name": "Companyhub - 2",
+    "pattern": "(?:companyhub).{0,40}\\\\b([a-zA-Z0-9$%^=-]{4,32})\\\\b"
+  },
+  {
+    "name": "conekta_apikey",
+    "pattern": "conekta[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "Confluent - 1",
+    "pattern": "(?:confluent).{0,40}\\\\b([a-zA-Z-0-9]{16})\\\\b"
+  },
+  {
+    "name": "Confluent - 2",
+    "pattern": "(?:confluent).{0,40}\\\\b([a-zA-Z-0-9]{64})\\\\b"
+  },
+  {
+    "name": "consumer_key",
+    "pattern": "consumer[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "consumerkey",
+    "pattern": "consumerkey(=| =|:| :)"
+  },
+  {
+    "name": "contentful_access_token",
+    "pattern": "contentful[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "contentful_cma_test_token",
+    "pattern": "contentful[_-]?cma[_-]?test[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "contentful_integration_management_token",
+    "pattern": "contentful[_-]?integration[_-]?management[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "contentful_php_management_test_token",
+    "pattern": "contentful[_-]?php[_-]?management[_-]?test[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "contentful_test_org_cma_token",
+    "pattern": "contentful[_-]?test[_-]?org[_-]?cma[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "contentful_v2_access_token",
+    "pattern": "contentful[_-]?v2[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "conversation_password",
+    "pattern": "conversation[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "conversation_username",
+    "pattern": "conversation[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Convertkit",
+    "pattern": "(?:convertkit).{0,40}\\\\b([a-z0-9A-Z_]{22})\\\\b"
+  },
+  {
+    "name": "Convier",
+    "pattern": "(?:convier).{0,40}\\\\b([0-9]{2}\\\\|[a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Copper - 2",
+    "pattern": "(?:copper).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "cos_secrets",
+    "pattern": "cos[_-]?secrets(=| =|:| :)"
+  },
+  {
+    "name": "Countrylayer",
+    "pattern": "(?:countrylayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Courier",
+    "pattern": "(?:courier).{0,40}\\\\b(pk\\\\_[a-zA-Z0-9]{1,}\\\\_[a-zA-Z0-9]{28})\\\\b"
+  },
+  {
+    "name": "Coveralls",
+    "pattern": "(?:coveralls).{0,40}\\\\b([a-zA-Z0-9-]{37})\\\\b"
+  },
+  {
+    "name": "coveralls_api_token",
+    "pattern": "coveralls[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "coveralls_repo_token",
+    "pattern": "coveralls[_-]?repo[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "coveralls_token",
+    "pattern": "coveralls[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "coverity_scan_token",
+    "pattern": "coverity[_-]?scan[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "croatia_eu_drivers_license_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{8}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Crowdin",
+    "pattern": "(?:crowdin).{0,40}\\\\b([0-9A-Za-z]{80})\\\\b"
+  },
+  {
+    "name": "Cryptocompare",
+    "pattern": "(?:cryptocompare).{0,40}\\\\b([a-z-0-9]{64})\\\\b"
+  },
+  {
+    "name": "Currencycloud - 1",
+    "pattern": "(?:currencycloud).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Currencyfreaks",
+    "pattern": "(?:currencyfreaks).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Currencylayer",
+    "pattern": "(?:currencylayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Currencyscoop",
+    "pattern": "(?:currencyscoop).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Currentsapi",
+    "pattern": "(?:currentsapi).{0,40}\\\\b([a-zA-Z0-9\\\\S]{48})\\\\b"
+  },
+  {
+    "name": "Customerguru - 1",
+    "pattern": "(?:guru).{0,40}\\\\b([a-z0-9A-Z]{50})\\\\b"
+  },
+  {
+    "name": "Customerguru - 2",
+    "pattern": "(?:guru).{0,40}\\\\b([a-z0-9A-Z]{30})\\\\b"
+  },
+  {
+    "name": "Customerio",
+    "pattern": "(?:customer).{0,40}\\\\b([a-z0-9A-Z]{20})\\\\b"
+  },
+  {
+    "name": "cypress_record_key",
+    "pattern": "cypress[_-]?record[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "D7network",
+    "pattern": "(?:d7network).{0,40}\\\\b([a-zA-Z0-9\\\\W\\\\S]{23}\\\\=)"
+  },
+  {
+    "name": "Dailyco",
+    "pattern": "(?:daily).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Dandelion",
+    "pattern": "(?:dandelion).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "danger_github_api_token",
+    "pattern": "danger[_-]?github[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "database_host",
+    "pattern": "database[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "database_name",
+    "pattern": "database[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "database_password",
+    "pattern": "database[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "database_port",
+    "pattern": "database[_-]?port(=| =|:| :)"
+  },
+  {
+    "name": "database_user",
+    "pattern": "database[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "database_username",
+    "pattern": "database[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Databricks",
+    "pattern": "dapi[a-f0-9]{32}\\\\b"
+  },
+  {
+    "name": "datadog_api_key",
+    "pattern": "datadog[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "datadog_app_key",
+    "pattern": "datadog[_-]?app[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Datadogtoken - 1",
+    "pattern": "(?:datadog).{0,40}\\\\b([a-zA-Z-0-9]{32})\\\\b"
+  },
+  {
+    "name": "Datadogtoken - 2",
+    "pattern": "(?:datadog).{0,40}\\\\b([a-zA-Z-0-9]{40})\\\\b"
+  },
+  {
+    "name": "Datafire",
+    "pattern": "(?:datafire).{0,40}\\\\b([a-z0-9\\\\S]{175,190})\\\\b"
+  },
+  {
+    "name": "Datagov",
+    "pattern": "(?:data.gov).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Date",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(\\d{1,2}[-/]\\d{1,2}[-/]\\d{2,4})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "db_connection",
+    "pattern": "db[_-]?connection(=| =|:| :)"
+  },
+  {
+    "name": "db_database",
+    "pattern": "db[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "db_host",
+    "pattern": "db[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "db_password",
+    "pattern": "db[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "db_pw",
+    "pattern": "db[_-]?pw(=| =|:| :)"
+  },
+  {
+    "name": "db_user",
+    "pattern": "db[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "db_username",
+    "pattern": "db[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "ddg_test_email",
+    "pattern": "ddg[_-]?test[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "ddg_test_email_pw",
+    "pattern": "ddg[_-]?test[_-]?email[_-]?pw(=| =|:| :)"
+  },
+  {
+    "name": "ddgc_github_token",
+    "pattern": "ddgc[_-]?github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Debounce",
+    "pattern": "(?:debounce).{0,40}\\\\b([a-zA-Z0-9]{13})\\\\b"
+  },
+  {
+    "name": "Deepai",
+    "pattern": "(?:deepai).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Deepgram",
+    "pattern": "(?:deepgram).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Delighted",
+    "pattern": "(?:delighted).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "deploy_password",
+    "pattern": "deploy[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "deploy_secure",
+    "pattern": "deploy[_-]?secure(=| =|:| :)"
+  },
+  {
+    "name": "deploy_token",
+    "pattern": "deploy[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "deploy_user",
+    "pattern": "deploy[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "Deputy - 1",
+    "pattern": "\\\\b([0-9a-z]{1,}.as.deputy.com)\\\\b"
+  },
+  {
+    "name": "Deputy - 2",
+    "pattern": "(?:deputy).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Detectlanguage",
+    "pattern": "(?:detectlanguage).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Dfuse",
+    "pattern": "\\\\b(web\\\\_[0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "dgpg_passphrase",
+    "pattern": "dgpg[_-]?passphrase(=| =|:| :)"
+  },
+  {
+    "name": "Diffbot",
+    "pattern": "(?:diffbot).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "digitalocean_access_token",
+    "pattern": "digitalocean[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "digitalocean_ssh_key_body",
+    "pattern": "digitalocean[_-]?ssh[_-]?key[_-]?body(=| =|:| :)"
+  },
+  {
+    "name": "digitalocean_ssh_key_ids",
+    "pattern": "digitalocean[_-]?ssh[_-]?key[_-]?ids(=| =|:| :)"
+  },
+  {
+    "name": "Digitaloceantoken",
+    "pattern": "(?:digitalocean).{0,40}\\\\b([A-Za-z0-9_-]{64})\\\\b"
+  },
+  {
+    "name": "Discord Webhook",
+    "pattern": "https://discordapp\\\\.com/api/webhooks/[0-9]+/[A-Za-z0-9\\\\-]+"
+  },
+  {
+    "name": "Discordbottoken - 1",
+    "pattern": "(?:discord).{0,40}\\\\b([A-Za-z0-9_-]{24}\\\\.[A-Za-z0-9_-]{6}\\\\.[A-Za-z0-9_-]{27})\\\\b"
+  },
+  {
+    "name": "Discordbottoken - 2",
+    "pattern": "(?:discord).{0,40}\\\\b([0-9]{17})\\\\b"
+  },
+  {
+    "name": "Discordwebhook",
+    "pattern": "(https:\\\\/\\\\/discord.com\\\\/api\\\\/webhooks\\\\/[0-9]{18}\\\\/[0-9a-zA-Z-]{68})"
+  },
+  {
+    "name": "Ditto",
+    "pattern": "(?:ditto).{0,40}\\\\b([a-z0-9]{8}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{12}\\\\.[a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Dnscheck - 1",
+    "pattern": "(?:dnscheck).{0,40}\\\\b([a-z0-9A-Z-]{36})\\\\b"
+  },
+  {
+    "name": "Dnscheck - 2",
+    "pattern": "(?:dnscheck).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "docker_hub_password",
+    "pattern": "docker[_-]?hub[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "docker_key",
+    "pattern": "docker[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "docker_pass",
+    "pattern": "docker[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "docker_passwd",
+    "pattern": "docker[_-]?passwd(=| =|:| :)"
+  },
+  {
+    "name": "docker_password",
+    "pattern": "docker[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "docker_postgres_url",
+    "pattern": "docker[_-]?postgres[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "docker_registry_auth",
+    "pattern": "auth\":.*\"(?:[A-Za-z0-9+\\\\/]{4})*(?:[A-Za-z0-9+\\\\/]{4}|[A-Za-z0-9+\\\\/]{3}=|[A-Za-z0-9+\\\\/]{2}={2})"
+  },
+  {
+    "name": "docker_token",
+    "pattern": "docker[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "dockerhub_password",
+    "pattern": "dockerhub[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "dockerhubpassword",
+    "pattern": "dockerhubpassword(=| =|:| :)"
+  },
+  {
+    "name": "Documo",
+    "pattern": "\\\\b(ey[a-zA-Z0-9]{34}.ey[a-zA-Z0-9]{154}.[a-zA-Z0-9_-]{43})\\\\b"
+  },
+  {
+    "name": "doordash_auth_token",
+    "pattern": "doordash[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Doppler",
+    "pattern": "\\\\b(dp\\\\.pt\\\\.[a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "Dotmailer - 1",
+    "pattern": "(?:dotmailer).{0,40}\\\\b(apiuser-[a-z0-9]{12}@apiconnector.com)\\\\b"
+  },
+  {
+    "name": "Dotmailer - 2",
+    "pattern": "(?:dotmailer).{0,40}\\\\b([a-zA-Z0-9\\\\S]{8,24})\\\\b"
+  },
+  {
+    "name": "Dovico",
+    "pattern": "(?:dovico).{0,40}\\\\b([0-9a-z]{32}\\\\.[0-9a-z]{1,}\\\\b)"
+  },
+  {
+    "name": "Dronahq",
+    "pattern": "(?:dronahq).{0,40}\\\\b([a-z0-9]{50})\\\\b"
+  },
+  {
+    "name": "Droneci",
+    "pattern": "(?:droneci).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Dropbox",
+    "pattern": "\\\\b(sl\\\\.[A-Za-z0-9\\\\-\\\\_]{130,140})\\\\b"
+  },
+  {
+    "name": "dropbox_oauth_bearer",
+    "pattern": "dropbox[_-]?oauth[_-]?bearer(=| =|:| :)"
+  },
+  {
+    "name": "droplet_travis_password",
+    "pattern": "droplet[_-]?travis[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "dsonar_login",
+    "pattern": "dsonar[_-]?login(=| =|:| :)"
+  },
+  {
+    "name": "dsonar_projectkey",
+    "pattern": "dsonar[_-]?projectkey(=| =|:| :)"
+  },
+  {
+    "name": "Dwolla",
+    "pattern": "(?:dwolla).{0,40}\\\\b([a-zA-Z-0-9]{50})\\\\b"
+  },
+  {
+    "name": "Dynalist",
+    "pattern": "(?:dynalist).{0,40}\\\\b([a-zA-Z0-9-_]{128})\\\\b"
+  },
+  {
+    "name": "Dynatrace token",
+    "pattern": "dt0[a-zA-Z]{1}[0-9]{2}\\\\.[A-Z0-9]{24}\\\\.[A-Z0-9]{64}"
+  },
+  {
+    "name": "Dyspatch",
+    "pattern": "(?:dyspatch).{0,40}\\\\b([A-Z0-9]{52})\\\\b"
+  },
+  {
+    "name": "Eagleeyenetworks - 1",
+    "pattern": "(?:eagleeyenetworks).{0,40}\\\\b([a-zA-Z0-9]{3,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,5})\\\\b"
+  },
+  {
+    "name": "Eagleeyenetworks - 2",
+    "pattern": "(?:eagleeyenetworks).{0,40}\\\\b([a-zA-Z0-9]{15})\\\\b"
+  },
+  {
+    "name": "Easyinsight - 1",
+    "pattern": "(?:easyinsight|easy-insight).{0,40}\\\\b([a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Easyinsight - 2",
+    "pattern": "(?:easyinsight|easy-insight).{0,40}\\\\b([0-9Aa-zA-Z]{20})\\\\b"
+  },
+  {
+    "name": "EC",
+    "pattern": "-----BEGIN EC PRIVATE KEY-----"
+  },
+  {
+    "name": "Ecuador_Unique_Identification_Number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((0[1-9]|[1-2][0-9]|30|90|99)\\d{8}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Edamam - 1",
+    "pattern": "(?:edamam).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Edamam - 2",
+    "pattern": "(?:edamam).{0,40}\\\\b([0-9a-z]{8})\\\\b"
+  },
+  {
+    "name": "Edenai",
+    "pattern": "(?:edenai).{0,40}\\\\b([a-zA-Z0-9]{36}.[a-zA-Z0-9]{92}.[a-zA-Z0-9_]{43})\\\\b"
+  },
+  {
+    "name": "Eightxeight - 1",
+    "pattern": "(?:8x8).{0,40}\\\\b([a-zA-Z0-9_]{18,30})\\\\b"
+  },
+  {
+    "name": "Eightxeight - 2",
+    "pattern": "(?:8x8).{0,40}\\\\b([a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "elastic_cloud_auth",
+    "pattern": "elastic[_-]?cloud[_-]?auth(=| =|:| :)"
+  },
+  {
+    "name": "Elasticemail",
+    "pattern": "(?:elastic).{0,40}\\\\b([A-Za-z0-9_-]{96})\\\\b"
+  },
+  {
+    "name": "elasticsearch_password",
+    "pattern": "elasticsearch[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Email",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,7})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Enablex - 1",
+    "pattern": "(?:enablex).{0,40}\\\\b([a-zA-Z0-9]{36})\\\\b"
+  },
+  {
+    "name": "Enablex - 2",
+    "pattern": "(?:enablex).{0,40}\\\\b([a-z0-9]{24})\\\\b"
+  },
+  {
+    "name": "encryption_password",
+    "pattern": "encryption[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "end_user_password",
+    "pattern": "end[_-]?user[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Enigma",
+    "pattern": "(?:enigma).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "env_github_oauth_token",
+    "pattern": "env[_-]?github[_-]?oauth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "env_heroku_api_key",
+    "pattern": "env[_-]?heroku[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "env_key",
+    "pattern": "env[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "env_secret",
+    "pattern": "env[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "env_secret_access_key",
+    "pattern": "env[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "env_sonatype_password",
+    "pattern": "env[_-]?sonatype[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Ethplorer",
+    "pattern": "(?:ethplorer).{0,40}\\\\b([a-z0-9A-Z-]{22})\\\\b"
+  },
+  {
+    "name": "Etsyapikey",
+    "pattern": "(?:etsy).{0,40}\\\\b([a-zA-Z-0-9]{24})\\\\b"
+  },
+  {
+    "name": "eureka_awssecretkey",
+    "pattern": "eureka[_-]?awssecretkey(=| =|:| :)"
+  },
+  {
+    "name": "Everhour",
+    "pattern": "(?:everhour).{0,40}\\\\b([0-9Aa-f]{4}-[0-9a-f]{4}-[0-9a-f]{6}-[0-9a-f]{6}-[0-9a-f]{8})\\\\b"
+  },
+  {
+    "name": "Exchangerateapi",
+    "pattern": "(?:exchangerate).{0,40}\\\\b([a-z0-9]{24})\\\\b"
+  },
+  {
+    "name": "Exchangeratesapi",
+    "pattern": "(?:exchangerates).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "exp_password",
+    "pattern": "exp[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Facebook Access Token",
+    "pattern": "EAACEdEose0cBA[0-9A-Za-z]+"
+  },
+  {
+    "name": "Facebook OAuth",
+    "pattern": "[fF][aA][cC][eE][bB][oO][oO][kK].*['|\"][0-9a-f]{32}['|\"]"
+  },
+  {
+    "name": "Facebook_Access_Token",
+    "pattern": "EAACEdEose0cBA[0-9A-Za-z]+"
+  },
+  {
+    "name": "Facebook_Access_Token",
+    "pattern": "EAACEdEose0cBA[0-9A-Za-z]+"
+  },
+  {
+    "name": "facebook_access_token",
+    "pattern": "(EAACEdEose0cBA[0-9A-Za-z]+)"
+  },
+  {
+    "name": "Facebook_OAuth",
+    "pattern": "\\[f\\|F\\]\\[a\\|A\\]\\[c\\|C\\]\\[e\\|E\\]\\[b\\|B\\]\\[o\\|O\\]\\[o\\|O\\]\\[k\\|K\\]\\.\\*\\[\\\\"
+  },
+  {
+    "name": "facebook_oauth",
+    "pattern": "[f|F][a|A][c|C][e|E][b|B][o|O][o|O][k|K].*['|\"][0-9a-f]{32}['|\"]"
+  },
+  {
+    "name": "Facebookoauth",
+    "pattern": "(?:facebook).{0,40}\\\\b([A-Za-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Faceplusplus",
+    "pattern": "(?:faceplusplus).{0,40}\\\\b([0-9a-zA-Z_-]{32})\\\\b"
+  },
+  {
+    "name": "Fakejson",
+    "pattern": "(?:fakejson).{0,40}\\\\b([a-zA-Z0-9]{22})\\\\b"
+  },
+  {
+    "name": "Fastforex",
+    "pattern": "(?:fastforex).{0,40}\\\\b([a-z0-9-]{28})\\\\b"
+  },
+  {
+    "name": "Fastlypersonaltoken",
+    "pattern": "(?:fastly).{0,40}\\\\b([A-Za-z0-9_-]{32})\\\\b"
+  },
+  {
+    "name": "FCM Server Key",
+    "pattern": "AAAA[a-zA-Z0-9_-]{7}:[a-zA-Z0-9_-]{140}"
+  },
+  {
+    "name": "FCM_server_key",
+    "pattern": "(AAAA[a-zA-Z0-9_-]{7}:[a-zA-Z0-9_-]{140})"
+  },
+  {
+    "name": "Feedier",
+    "pattern": "(?:feedier).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Fetchrss",
+    "pattern": "(?:fetchrss).{0,40}\\\\b([0-9A-Za-z.]{40})\\\\b"
+  },
+  {
+    "name": "Figmapersonalaccesstoken",
+    "pattern": "(?:figma).{0,40}\\\\b([0-9]{6}-[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "file_password",
+    "pattern": "file[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Fileio",
+    "pattern": "(?:fileio).{0,40}\\\\b([A-Z0-9.-]{39})\\\\b"
+  },
+  {
+    "name": "Filter_TrivialValue2_20601768_CEP2_0",
+    "pattern": "(?i)(sample|example)\\.(com|net)"
+  },
+  {
+    "name": "Finage",
+    "pattern": "\\\\b(API_KEY[0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Financialmodelingprep",
+    "pattern": "(?:financialmodelingprep).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Findl",
+    "pattern": "(?:findl).{0,40}\\\\b([a-z0-9]{8}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Finnhub",
+    "pattern": "(?:finnhub).{0,40}\\\\b([0-9a-z]{20})\\\\b"
+  },
+  {
+    "name": "Firebase Database Detect - 1",
+    "pattern": "[a-z0-9.-]+\\\\.firebaseio\\\\.com"
+  },
+  {
+    "name": "Firebase Database Detect - 2",
+    "pattern": "[a-z0-9.-]+\\\\.firebaseapp\\\\.com"
+  },
+  {
+    "name": "firebase_api_json",
+    "pattern": "firebase[_-]?api[_-]?json(=| =|:| :)"
+  },
+  {
+    "name": "firebase_api_token",
+    "pattern": "firebase[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "firebase_key",
+    "pattern": "firebase[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "firebase_project_develop",
+    "pattern": "firebase[_-]?project[_-]?develop(=| =|:| :)"
+  },
+  {
+    "name": "firebase_token",
+    "pattern": "firebase[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Firebase_URL",
+    "pattern": ".*firebaseio\\.com"
+  },
+  {
+    "name": "firefox_secret",
+    "pattern": "firefox[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Fixerio",
+    "pattern": "(?:fixer).{0,40}\\\\b([A-Za-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "flask_secret_key",
+    "pattern": "flask[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Flatio",
+    "pattern": "(?:flat).{0,40}\\\\b([0-9a-z]{128})\\\\b"
+  },
+  {
+    "name": "Fleetbase",
+    "pattern": "\\\\b(flb_live_[0-9a-zA-Z]{20})\\\\b"
+  },
+  {
+    "name": "Flickr",
+    "pattern": "(?:flickr).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "flickr_api_key",
+    "pattern": "flickr[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "flickr_api_secret",
+    "pattern": "flickr[_-]?api[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Flightapi",
+    "pattern": "(?:flightapi).{0,40}\\\\b([a-z0-9]{24})\\\\b"
+  },
+  {
+    "name": "Flightstats - 1",
+    "pattern": "(?:flightstats).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Flightstats - 2",
+    "pattern": "(?:flightstats).{0,40}\\\\b([0-9a-z]{8})\\\\b"
+  },
+  {
+    "name": "Float",
+    "pattern": "(?:float).{0,40}\\\\b([a-zA-Z0-9-._+=]{59,60})\\\\b"
+  },
+  {
+    "name": "Flowflu - 2",
+    "pattern": "(?:flowflu).{0,40}\\\\b([a-zA-Z0-9]{51})\\\\b"
+  },
+  {
+    "name": "Flutterwave",
+    "pattern": "\\\\b(FLWSECK-[0-9a-z]{32}-X)\\\\b"
+  },
+  {
+    "name": "Fmfw - 1",
+    "pattern": "(?:fmfw).{0,40}\\\\b([a-zA-Z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Fmfw - 2",
+    "pattern": "(?:fmfw).{0,40}\\\\b([a-zA-Z0-9_-]{32})\\\\b"
+  },
+  {
+    "name": "Formbucket",
+    "pattern": "(?:formbucket).{0,40}\\\\b([0-9A-Za-z]{1,}.[0-9A-Za-z]{1,}\\\\.[0-9A-Z-a-z\\\\-_]{1,})"
+  },
+  {
+    "name": "Formio",
+    "pattern": "(?:formio).{0,40}\\\\b(eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9\\\\.[0-9A-Za-z]{310}\\\\.[0-9A-Z-a-z\\\\-_]{43}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "fossa_api_key",
+    "pattern": "fossa[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Foursquare",
+    "pattern": "(?:foursquare).{0,40}\\\\b([0-9A-Z]{48})\\\\b"
+  },
+  {
+    "name": "Frameio",
+    "pattern": "\\\\b(fio-u-[0-9a-zA-Z_-]{64})\\\\b"
+  },
+  {
+    "name": "Freshbooks - 1",
+    "pattern": "(?:freshbooks).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Freshbooks - 2",
+    "pattern": "(?:freshbooks).{0,40}\\\\b(https://www.[0-9A-Za-z_-]{1,}.com)\\\\b"
+  },
+  {
+    "name": "Freshdesk - 1",
+    "pattern": "(?:freshdesk).{0,40}\\\\b([0-9A-Za-z]{20})\\\\b"
+  },
+  {
+    "name": "Freshdesk - 2",
+    "pattern": "\\\\b([0-9a-z-]{1,}.freshdesk.com)\\\\b"
+  },
+  {
+    "name": "Front",
+    "pattern": "(?:front).{0,40}\\\\b([0-9a-zA-Z]{36}.[0-9a-zA-Z\\\\.\\\\-\\\\_]{188,244})\\\\b"
+  },
+  {
+    "name": "ftp_host",
+    "pattern": "ftp[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "ftp_login",
+    "pattern": "ftp[_-]?login(=| =|:| :)"
+  },
+  {
+    "name": "ftp_password",
+    "pattern": "ftp[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ftp_pw",
+    "pattern": "ftp[_-]?pw(=| =|:| :)"
+  },
+  {
+    "name": "ftp_user",
+    "pattern": "ftp[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "ftp_username",
+    "pattern": "ftp[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Fulcrum",
+    "pattern": "(?:fulcrum).{0,40}\\\\b([a-z0-9]{80})\\\\b"
+  },
+  {
+    "name": "Fullstory",
+    "pattern": "(?:fullstory).{0,40}\\\\b([a-zA-Z-0-9/+]{88})\\\\b"
+  },
+  {
+    "name": "Fusebill",
+    "pattern": "(?:fusebill).{0,40}\\\\b([a-zA-Z0-9]{88})\\\\b"
+  },
+  {
+    "name": "Fxmarket",
+    "pattern": "(?:fxmarket).{0,40}\\\\b([0-9Aa-zA-Z-_=]{20})\\\\b"
+  },
+  {
+    "name": "gcloud_bucket",
+    "pattern": "gcloud[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "gcloud_project",
+    "pattern": "gcloud[_-]?project(=| =|:| :)"
+  },
+  {
+    "name": "gcloud_service_key",
+    "pattern": "gcloud[_-]?service[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Gcp",
+    "pattern": "\\\\{[^{]+auth_provider_x509_cert_url[^}]+\\\\}"
+  },
+  {
+    "name": "GCP_Service_Account",
+    "pattern": "\"type\": \"service_account\""
+  },
+  {
+    "name": "gcr_password",
+    "pattern": "gcr[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "gcs_bucket",
+    "pattern": "gcs[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "Geckoboard",
+    "pattern": "(?:geckoboard).{0,40}\\\\b([a-zA-Z0-9]{44})\\\\b"
+  },
+  {
+    "name": "Generic - 1376",
+    "pattern": "jdbc:mysql(=| =|:| :)"
+  },
+  {
+    "name": "Generic - 1688",
+    "pattern": "TOKEN[\\\\\\\\-|_|A-Z0-9]*(\\\\'|\\\\\")?(:|=)(\\\\'|\\\\\")?[\\\\\\\\-|_|A-Z0-9]{10}"
+  },
+  {
+    "name": "Generic - 1689",
+    "pattern": "API[\\\\\\\\-|_|A-Z0-9]*(\\\\'|\\\\\")?(:|=)(\\\\'|\\\\\")?[\\\\\\\\-|_|A-Z0-9]{10}"
+  },
+  {
+    "name": "Generic - 1691",
+    "pattern": "SECRET[\\\\\\\\-|_|A-Z0-9]*(\\\\'|\\\\\")?(:|=)(\\\\'|\\\\\")?[\\\\\\\\-|_|A-Z0-9]{10}"
+  },
+  {
+    "name": "Generic - 1692",
+    "pattern": "AUTHORIZATION[\\\\\\\\-|_|A-Z0-9]*(\\\\'|\\\\\")?(:|=)(\\\\'|\\\\\")?[\\\\\\\\-|_|A-Z0-9]{10}"
+  },
+  {
+    "name": "Generic - 1693",
+    "pattern": "PASSWORD[\\\\\\\\-|_|A-Z0-9]*(\\\\'|\\\\\")?(:|=)(\\\\'|\\\\\")?[\\\\\\\\-|_|A-Z0-9]{10}"
+  },
+  {
+    "name": "Generic - 1695",
+    "pattern": "(A|a)(P|p)(Ii)[\\\\-|_|A-Za-z0-9]*(\\\\''|\")?( )*(:|=)( )*(\\\\''|\")?[0-9A-Za-z\\\\-_]+(\\\\''|\")?"
+  },
+  {
+    "name": "Generic - 1700",
+    "pattern": "BEGIN OPENSSH PRIVATE KEY"
+  },
+  {
+    "name": "Generic - 1701",
+    "pattern": "BEGIN PRIVATE KEY"
+  },
+  {
+    "name": "Generic - 1702",
+    "pattern": "BEGIN RSA PRIVATE KEY"
+  },
+  {
+    "name": "Generic - 1703",
+    "pattern": "BEGIN DSA PRIVATE KEY"
+  },
+  {
+    "name": "Generic - 1704",
+    "pattern": "BEGIN EC PRIVATE KEY"
+  },
+  {
+    "name": "Generic - 1705",
+    "pattern": "BEGIN PGP PRIVATE KEY BLOCK"
+  },
+  {
+    "name": "Generic - 1707",
+    "pattern": "[a-z0-9.-]+\\\\.s3-[a-z0-9-]\\\\.amazonaws\\\\.com"
+  },
+  {
+    "name": "Generic - 1708",
+    "pattern": "[a-z0-9.-]+\\\\.s3-website[.-](eu|ap|us|ca|sa|cn)"
+  },
+  {
+    "name": "Generic - 1710",
+    "pattern": "algolia_api_key"
+  },
+  {
+    "name": "Generic - 1711",
+    "pattern": "asana_access_token"
+  },
+  {
+    "name": "Generic - 1713",
+    "pattern": "azure_tenant"
+  },
+  {
+    "name": "Generic - 1714",
+    "pattern": "bitly_access_token"
+  },
+  {
+    "name": "Generic - 1715",
+    "pattern": "branchio_secret"
+  },
+  {
+    "name": "Generic - 1716",
+    "pattern": "browserstack_access_key"
+  },
+  {
+    "name": "Generic - 1717",
+    "pattern": "buildkite_access_token"
+  },
+  {
+    "name": "Generic - 1718",
+    "pattern": "comcast_access_token"
+  },
+  {
+    "name": "Generic - 1719",
+    "pattern": "datadog_api_key"
+  },
+  {
+    "name": "Generic - 1720",
+    "pattern": "deviantart_secret"
+  },
+  {
+    "name": "Generic - 1721",
+    "pattern": "deviantart_access_token"
+  },
+  {
+    "name": "Generic - 1722",
+    "pattern": "dropbox_api_token"
+  },
+  {
+    "name": "Generic - 1723",
+    "pattern": "facebook_appsecret"
+  },
+  {
+    "name": "Generic - 1724",
+    "pattern": "facebook_access_token"
+  },
+  {
+    "name": "Generic - 1725",
+    "pattern": "firebase_custom_token"
+  },
+  {
+    "name": "Generic - 1726",
+    "pattern": "firebase_id_token"
+  },
+  {
+    "name": "Generic - 1727",
+    "pattern": "github_client"
+  },
+  {
+    "name": "Generic - 1728",
+    "pattern": "github_ssh_key"
+  },
+  {
+    "name": "Generic - 1730",
+    "pattern": "gitlab_private_token"
+  },
+  {
+    "name": "Generic - 1731",
+    "pattern": "google_cm"
+  },
+  {
+    "name": "Generic - 1732",
+    "pattern": "google_maps_key"
+  },
+  {
+    "name": "Generic - 1733",
+    "pattern": "heroku_api_key"
+  },
+  {
+    "name": "Generic - 1734",
+    "pattern": "instagram_access_token"
+  },
+  {
+    "name": "Generic - 1735",
+    "pattern": "mailchimp_api_key"
+  },
+  {
+    "name": "Generic - 1736",
+    "pattern": "mailgun_api_key"
+  },
+  {
+    "name": "Generic - 1737",
+    "pattern": "mailjet"
+  },
+  {
+    "name": "Generic - 1738",
+    "pattern": "mapbox_access_token"
+  },
+  {
+    "name": "Generic - 1739",
+    "pattern": "pagerduty_api_token"
+  },
+  {
+    "name": "Generic - 1740",
+    "pattern": "paypal_key_sb"
+  },
+  {
+    "name": "Generic - 1741",
+    "pattern": "paypal_key_live"
+  },
+  {
+    "name": "Generic - 1742",
+    "pattern": "paypal_token_sb"
+  },
+  {
+    "name": "Generic - 1743",
+    "pattern": "paypal_token_live"
+  },
+  {
+    "name": "Generic - 1744",
+    "pattern": "pendo_integration_key"
+  },
+  {
+    "name": "Generic - 1745",
+    "pattern": "salesforce_access_token"
+  },
+  {
+    "name": "Generic - 1746",
+    "pattern": "saucelabs_ukey"
+  },
+  {
+    "name": "Generic - 1747",
+    "pattern": "sendgrid_api_key"
+  },
+  {
+    "name": "Generic - 1748",
+    "pattern": "slack_api_token"
+  },
+  {
+    "name": "Generic - 1749",
+    "pattern": "slack_webhook"
+  },
+  {
+    "name": "Generic - 1750",
+    "pattern": "square_secret"
+  },
+  {
+    "name": "Generic - 1751",
+    "pattern": "square_auth_token"
+  },
+  {
+    "name": "Generic - 1752",
+    "pattern": "travisci_api_token"
+  },
+  {
+    "name": "Generic - 1753",
+    "pattern": "twilio_sid_token"
+  },
+  {
+    "name": "Generic - 1754",
+    "pattern": "twitter_api_secret"
+  },
+  {
+    "name": "Generic - 1755",
+    "pattern": "twitter_bearer_token"
+  },
+  {
+    "name": "Generic - 1756",
+    "pattern": "spotify_access_token"
+  },
+  {
+    "name": "Generic - 1757",
+    "pattern": "stripe_key_live"
+  },
+  {
+    "name": "Generic - 1758",
+    "pattern": "wakatime_api_key"
+  },
+  {
+    "name": "Generic - 1759",
+    "pattern": "wompi_auth_bearer_sb"
+  },
+  {
+    "name": "Generic - 1760",
+    "pattern": "wompi_auth_bearer_live"
+  },
+  {
+    "name": "Generic - 1761",
+    "pattern": "wpengine_api_key"
+  },
+  {
+    "name": "Generic - 1762",
+    "pattern": "zapier_webhook"
+  },
+  {
+    "name": "Generic - 1763",
+    "pattern": "zendesk_access_token"
+  },
+  {
+    "name": "Generic - 1764",
+    "pattern": "ssh-rsa"
+  },
+  {
+    "name": "Generic - 1765",
+    "pattern": "s3-[a-z0-9-]+\\\\.amazonaws\\\\.com/[a-z0-9._-]+"
+  },
+  {
+    "name": "Generic Secret",
+    "pattern": "[sS][eE][cC][rR][eE][tT].*['|\"][0-9a-zA-Z]{32,45}['|\"]"
+  },
+  {
+    "name": "Generic webhook secret",
+    "pattern": "(webhook).+(secret|token|key).+"
+  },
+  {
+    "name": "Generic_API_Key",
+    "pattern": "\\[a\\|A\\]\\[p\\|P\\]\\[i\\|I\\]_\\?\\[k\\|K\\]\\[e\\|E\\]\\[y\\|Y\\]\\.\\*\\[\\\\"
+  },
+  {
+    "name": "Generic_Secret",
+    "pattern": "\\[s\\|S\\]\\[e\\|E\\]\\[c\\|C\\]\\[r\\|R\\]\\[e\\|E\\]\\[t\\|T\\]\\.\\*\\[\\\\"
+  },
+  {
+    "name": "Gengo",
+    "pattern": "(?:gengo).{0,40}([ ]{0,1}[0-9a-zA-Z\\\\[\\\\]\\\\-\\\\(\\\\)\\\\{\\\\}|_^@$=~]{64}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Geoapify",
+    "pattern": "(?:geoapify).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Geocode",
+    "pattern": "(?:geocode).{0,40}\\\\b([a-z0-9]{28})\\\\b"
+  },
+  {
+    "name": "Geocodify",
+    "pattern": "(?:geocodify).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Geocodio - 2",
+    "pattern": "(?:geocod).{0,40}\\\\b([a-z0-9]{39})\\\\b"
+  },
+  {
+    "name": "Geoipifi",
+    "pattern": "(?:ipifi).{0,40}\\\\b([a-z0-9A-Z_]{32})\\\\b"
+  },
+  {
+    "name": "Getemail",
+    "pattern": "(?:getemail).{0,40}\\\\b([a-zA-Z0-9-]{20})\\\\b"
+  },
+  {
+    "name": "Getemails - 1",
+    "pattern": "(?:getemails).{0,40}\\\\b([a-z0-9-]{26})\\\\b"
+  },
+  {
+    "name": "Getemails - 2",
+    "pattern": "(?:getemails).{0,40}\\\\b([a-z0-9-]{18})\\\\b"
+  },
+  {
+    "name": "Getgeoapi",
+    "pattern": "(?:getgeoapi).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Getgist",
+    "pattern": "(?:getgist).{0,40}\\\\b([a-z0-9A-Z+=]{68})"
+  },
+  {
+    "name": "Getsandbox - 1",
+    "pattern": "(?:getsandbox).{0,40}\\\\b([a-z0-9-]{40})\\\\b"
+  },
+  {
+    "name": "Getsandbox - 2",
+    "pattern": "(?:getsandbox).{0,40}\\\\b([a-z0-9-]{15,30})\\\\b"
+  },
+  {
+    "name": "gh_api_key",
+    "pattern": "gh[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "gh_email",
+    "pattern": "gh[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "gh_next_oauth_client_secret",
+    "pattern": "gh[_-]?next[_-]?oauth[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "gh_next_unstable_oauth_client_id",
+    "pattern": "gh[_-]?next[_-]?unstable[_-]?oauth[_-]?client[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "gh_next_unstable_oauth_client_secret",
+    "pattern": "gh[_-]?next[_-]?unstable[_-]?oauth[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "gh_oauth_client_secret",
+    "pattern": "gh[_-]?oauth[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "gh_oauth_token",
+    "pattern": "gh[_-]?oauth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "gh_repo_token",
+    "pattern": "gh[_-]?repo[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "gh_token",
+    "pattern": "gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "gh_unstable_oauth_client_secret",
+    "pattern": "gh[_-]?unstable[_-]?oauth[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "ghb_token",
+    "pattern": "ghb[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "ghost_api_key",
+    "pattern": "ghost[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "git_author_email",
+    "pattern": "git[_-]?author[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "git_author_name",
+    "pattern": "git[_-]?author[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "git_committer_email",
+    "pattern": "git[_-]?committer[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "git_committer_name",
+    "pattern": "git[_-]?committer[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "git_email",
+    "pattern": "git[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "git_name",
+    "pattern": "git[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "git_token",
+    "pattern": "git[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "GitHub",
+    "pattern": "\\[g\\|G\\]\\[i\\|I\\]\\[t\\|T\\]\\[h\\|H\\]\\[u\\|U\\]\\[b\\|B\\]\\.\\*\\[\\\\"
+  },
+  {
+    "name": "GitHub",
+    "pattern": "[gG][iI][tT][hH][uU][bB].*['|\"][0-9a-zA-Z]{35,40}['|\"]"
+  },
+  {
+    "name": "Github - 2",
+    "pattern": "\\\\b((?:ghp|gho|ghu|ghs|ghr)_[a-zA-Z0-9]{36,255}\\\\b)"
+  },
+  {
+    "name": "Github App Token",
+    "pattern": "(ghu|ghs)_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "Github OAuth Access Token",
+    "pattern": "gho_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "Github Personal Access Token",
+    "pattern": "ghp_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "Github Refresh Token",
+    "pattern": "ghr_[0-9a-zA-Z]{76}"
+  },
+  {
+    "name": "GitHub_Access_Token",
+    "pattern": "[a-zA-Z0-9_\\-]*:[a-zA-Z0-9_\\-]+@github\\.com*"
+  },
+  {
+    "name": "github_access_token - 1",
+    "pattern": "github[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_access_token - 2",
+    "pattern": "[a-zA-Z0-9_-]*:[a-zA-Z0-9_-]+@github.com*"
+  },
+  {
+    "name": "github_api_key",
+    "pattern": "github[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "github_api_token",
+    "pattern": "github[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Github_App_Token",
+    "pattern": "(ghu|ghs)\\_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "github_auth",
+    "pattern": "github[_-]?auth(=| =|:| :)"
+  },
+  {
+    "name": "github_auth_token",
+    "pattern": "github[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_client_secret",
+    "pattern": "github[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "github_deploy_hb_doc_pass",
+    "pattern": "github[_-]?deploy[_-]?hb[_-]?doc[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "github_deployment_token",
+    "pattern": "github[_-]?deployment[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_hunter_token",
+    "pattern": "github[_-]?hunter[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_hunter_username",
+    "pattern": "github[_-]?hunter[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "github_key",
+    "pattern": "github[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "github_oauth",
+    "pattern": "github[_-]?oauth(=| =|:| :)"
+  },
+  {
+    "name": "Github_OAuth_Access_Token",
+    "pattern": "gho\\_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "github_oauth_token",
+    "pattern": "github[_-]?oauth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Github_old",
+    "pattern": "(?:github)[^\\\\.].{0,40}[ =:'\"]+([a-f0-9]{40})\\\\b"
+  },
+  {
+    "name": "github_password",
+    "pattern": "github[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Github_Personal_Access_Token",
+    "pattern": "ghp\\_[0-9a-zA-Z]{36}"
+  },
+  {
+    "name": "github_pwd",
+    "pattern": "github[_-]?pwd(=| =|:| :)"
+  },
+  {
+    "name": "Github_Refresh_Token",
+    "pattern": "ghr\\_[0-9a-zA-Z]{76}"
+  },
+  {
+    "name": "github_release_token",
+    "pattern": "github[_-]?release[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_repo",
+    "pattern": "github[_-]?repo(=| =|:| :)"
+  },
+  {
+    "name": "github_token",
+    "pattern": "github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "github_tokens",
+    "pattern": "github[_-]?tokens(=| =|:| :)"
+  },
+  {
+    "name": "Githubapp - 1",
+    "pattern": "(?:github).{0,40}\\\\b([0-9]{6})\\\\b"
+  },
+  {
+    "name": "Githubapp - 2",
+    "pattern": "(?:github).{0,40}(-----BEGIN RSA PRIVATE KEY-----\\\\s[A-Za-z0-9+\\\\/\\\\s]*\\\\s-----END RSA PRIVATE KEY-----)"
+  },
+  {
+    "name": "Gitlab",
+    "pattern": "(?:gitlab).{0,40}\\\\b([a-zA-Z0-9\\\\-=_]{20,22})\\\\b"
+  },
+  {
+    "name": "gitlab_user_email",
+    "pattern": "gitlab[_-]?user[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "Gitlabv2",
+    "pattern": "\\\\b(glpat-[a-zA-Z0-9\\\\-=_]{20,22})\\\\b"
+  },
+  {
+    "name": "Gitter",
+    "pattern": "(?:gitter).{0,40}\\\\b([a-z0-9-]{40})\\\\b"
+  },
+  {
+    "name": "Glassnode",
+    "pattern": "(?:glassnode).{0,40}\\\\b([0-9A-Za-z]{27})\\\\b"
+  },
+  {
+    "name": "Gocanvas - 1",
+    "pattern": "(?:gocanvas).{0,40}\\\\b([0-9A-Za-z/+]{43}=[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Gocanvas - 2",
+    "pattern": "(?:gocanvas).{0,40}\\\\b([\\\\w\\\\.-]+@[\\\\w-]+\\\\.[\\\\w\\\\.-]{2,5})\\\\b"
+  },
+  {
+    "name": "Gocardless",
+    "pattern": "\\\\b(live_[0-9A-Za-z\\\\_\\\\-]{40}[ \"'\\\\r\\\\n]{1})"
+  },
+  {
+    "name": "gogs_password",
+    "pattern": "gogs[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Goodday",
+    "pattern": "(?:goodday).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Google (GCP) Service Account",
+    "pattern": "\"type\": \"service_account\""
+  },
+  {
+    "name": "Google API Key",
+    "pattern": "AIza[0-9a-z-_]{35}"
+  },
+  {
+    "name": "Google Calendar URI",
+    "pattern": "https://www\\\\.google\\\\.com/calendar/embed\\\\?src=[A-Za-z0-9%@&;=\\\\-_\\\\./]+"
+  },
+  {
+    "name": "Google OAuth Access Token",
+    "pattern": "ya29\\\\.[0-9A-Za-z\\\\-_]+"
+  },
+  {
+    "name": "google_account_type",
+    "pattern": "google[_-]?account[_-]?type(=| =|:| :)"
+  },
+  {
+    "name": "Google_API_Key",
+    "pattern": "AIza[0-9A-Za-z\\-_]{35}"
+  },
+  {
+    "name": "Google_API_Key",
+    "pattern": "AIza[0-9A-Za-z\\-_]{35}"
+  },
+  {
+    "name": "Google_Calendar_URI",
+    "pattern": "https://www\\.google\\.com/calendar/embed\\?src=[A-Za-z0-9%@&;=\\-_\\.\\/]+"
+  },
+  {
+    "name": "google_client_email",
+    "pattern": "google[_-]?client[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "google_client_id",
+    "pattern": "google[_-]?client[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "google_client_secret",
+    "pattern": "google[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Google_Cloud_Platform_API_Key",
+    "pattern": "[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}"
+  },
+  {
+    "name": "Google_FCM_Server_Key",
+    "pattern": "AAAA[a-zA-Z0-9_\\-]{7}:[a-zA-Z0-9_\\-]{140}"
+  },
+  {
+    "name": "google_maps_api_key",
+    "pattern": "google[_-]?maps[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "google_oauth",
+    "pattern": "(ya29.[0-9A-Za-z-_]+)"
+  },
+  {
+    "name": "Google_OAuth_Access_Key",
+    "pattern": "ya29\\.[0-9A-Za-z\\-_]+"
+  },
+  {
+    "name": "Google_OAuth_Access_Token",
+    "pattern": "ya29\\.[0-9A-Za-z\\-_]+"
+  },
+  {
+    "name": "Google_OAuth_ID",
+    "pattern": "[0-9(\\+\\-][0-9A-Za-z_]{32}\\.apps\\.googleusercontent\\.com"
+  },
+  {
+    "name": "google_patterns",
+    "pattern": "(?:google_client_id|google_client_secret|google_client_token)"
+  },
+  {
+    "name": "google_private_key",
+    "pattern": "google[_-]?private[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "google_url",
+    "pattern": "([0-9]{12}-[a-z0-9]{32}.apps.googleusercontent.com)"
+  },
+  {
+    "name": "gpg_key_name",
+    "pattern": "gpg[_-]?key[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "gpg_keyname",
+    "pattern": "gpg[_-]?keyname(=| =|:| :)"
+  },
+  {
+    "name": "gpg_ownertrust",
+    "pattern": "gpg[_-]?ownertrust(=| =|:| :)"
+  },
+  {
+    "name": "gpg_passphrase",
+    "pattern": "gpg[_-]?passphrase(=| =|:| :)"
+  },
+  {
+    "name": "gpg_private_key",
+    "pattern": "gpg[_-]?private[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "gpg_secret_keys",
+    "pattern": "gpg[_-]?secret[_-]?keys(=| =|:| :)"
+  },
+  {
+    "name": "gradle_publish_key",
+    "pattern": "gradle[_-]?publish[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "gradle_publish_secret",
+    "pattern": "gradle[_-]?publish[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "gradle_signing_key_id",
+    "pattern": "gradle[_-]?signing[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "gradle_signing_password",
+    "pattern": "gradle[_-]?signing[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Graphcms - 1",
+    "pattern": "(?:graph).{0,40}\\\\b([a-z0-9]{25})\\\\b"
+  },
+  {
+    "name": "Graphcms - 2",
+    "pattern": "\\\\b(ey[a-zA-Z0-9]{73}.ey[a-zA-Z0-9]{365}.[a-zA-Z0-9_-]{683})\\\\b"
+  },
+  {
+    "name": "Graphhopper",
+    "pattern": "(?:graphhopper).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "gren_github_token",
+    "pattern": "gren[_-]?github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "grgit_user",
+    "pattern": "grgit[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "Groovehq",
+    "pattern": "(?:groove).{0,40}\\\\b([a-z0-9A-Z]{64})"
+  },
+  {
+    "name": "Guru - 1",
+    "pattern": "(?:guru).{0,40}\\\\b([a-zA-Z0-9]{3,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,5})\\\\b"
+  },
+  {
+    "name": "Guru - 2",
+    "pattern": "(?:guru).{0,40}\\\\b([a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Gyazo",
+    "pattern": "(?:gyazo).{0,40}\\\\b([0-9A-Za-z-]{43})\\\\b"
+  },
+  {
+    "name": "hab_auth_token",
+    "pattern": "hab[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "hab_key",
+    "pattern": "hab[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Happi",
+    "pattern": "(?:happi).{0,40}\\\\b([a-zA-Z0-9]{56})"
+  },
+  {
+    "name": "Happyscribe",
+    "pattern": "(?:happyscribe).{0,40}\\\\b([0-9a-zA-Z]{24})\\\\b"
+  },
+  {
+    "name": "Harvest - 1",
+    "pattern": "(?:harvest).{0,40}\\\\b([a-z0-9A-Z._]{97})\\\\b"
+  },
+  {
+    "name": "Harvest - 2",
+    "pattern": "(?:harvest).{0,40}\\\\b([0-9]{4,9})\\\\b"
+  },
+  {
+    "name": "hb_codesign_gpg_pass",
+    "pattern": "hb[_-]?codesign[_-]?gpg[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "hb_codesign_key_pass",
+    "pattern": "hb[_-]?codesign[_-]?key[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Hellosign",
+    "pattern": "(?:hellosign).{0,40}\\\\b([a-zA-Z-0-9/+]{64})\\\\b"
+  },
+  {
+    "name": "Helpcrunch",
+    "pattern": "(?:helpcrunch).{0,40}\\\\b([a-zA-Z-0-9+/=]{328})"
+  },
+  {
+    "name": "Helpscout",
+    "pattern": "(?:helpscout).{0,40}\\\\b([A-Za-z0-9]{56})\\\\b"
+  },
+  {
+    "name": "Hereapi",
+    "pattern": "(?:hereapi).{0,40}\\\\b([a-zA-Z0-9\\\\S]{43})\\\\b"
+  },
+  {
+    "name": "Heroku",
+    "pattern": "(?:heroku).{0,40}\\\\b([0-9Aa-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Heroku_API_Key",
+    "pattern": "[h|H][e|E][r|R][o|O][k|K][u|U].*[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}"
+  },
+  {
+    "name": "Heroku_API_key",
+    "pattern": "[h|H][e|E][r|R][o|O][k|K][u|U].{0,30}[0-9A-F]{8}\\-[0-9A-F]{4}\\-[0-9A-F]{4}\\-[0-9A-F]{4}\\-[0-9A-F]{12}"
+  },
+  {
+    "name": "heroku_api_key",
+    "pattern": "heroku[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "heroku_api_key_api_key",
+    "pattern": "([h|H][e|E][r|R][o|O][k|K][u|U].{0,30}[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12})"
+  },
+  {
+    "name": "heroku_email",
+    "pattern": "heroku[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "heroku_token",
+    "pattern": "heroku[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Hive - 1",
+    "pattern": "(?:hive).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Hive - 2",
+    "pattern": "(?:hive).{0,40}\\\\b([0-9A-Za-z]{17})\\\\b"
+  },
+  {
+    "name": "Hiveage",
+    "pattern": "(?:hiveage).{0,40}\\\\b([0-9A-Za-z\\\\_\\\\-]{20})\\\\b"
+  },
+  {
+    "name": "hockeyapp",
+    "pattern": "hockey.{0,50}(\"|')?[0-9a-f]{32}(\"|')?"
+  },
+  {
+    "name": "hockeyapp_token",
+    "pattern": "hockeyapp[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Holidayapi",
+    "pattern": "(?:holidayapi).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "homebrew_github_api_token",
+    "pattern": "homebrew[_-]?github[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Host",
+    "pattern": "(?:host).{0,40}\\\\b([a-z0-9]{14})\\\\b"
+  },
+  {
+    "name": "Html2pdf",
+    "pattern": "(?:html2pdf).{0,40}\\\\b([a-zA-Z0-9]{64})\\\\b"
+  },
+  {
+    "name": "hub_dxia2_password",
+    "pattern": "hub[_-]?dxia2[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Hubspotapikey",
+    "pattern": "(?:hubspot).{0,40}\\\\b([A-Za-z0-9]{8}\\\\-[A-Za-z0-9]{4}\\\\-[A-Za-z0-9]{4}\\\\-[A-Za-z0-9]{4}\\\\-[A-Za-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Humanity",
+    "pattern": "(?:humanity).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Hunter",
+    "pattern": "(?:hunter).{0,40}\\\\b([a-z0-9_-]{40})\\\\b"
+  },
+  {
+    "name": "Hypertrack - 1",
+    "pattern": "(?:hypertrack).{0,40}\\\\b([0-9a-zA-Z\\\\_\\\\-]{54})\\\\b"
+  },
+  {
+    "name": "Hypertrack - 2",
+    "pattern": "(?:hypertrack).{0,40}\\\\b([0-9a-zA-Z\\\\_\\\\-]{27})\\\\b"
+  },
+  {
+    "name": "Ibmclouduserkey",
+    "pattern": "(?:ibm).{0,40}\\\\b([A-Za-z0-9_-]{44})\\\\b"
+  },
+  {
+    "name": "Iconfinder",
+    "pattern": "(?:iconfinder).{0,40}\\\\b([a-zA-Z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Iexcloud",
+    "pattern": "(?:iexcloud).{0,40}\\\\b([a-z0-9_]{35})\\\\b"
+  },
+  {
+    "name": "ij_repo_password",
+    "pattern": "ij[_-]?repo[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ij_repo_username",
+    "pattern": "ij[_-]?repo[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Imagekit",
+    "pattern": "(?:imagekit).{0,40}\\\\b([a-zA-Z0-9_=]{36})"
+  },
+  {
+    "name": "Imagga",
+    "pattern": "(?:imagga).{0,40}\\\\b([a-z0-9A-Z=]{72})"
+  },
+  {
+    "name": "Impala",
+    "pattern": "(?:impala).{0,40}\\\\b([0-9A-Za-z_]{46})\\\\b"
+  },
+  {
+    "name": "index_name",
+    "pattern": "index[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "Insightly",
+    "pattern": "(?:insightly).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "integration_test_api_key",
+    "pattern": "integration[_-]?test[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "integration_test_appid",
+    "pattern": "integration[_-]?test[_-]?appid(=| =|:| :)"
+  },
+  {
+    "name": "Integromat",
+    "pattern": "(?:integromat).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Intercom",
+    "pattern": "(?:intercom).{0,40}\\\\b([a-zA-Z0-9\\\\W\\\\S]{59}\\\\=)"
+  },
+  {
+    "name": "internal_secrets",
+    "pattern": "internal[_-]?secrets(=| =|:| :)"
+  },
+  {
+    "name": "Intrinio",
+    "pattern": "(?:intrinio).{0,40}\\\\b([a-zA-Z0-9]{44})\\\\b"
+  },
+  {
+    "name": "Invoiceocean - 1",
+    "pattern": "(?:invoiceocean).{0,40}\\\\b([0-9A-Za-z]{20})\\\\b"
+  },
+  {
+    "name": "Invoiceocean - 2",
+    "pattern": "\\\\b([0-9a-z]{1,}.invoiceocean.com)\\\\b"
+  },
+  {
+    "name": "ios_docs_deploy_token",
+    "pattern": "ios[_-]?docs[_-]?deploy[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "IP_Address",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Ipapi",
+    "pattern": "(?:ipapi).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Ipgeolocation",
+    "pattern": "(?:ipgeolocation).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Ipify",
+    "pattern": "(?:ipify).{0,40}\\\\b([a-zA-Z0-9_-]{32})\\\\b"
+  },
+  {
+    "name": "Ipinfodb",
+    "pattern": "(?:ipinfodb).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Ipquality",
+    "pattern": "(?:ipquality).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Ipstack",
+    "pattern": "(?:ipstack).{0,40}\\\\b([a-fA-f0-9]{32})\\\\b"
+  },
+  {
+    "name": "ipv4_address_Copy",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-5])(?:\\.(?:0|[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-5])){3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "itest_gh_token",
+    "pattern": "itest[_-]?gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "jdbc",
+    "pattern": "mysql: jdbc:mysql(=| =|:| :)"
+  },
+  {
+    "name": "JDBC Connection String",
+    "pattern": "jdbc:[a-z:]+://[A-Za-z0-9\\\\.\\\\-_:;=/@?,&]+"
+  },
+  {
+    "name": "jdbc_databaseurl",
+    "pattern": "jdbc[_-]?databaseurl(=| =|:| :)"
+  },
+  {
+    "name": "jdbc_host",
+    "pattern": "jdbc[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "Jiratoken - 1",
+    "pattern": "(?:jira).{0,40}\\\\b([a-zA-Z-0-9]{24})\\\\b"
+  },
+  {
+    "name": "Jiratoken - 2",
+    "pattern": "(?:jira).{0,40}\\\\b([a-zA-Z-0-9]{5,24}\\\\@[a-zA-Z-0-9]{3,16}\\\\.com)\\\\b"
+  },
+  {
+    "name": "Jiratoken - 3",
+    "pattern": "(?:jira).{0,40}\\\\b([a-zA-Z-0-9]{5,24}\\\\.[a-zA-Z-0-9]{3,16}\\\\.[a-zA-Z-0-9]{3,16})\\\\b"
+  },
+  {
+    "name": "Jotform",
+    "pattern": "(?:jotform).{0,40}\\\\b([0-9Aa-z]{32})\\\\b"
+  },
+  {
+    "name": "Jumpcloud",
+    "pattern": "(?:jumpcloud).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Juro",
+    "pattern": "(?:juro).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "JWT",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])([eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9]+\\.[eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ]+\\.[SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c]+)(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "jwt_secret",
+    "pattern": "jwt[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "kafka_admin_url",
+    "pattern": "kafka[_-]?admin[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "kafka_instance_name",
+    "pattern": "kafka[_-]?instance[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "kafka_rest_url",
+    "pattern": "kafka[_-]?rest[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "Kanban - 1",
+    "pattern": "(?:kanban).{0,40}\\\\b([0-9A-Z]{12})\\\\b"
+  },
+  {
+    "name": "Kanban - 2",
+    "pattern": "\\\\b([0-9a-z]{1,}.kanbantool.com)\\\\b"
+  },
+  {
+    "name": "Karmacrm",
+    "pattern": "(?:karma).{0,40}\\\\b([a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Keenio - 1",
+    "pattern": "(?:keen).{0,40}\\\\b([0-9a-z]{24})\\\\b"
+  },
+  {
+    "name": "Keenio - 2",
+    "pattern": "(?:keen).{0,40}\\\\b([0-9A-Z]{64})\\\\b"
+  },
+  {
+    "name": "keystore_pass",
+    "pattern": "keystore[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Kickbox",
+    "pattern": "(?:kickbox).{0,40}\\\\b([a-zA-Z0-9_]+[a-zA-Z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Klipfolio",
+    "pattern": "(?:klipfolio).{0,40}\\\\b([0-9a-f]{40})\\\\b"
+  },
+  {
+    "name": "Kontent",
+    "pattern": "(?:kontent).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "kovan_private_key",
+    "pattern": "kovan[_-]?private[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Kraken - 1",
+    "pattern": "(?:kraken).{0,40}\\\\b([0-9A-Za-z\\\\/\\\\+=]{56}[ \"'\\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Kraken - 2",
+    "pattern": "(?:kraken).{0,40}\\\\b([0-9A-Za-z\\\\/\\\\+=]{86,88}[ \"'\\\\r\\\\n]{1})"
+  },
+  {
+    "name": "kubecfg_s3_path",
+    "pattern": "kubecfg[_-]?s3[_-]?path(=| =|:| :)"
+  },
+  {
+    "name": "kubeconfig",
+    "pattern": "kubeconfig(=| =|:| :)"
+  },
+  {
+    "name": "Kucoin - 1",
+    "pattern": "(?:kucoin).{0,40}([ \\\\r\\\\n]{1}[!-~]{7,32}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Kucoin - 2",
+    "pattern": "(?:kucoin).{0,40}\\\\b([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Kucoin - 3",
+    "pattern": "(?:kucoin).{0,40}\\\\b([0-9a-f]{24})\\\\b"
+  },
+  {
+    "name": "kxoltsn3vogdop92m",
+    "pattern": "kxoltsn3vogdop92m(=| =|:| :)"
+  },
+  {
+    "name": "Kylas",
+    "pattern": "(?:kylas).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Languagelayer",
+    "pattern": "(?:languagelayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Lastfm",
+    "pattern": "(?:lastfm).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Launchdarkly",
+    "pattern": "(?:launchdarkly).{0,40}\\\\b([a-z0-9-]{40})\\\\b"
+  },
+  {
+    "name": "Leadfeeder",
+    "pattern": "(?:leadfeeder).{0,40}\\\\b([a-zA-Z0-9-]{43})\\\\b"
+  },
+  {
+    "name": "leanplum_key",
+    "pattern": "leanplum[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "lektor_deploy_password",
+    "pattern": "lektor[_-]?deploy[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "lektor_deploy_username",
+    "pattern": "lektor[_-]?deploy[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Lendflow",
+    "pattern": "(?:lendflow).{0,40}\\\\b([a-zA-Z0-9]{36}\\\\.[a-zA-Z0-9]{235}\\\\.[a-zA-Z0-9]{32}\\\\-[a-zA-Z0-9]{47}\\\\-[a-zA-Z0-9_]{162}\\\\-[a-zA-Z0-9]{42}\\\\-[a-zA-Z0-9_]{40}\\\\-[a-zA-Z0-9_]{66}\\\\-[a-zA-Z0-9_]{59}\\\\-[a-zA-Z0-9]{7}\\\\-[a-zA-Z0-9_]{220})\\\\b"
+  },
+  {
+    "name": "Lessannoyingcrm",
+    "pattern": "(?:less).{0,40}\\\\b([a-zA-Z0-9-]{57})\\\\b"
+  },
+  {
+    "name": "Lexigram",
+    "pattern": "(?:lexigram).{0,40}\\\\b([a-zA-Z0-9\\\\S]{301})\\\\b"
+  },
+  {
+    "name": "lighthouse_api_key",
+    "pattern": "lighthouse[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Linearapi",
+    "pattern": "\\\\b(lin_api_[0-9A-Za-z]{40})\\\\b"
+  },
+  {
+    "name": "Linemessaging",
+    "pattern": "(?:line).{0,40}\\\\b([A-Za-z0-9+/]{171,172})\\\\b"
+  },
+  {
+    "name": "Linenotify",
+    "pattern": "(?:linenotify).{0,40}\\\\b([0-9A-Za-z]{43})\\\\b"
+  },
+  {
+    "name": "LinkedIn_Client_ID",
+    "pattern": "(?i)linkedin(.{0,20})?[0-9a-z]{12}"
+  },
+  {
+    "name": "LinkedIn_Secret_Key",
+    "pattern": "(?i)linkedin(.{0,20})?[0-9a-z]{16}"
+  },
+  {
+    "name": "Linkpreview",
+    "pattern": "(?:linkpreview).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "linux_signing_key",
+    "pattern": "linux[_-]?signing[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Liveagent",
+    "pattern": "(?:liveagent).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Livestorm",
+    "pattern": "(?:livestorm).{0,40}\\\\b(eyJhbGciOiJIUzI1NiJ9\\\\.eyJhdWQiOiJhcGkubGl2ZXN0b3JtLmNvIiwianRpIjoi[0-9A-Z-a-z]{134}\\\\.[0-9A-Za-z\\\\-\\\\_]{43}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "ll_publish_url",
+    "pattern": "ll[_-]?publish[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "ll_shared_key",
+    "pattern": "ll[_-]?shared[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Locationiq",
+    "pattern": "\\\\b(pk\\\\.[a-zA-Z-0-9]{32})\\\\b"
+  },
+  {
+    "name": "Loginradius",
+    "pattern": "(?:loginradius).{0,40}\\\\b([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Lokalisetoken",
+    "pattern": "(?:lokalise).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "looker_test_runner_client_secret",
+    "pattern": "looker[_-]?test[_-]?runner[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "lottie_happo_api_key",
+    "pattern": "lottie[_-]?happo[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "lottie_happo_secret_key",
+    "pattern": "lottie[_-]?happo[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "lottie_s3_secret_key",
+    "pattern": "lottie[_-]?s3[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "lottie_upload_cert_key_password",
+    "pattern": "lottie[_-]?upload[_-]?cert[_-]?key[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "lottie_upload_cert_key_store_password",
+    "pattern": "lottie[_-]?upload[_-]?cert[_-]?key[_-]?store[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Loyverse",
+    "pattern": "(?:loyverse).{0,40}\\\\b([0-9-a-z]{32})\\\\b"
+  },
+  {
+    "name": "Luno - 1",
+    "pattern": "(?:luno).{0,40}\\\\b([a-z0-9]{13})\\\\b"
+  },
+  {
+    "name": "Luno - 2",
+    "pattern": "(?:luno).{0,40}\\\\b([a-zA-Z0-9_-]{43})\\\\b"
+  },
+  {
+    "name": "M3o",
+    "pattern": "(?:m3o).{0,40}\\\\b([0-9A-Za-z]{48})\\\\b"
+  },
+  {
+    "name": "Macaddress",
+    "pattern": "(?:macaddress).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "Madkudu",
+    "pattern": "(?:madkudu).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "magento_auth_password",
+    "pattern": "magento[_-]?auth[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "magento_auth_username",
+    "pattern": "magento[_-]?auth[_-]?username (=| =|:| :)"
+  },
+  {
+    "name": "magento_password",
+    "pattern": "magento[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Magnetic",
+    "pattern": "(?:magnetic).{0,40}\\\\b([0-9Aa-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "mail_password",
+    "pattern": "mail[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Mailboxlayer",
+    "pattern": "(?:mailboxlayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "mailchimp",
+    "pattern": "(W(?:[a-f0-9]{32}(-us[0-9]{1,2}))a-zA-Z0-9)"
+  },
+  {
+    "name": "MailChimp API Key",
+    "pattern": "[0-9a-f]{32}-us[0-9]{1,2}"
+  },
+  {
+    "name": "MailChimp_API_Key",
+    "pattern": "[0-9a-f]{32}-us[0-9]{1,2}"
+  },
+  {
+    "name": "MailChimp_API_Key",
+    "pattern": "[0-9a-f]{32}\\-us[0-9]{1,2}"
+  },
+  {
+    "name": "mailchimp_api_key",
+    "pattern": "mailchimp[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mailchimp_key",
+    "pattern": "mailchimp[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mailer_password",
+    "pattern": "mailer[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Mailerlite",
+    "pattern": "(?:mailerlite).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "mailgun",
+    "pattern": "(key-[0-9a-f]{32})"
+  },
+  {
+    "name": "Mailgun - 2",
+    "pattern": "(?:mailgun).{0,40}\\\\b([a-zA-Z-0-9]{72})\\\\b"
+  },
+  {
+    "name": "Mailgun API Key - 1",
+    "pattern": "key-[0-9a-zA-Z]{32}"
+  },
+  {
+    "name": "Mailgun API key - 2",
+    "pattern": "(mailgun|mg)[0-9a-z]{32}"
+  },
+  {
+    "name": "Mailgun_API_Key",
+    "pattern": "key-[0-9a-zA-Z]{32}"
+  },
+  {
+    "name": "mailgun_api_key",
+    "pattern": "mailgun[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mailgun_apikey",
+    "pattern": "mailgun[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "mailgun_password",
+    "pattern": "mailgun[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "mailgun_priv_key",
+    "pattern": "mailgun[_-]?priv[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Mailgun_Private_Key",
+    "pattern": "key\\-[0-9a-zA-Z]{32}"
+  },
+  {
+    "name": "mailgun_pub_apikey",
+    "pattern": "mailgun[_-]?pub[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "mailgun_pub_key",
+    "pattern": "mailgun[_-]?pub[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mailgun_secret_api_key",
+    "pattern": "mailgun[_-]?secret[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Mailjetbasicauth",
+    "pattern": "(?:mailjet).{0,40}\\\\b([A-Za-z0-9]{87}\\\\=)"
+  },
+  {
+    "name": "Mailjetsms",
+    "pattern": "(?:mailjet).{0,40}\\\\b([A-Za-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Mailmodo",
+    "pattern": "(?:mailmodo).{0,40}\\\\b([A-Z0-9]{7}-[A-Z0-9]{7}-[A-Z0-9]{7}-[A-Z0-9]{7})\\\\b"
+  },
+  {
+    "name": "Mailsac",
+    "pattern": "(?:mailsac).{0,40}\\\\b(k_[0-9A-Za-z]{36,})\\\\b"
+  },
+  {
+    "name": "manage_key",
+    "pattern": "manage[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "manage_secret",
+    "pattern": "manage[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "management_token",
+    "pattern": "management[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "managementapiaccesstoken",
+    "pattern": "managementapiaccesstoken(=| =|:| :)"
+  },
+  {
+    "name": "Mandrill",
+    "pattern": "(?:mandrill).{0,40}\\\\b([A-Za-z0-9_-]{22})\\\\b"
+  },
+  {
+    "name": "mandrill_api_key",
+    "pattern": "mandrill[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Manifest",
+    "pattern": "(?:manifest).{0,40}\\\\b([a-zA-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "manifest_app_token",
+    "pattern": "manifest[_-]?app[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "manifest_app_url",
+    "pattern": "manifest[_-]?app[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "Mapbox - 2",
+    "pattern": "\\\\b(sk\\\\.[a-zA-Z-0-9\\\\.]{80,240})\\\\b"
+  },
+  {
+    "name": "mapbox_access_token",
+    "pattern": "mapbox[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "mapbox_api_token",
+    "pattern": "mapbox[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "mapbox_aws_access_key_id",
+    "pattern": "mapbox[_-]?aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "mapbox_aws_secret_access_key",
+    "pattern": "mapbox[_-]?aws[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mapboxaccesstoken",
+    "pattern": "mapboxaccesstoken(=| =|:| :)"
+  },
+  {
+    "name": "Mapquest",
+    "pattern": "(?:mapquest).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Marketstack",
+    "pattern": "(?:marketstack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "master_password",
+    "pattern": "(master_password).+"
+  },
+  {
+    "name": "Mattermostpersonaltoken - 1",
+    "pattern": "(?:mattermost).{0,40}\\\\b([A-Za-z0-9-_]{1,}.cloud.mattermost.com)\\\\b"
+  },
+  {
+    "name": "Mattermostpersonaltoken - 2",
+    "pattern": "(?:mattermost).{0,40}\\\\b([a-z0-9]{26})\\\\b"
+  },
+  {
+    "name": "Mavenlink",
+    "pattern": "(?:mavenlink).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Maxmindlicense - 1",
+    "pattern": "(?:maxmind|geoip).{0,40}\\\\b([0-9A-Za-z]{16})\\\\b"
+  },
+  {
+    "name": "Maxmindlicense - 2",
+    "pattern": "(?:maxmind|geoip).{0,40}\\\\b([0-9]{2,7})\\\\b"
+  },
+  {
+    "name": "Meaningcloud",
+    "pattern": "(?:meaningcloud).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Mediastack",
+    "pattern": "(?:mediastack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Meistertask",
+    "pattern": "(?:meistertask).{0,40}\\\\b([a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "Mesibo",
+    "pattern": "(?:mesibo).{0,40}\\\\b([0-9A-Za-z]{64})\\\\b"
+  },
+  {
+    "name": "Messagebird",
+    "pattern": "(?:messagebird).{0,40}\\\\b([A-Za-z0-9_-]{25})\\\\b"
+  },
+  {
+    "name": "Metaapi - 1",
+    "pattern": "(?:metaapi|meta-api).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Metaapi - 2",
+    "pattern": "(?:metaapi|meta-api).{0,40}\\\\b([0-9a-f]{24})\\\\b"
+  },
+  {
+    "name": "Metrilo",
+    "pattern": "(?:metrilo).{0,40}\\\\b([a-z0-9]{16})\\\\b"
+  },
+  {
+    "name": "mg_api_key",
+    "pattern": "mg[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mg_public_api_key",
+    "pattern": "mg[_-]?public[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "mh_apikey",
+    "pattern": "mh[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "mh_password",
+    "pattern": "mh[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Microsoft Teams Webhook",
+    "pattern": "https://outlook\\\\.office\\\\.com/webhook/[A-Za-z0-9\\\\-@]+/IncomingWebhook/[A-Za-z0-9\\\\-]+/[A-Za-z0-9\\\\-]+"
+  },
+  {
+    "name": "Microsoft_Teams_Webhook",
+    "pattern": "https://outlook\\.office\\.com/webhook/[A-Za-z0-9\\-@]+/IncomingWebhook/[A-Za-z0-9\\-]+/[A-Za-z0-9\\-]+"
+  },
+  {
+    "name": "Microsoftteamswebhook",
+    "pattern": "(https:\\\\/\\\\/[a-zA-Z-0-9]+\\\\.webhook\\\\.office\\\\.com\\\\/webhookb2\\\\/[a-zA-Z-0-9]{8}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{12}\\\\@[a-zA-Z-0-9]{8}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{12}\\\\/IncomingWebhook\\\\/[a-zA-Z-0-9]{32}\\\\/[a-zA-Z-0-9]{8}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{4}-[a-zA-Z-0-9]{12})"
+  },
+  {
+    "name": "Midise",
+    "pattern": "midi-662b69edd2[a-zA-Z0-9]{54}"
+  },
+  {
+    "name": "mile_zero_key",
+    "pattern": "mile[_-]?zero[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Mindmeister",
+    "pattern": "(?:mindmeister).{0,40}\\\\b([a-zA-Z0-9]{43})\\\\b"
+  },
+  {
+    "name": "minio_access_key",
+    "pattern": "minio[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "minio_secret_key",
+    "pattern": "minio[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Mite - 1",
+    "pattern": "(?:mite).{0,40}\\\\b([0-9a-z]{16})\\\\b"
+  },
+  {
+    "name": "Mite - 2",
+    "pattern": "\\\\b([0-9a-z-]{1,}.mite.yo.lk)\\\\b"
+  },
+  {
+    "name": "Mixmax",
+    "pattern": "(?:mixmax).{0,40}\\\\b([a-zA-Z0-9_-]{36})\\\\b"
+  },
+  {
+    "name": "Mixpanel - 1",
+    "pattern": "(?:mixpanel).{0,40}\\\\b([a-zA-Z0-9.-]{30,40})\\\\b"
+  },
+  {
+    "name": "Mixpanel - 2",
+    "pattern": "(?:mixpanel).{0,40}\\\\b([a-zA-Z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Moderation",
+    "pattern": "(?:moderation).{0,40}\\\\b([a-zA-Z0-9]{36}\\\\.[a-zA-Z0-9]{115}\\\\.[a-zA-Z0-9_]{43})\\\\b"
+  },
+  {
+    "name": "Monday",
+    "pattern": "(?:monday).{0,40}\\\\b(ey[a-zA-Z0-9_.]{210,225})\\\\b"
+  },
+  {
+    "name": "MongoDB_Cloud_Connection_String",
+    "pattern": "mongodb\\+srv://(.*)"
+  },
+  {
+    "name": "Moonclerck",
+    "pattern": "(?:moonclerck).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Moonclerk",
+    "pattern": "(?:moonclerk).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Moosend",
+    "pattern": "(?:moosend).{0,40}\\\\b([0-9Aa-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Mrticktock - 1",
+    "pattern": "(?:mrticktock).{0,40}\\\\b([a-zA-Z0-9!=@#$%()_^]{1,50})"
+  },
+  {
+    "name": "multi_bob_sid",
+    "pattern": "multi[_-]?bob[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "multi_connect_sid",
+    "pattern": "multi[_-]?connect[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "multi_disconnect_sid",
+    "pattern": "multi[_-]?disconnect[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "multi_workflow_sid",
+    "pattern": "multi[_-]?workflow[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "multi_workspace_sid",
+    "pattern": "multi[_-]?workspace[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "my_secret_env",
+    "pattern": "my[_-]?secret[_-]?env(=| =|:| :)"
+  },
+  {
+    "name": "Myfreshworks - 2",
+    "pattern": "(?:freshworks).{0,40}\\\\b([a-z0-9A-Z-]{22})\\\\b"
+  },
+  {
+    "name": "Myintervals",
+    "pattern": "(?:myintervals).{0,40}\\\\b([0-9a-z]{11})\\\\b"
+  },
+  {
+    "name": "mysql_database",
+    "pattern": "mysql[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "mysql_hostname",
+    "pattern": "mysql[_-]?hostname(=| =|:| :)"
+  },
+  {
+    "name": "mysql_password",
+    "pattern": "mysql[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "mysql_root_password",
+    "pattern": "mysql[_-]?root[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "mysql_user",
+    "pattern": "mysql[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "mysql_username",
+    "pattern": "mysql[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "mysqlmasteruser",
+    "pattern": "mysqlmasteruser(=| =|:| :)"
+  },
+  {
+    "name": "mysqlsecret",
+    "pattern": "mysqlsecret(=| =|:| :)"
+  },
+  {
+    "name": "nab_bank_statements",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(08[2-4](?:[- ]?\\d{3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Nasdaqdatalink",
+    "pattern": "(?:nasdaq).{0,40}\\\\b([a-zA-Z0-9_-]{20})\\\\b"
+  },
+  {
+    "name": "nativeevents",
+    "pattern": "nativeevents(=| =|:| :)"
+  },
+  {
+    "name": "Nethunt - 1",
+    "pattern": "(?:nethunt).{0,40}\\\\b([a-zA-Z0-9.-@]{25,30})\\\\b"
+  },
+  {
+    "name": "Nethunt - 2",
+    "pattern": "(?:nethunt).{0,40}\\\\b([a-z0-9-\\\\S]{36})\\\\b"
+  },
+  {
+    "name": "Netlify",
+    "pattern": "(?:netlify).{0,40}\\\\b([A-Za-z0-9_-]{43,45})\\\\b"
+  },
+  {
+    "name": "netlify_api_key",
+    "pattern": "netlify[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Neutrinoapi - 1",
+    "pattern": "(?:neutrinoapi).{0,40}\\\\b([a-zA-Z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Neutrinoapi - 2",
+    "pattern": "(?:neutrinoapi).{0,40}\\\\b([a-zA-Z0-9]{6,24})\\\\b"
+  },
+  {
+    "name": "New_Relic_Admin_API_Key",
+    "pattern": "NRAA-[a-f0-9]{27}"
+  },
+  {
+    "name": "new_relic_beta_token",
+    "pattern": "new[_-]?relic[_-]?beta[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "New_Relic_Insights_Key",
+    "pattern": "NRI(?:I|Q)-[A-Za-z0-9\\-_]{32}"
+  },
+  {
+    "name": "New_Relic_REST_API_Key",
+    "pattern": "NRRA-[a-f0-9]{42}"
+  },
+  {
+    "name": "New_Relic_Synthetics_Location_Key",
+    "pattern": "NRSP-[a-z]{2}[0-9]{2}[a-f0-9]{31}"
+  },
+  {
+    "name": "Newrelic Admin API Key",
+    "pattern": "NRAA-[a-f0-9]{27}"
+  },
+  {
+    "name": "Newrelic Insights API Key",
+    "pattern": "NRI(?:I|Q)-[A-Za-z0-9\\\\-_]{32}"
+  },
+  {
+    "name": "Newrelic REST API Key",
+    "pattern": "NRRA-[a-f0-9]{42}"
+  },
+  {
+    "name": "Newrelic Synthetics Location Key",
+    "pattern": "NRSP-[a-z]{2}[0-9]{2}[a-f0-9]{31}"
+  },
+  {
+    "name": "Newrelicpersonalapikey",
+    "pattern": "(?:newrelic).{0,40}\\\\b([A-Za-z0-9_\\\\.]{4}-[A-Za-z0-9_\\\\.]{42})\\\\b"
+  },
+  {
+    "name": "Newsapi",
+    "pattern": "(?:newsapi).{0,40}\\\\b([a-z0-9]{32})"
+  },
+  {
+    "name": "Newscatcher",
+    "pattern": "(?:newscatcher).{0,40}\\\\b([0-9A-Za-z_]{43})\\\\b"
+  },
+  {
+    "name": "Nexmoapikey - 1",
+    "pattern": "(?:nexmo).{0,40}\\\\b([A-Za-z0-9_-]{8})\\\\b"
+  },
+  {
+    "name": "Nexmoapikey - 2",
+    "pattern": "(?:nexmo).{0,40}\\\\b([A-Za-z0-9_-]{16})\\\\b"
+  },
+  {
+    "name": "nexus_password",
+    "pattern": "nexus[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "nexuspassword",
+    "pattern": "nexuspassword(=| =|:| :)"
+  },
+  {
+    "name": "Nftport",
+    "pattern": "(?:nftport).{0,40}\\\\b([a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "ngrok_auth_token",
+    "pattern": "ngrok[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "ngrok_token",
+    "pattern": "ngrok[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Nicereply",
+    "pattern": "(?:nicereply).{0,40}\\\\b([0-9a-f]{40})\\\\b"
+  },
+  {
+    "name": "Nimble",
+    "pattern": "(?:nimble).{0,40}\\\\b([a-zA-Z0-9]{30})\\\\b"
+  },
+  {
+    "name": "Nitro",
+    "pattern": "(?:nitro).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "node_env",
+    "pattern": "node[_-]?env(=| =|:| :)"
+  },
+  {
+    "name": "node_pre_gyp_accesskeyid",
+    "pattern": "node[_-]?pre[_-]?gyp[_-]?accesskeyid(=| =|:| :)"
+  },
+  {
+    "name": "node_pre_gyp_github_token",
+    "pattern": "node[_-]?pre[_-]?gyp[_-]?github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "node_pre_gyp_secretaccesskey",
+    "pattern": "node[_-]?pre[_-]?gyp[_-]?secretaccesskey(=| =|:| :)"
+  },
+  {
+    "name": "non_token",
+    "pattern": "non[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Noticeable",
+    "pattern": "(?:noticeable).{0,40}\\\\b([0-9a-zA-Z]{20})\\\\b"
+  },
+  {
+    "name": "Notion",
+    "pattern": "\\\\b(secret_[A-Za-z0-9]{43})\\\\b"
+  },
+  {
+    "name": "Notion_Integration_Token",
+    "pattern": "(secret_)([a-zA-Z0-9]{43})"
+  },
+  {
+    "name": "now_token",
+    "pattern": "now[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Nozbeteams",
+    "pattern": "(?:nozbe|nozbeteams).{0,40}\\\\b([0-9A-Za-z]{16}_[0-9A-Za-z\\\\-_]{64}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "npm_api_key",
+    "pattern": "npm[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "npm_api_token",
+    "pattern": "npm[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "npm_auth_token",
+    "pattern": "npm[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "npm_email",
+    "pattern": "npm[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "npm_password",
+    "pattern": "npm[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "npm_secret_key",
+    "pattern": "npm[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "npm_token - 1",
+    "pattern": "npm[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "NSW_Drivers_Licence_Card_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])([0-9][ ][0-9]{3}[ ][0-9]{3}[ ][0-9]{3})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "NSW_Drivers_Licence_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "nuget_api_key - 1",
+    "pattern": "(oy2[a-z0-9]{43})"
+  },
+  {
+    "name": "nuget_api_key - 2",
+    "pattern": "nuget[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "numbers_service_pass",
+    "pattern": "numbers[_-]?service[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Numverify",
+    "pattern": "(?:numverify).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Nutritionix - 1",
+    "pattern": "(?:nutritionix).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Nutritionix - 2",
+    "pattern": "(?:nutritionix).{0,40}\\\\b([a-z0-9]{8})\\\\b"
+  },
+  {
+    "name": "Nylas",
+    "pattern": "(?:nylas).{0,40}\\\\b([0-9A-Za-z]{30})\\\\b"
+  },
+  {
+    "name": "Nytimes",
+    "pattern": "(?:nytimes).{0,40}\\\\b([a-z0-9A-Z-]{32})\\\\b"
+  },
+  {
+    "name": "Oanda",
+    "pattern": "(?:oanda).{0,40}\\\\b([a-zA-Z0-9]{24})\\\\b"
+  },
+  {
+    "name": "oauth_token",
+    "pattern": "oauth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "object_storage_password",
+    "pattern": "object[_-]?storage[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "object_storage_region_name",
+    "pattern": "object[_-]?storage[_-]?region[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "object_store_bucket",
+    "pattern": "object[_-]?store[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "object_store_creds",
+    "pattern": "object[_-]?store[_-]?creds(=| =|:| :)"
+  },
+  {
+    "name": "oc_pass",
+    "pattern": "oc[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "octest_app_password",
+    "pattern": "octest[_-]?app[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "octest_app_username",
+    "pattern": "octest[_-]?app[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "octest_password",
+    "pattern": "octest[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ofta_key",
+    "pattern": "ofta[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "ofta_region",
+    "pattern": "ofta[_-]?region(=| =|:| :)"
+  },
+  {
+    "name": "ofta_secret",
+    "pattern": "ofta[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "okta_client_token",
+    "pattern": "okta[_-]?client[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "okta_oauth2_client_secret",
+    "pattern": "okta[_-]?oauth2[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "okta_oauth2_clientsecret",
+    "pattern": "okta[_-]?oauth2[_-]?clientsecret(=| =|:| :)"
+  },
+  {
+    "name": "omise_key",
+    "pattern": "omise[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "omise_pkey",
+    "pattern": "omise[_-]?pkey(=| =|:| :)"
+  },
+  {
+    "name": "omise_pubkey",
+    "pattern": "omise[_-]?pubkey(=| =|:| :)"
+  },
+  {
+    "name": "omise_skey",
+    "pattern": "omise[_-]?skey(=| =|:| :)"
+  },
+  {
+    "name": "Omnisend",
+    "pattern": "(?:omnisend).{0,40}\\\\b([a-z0-9A-Z-]{75})\\\\b"
+  },
+  {
+    "name": "Onedesk - 1",
+    "pattern": "(?:onedesk).{0,40}\\\\b([a-zA-Z0-9!=@#$%^]{8,64})"
+  },
+  {
+    "name": "Onelogin - 2",
+    "pattern": "secret[a-zA-Z0-9_' \"=]{0,20}([a-z0-9]{64})"
+  },
+  {
+    "name": "Onepagecrm - 1",
+    "pattern": "(?:onepagecrm).{0,40}\\\\b([a-zA-Z0-9=]{44})"
+  },
+  {
+    "name": "Onepagecrm - 2",
+    "pattern": "(?:onepagecrm).{0,40}\\\\b([a-z0-9]{24})\\\\b"
+  },
+  {
+    "name": "onesignal_api_key",
+    "pattern": "onesignal[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "onesignal_user_auth_key",
+    "pattern": "onesignal[_-]?user[_-]?auth[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Onwaterio",
+    "pattern": "(?:onwater).{0,40}\\\\b([a-zA-Z0-9_-]{20})\\\\b"
+  },
+  {
+    "name": "Oopspam",
+    "pattern": "(?:oopspam).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "open_whisk_key",
+    "pattern": "open[_-]?whisk[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Opencagedata",
+    "pattern": "(?:opencagedata).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Opengraphr",
+    "pattern": "(?:opengraphr).{0,40}\\\\b([0-9Aa-zA-Z]{80})\\\\b"
+  },
+  {
+    "name": "Openuv",
+    "pattern": "(?:openuv).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Openweather",
+    "pattern": "(?:openweather).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "openwhisk_key",
+    "pattern": "openwhisk[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Optimizely",
+    "pattern": "(?:optimizely).{0,40}\\\\b([0-9A-Za-z-:]{54})\\\\b"
+  },
+  {
+    "name": "os_auth_url",
+    "pattern": "os[_-]?auth[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "os_password",
+    "pattern": "os[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ossrh_jira_password",
+    "pattern": "ossrh[_-]?jira[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ossrh_pass",
+    "pattern": "ossrh[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "ossrh_password",
+    "pattern": "ossrh[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "ossrh_secret",
+    "pattern": "ossrh[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "ossrh_username",
+    "pattern": "ossrh[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "outlook_team",
+    "pattern": "(https://outlook.office.com/webhook/[0-9a-f-]{36}@)"
+  },
+  {
+    "name": "Owlbot",
+    "pattern": "(?:owlbot).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "packagecloud_token",
+    "pattern": "packagecloud[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "page_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((Page 1 of ([1-9]|1[0-9]|20)))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "pagerduty_apikey",
+    "pattern": "pagerduty[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "Pagerdutyapikey",
+    "pattern": "(?:pagerduty).{0,40}\\\\b([a-z]{1}\\\\+[a-zA-Z]{9}\\\\-[a-z]{2}\\\\-[a-z0-9]{5})\\\\b"
+  },
+  {
+    "name": "Pandadoc",
+    "pattern": "(?:pandadoc).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Pandascore",
+    "pattern": "(?:pandascore).{0,40}([ \\\\r\\\\n]{0,1}[0-9A-Za-z\\\\-\\\\_]{51}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Paralleldots",
+    "pattern": "(?:paralleldots).{0,40}\\\\b([0-9A-Za-z]{43})\\\\b"
+  },
+  {
+    "name": "parse_js_key",
+    "pattern": "parse[_-]?js[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Partnerstack",
+    "pattern": "(?:partnerstack).{0,40}\\\\b([0-9A-Za-z]{64})\\\\b"
+  },
+  {
+    "name": "Passbase",
+    "pattern": "(?:passbase).{0,40}\\\\b([a-zA-Z0-9]{128})\\\\b"
+  },
+  {
+    "name": "Password in URL",
+    "pattern": "[a-zA-Z]{3,10}://[^/\\\\s:@]{3,20}:[^/\\\\s:@]{3,20}@.{1,100}[\"'\\\\s]"
+  },
+  {
+    "name": "passwordtravis",
+    "pattern": "passwordtravis(=| =|:| :)"
+  },
+  {
+    "name": "Pastebin",
+    "pattern": "(?:pastebin).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "Paymoapp",
+    "pattern": "(?:paymoapp).{0,40}\\\\b([a-zA-Z0-9]{44})\\\\b"
+  },
+  {
+    "name": "Paymongo",
+    "pattern": "(?:paymongo).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "PayPal Braintree access token",
+    "pattern": "access_token\\\\$production\\\\$[0-9a-z]{16}\\\\$[0-9a-f]{32}"
+  },
+  {
+    "name": "PayPal_Braintree_Access_Token",
+    "pattern": "access_token$production$[0-9a-z]{16}$[0-9a-f]{32}"
+  },
+  {
+    "name": "paypal_braintree_access_token",
+    "pattern": "(access_token$production$[0-9a-z]{16}$[0-9a-f]{32})"
+  },
+  {
+    "name": "paypal_client_secret",
+    "pattern": "paypal[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Paypaloauth - 1",
+    "pattern": "\\\\b([A-Za-z0-9_\\\\.]{7}-[A-Za-z0-9_\\\\.]{72})\\\\b"
+  },
+  {
+    "name": "Paypaloauth - 2",
+    "pattern": "\\\\b([A-Za-z0-9_\\\\.]{69}-[A-Za-z0-9_\\\\.]{10})\\\\b"
+  },
+  {
+    "name": "Paystack",
+    "pattern": "\\\\b(sk\\\\_[a-z]{1,}\\\\_[A-Za-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Pdflayer",
+    "pattern": "(?:pdflayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Pdfshift",
+    "pattern": "(?:pdfshift).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "Peopledatalabs",
+    "pattern": "(?:peopledatalabs).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Pepipost",
+    "pattern": "(?:pepipost|netcore).{0,40}\\\\b([a-zA-Z-0-9]{32})\\\\b"
+  },
+  {
+    "name": "percy_project",
+    "pattern": "percy[_-]?project(=| =|:| :)"
+  },
+  {
+    "name": "percy_token",
+    "pattern": "percy[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "personal_key",
+    "pattern": "personal[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "personal_secret",
+    "pattern": "personal[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "pg_database",
+    "pattern": "pg[_-]?database(=| =|:| :)"
+  },
+  {
+    "name": "pg_host",
+    "pattern": "pg[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "PGP private key block",
+    "pattern": "-----BEGIN PGP PRIVATE KEY BLOCK-----"
+  },
+  {
+    "name": "PGP_Private_Key",
+    "pattern": "-----BEGIN PGP PRIVATE KEY BLOCK-----"
+  },
+  {
+    "name": "Picatic API key",
+    "pattern": "sk_live_[0-9a-z]{32}"
+  },
+  {
+    "name": "Picatic_API_Key",
+    "pattern": "sk_live_[0-9a-z]{32}"
+  },
+  {
+    "name": "Picatic_API_Key",
+    "pattern": "sk\\_[live|test]\\_[0-9a-z]{32}"
+  },
+  {
+    "name": "Pipedream",
+    "pattern": "(?:pipedream).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Pipedrive",
+    "pattern": "(?:pipedrive).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Pivotaltracker",
+    "pattern": "(?:pivotal).{0,40}([a-z0-9]{32})"
+  },
+  {
+    "name": "Pixabay",
+    "pattern": "(?:pixabay).{0,40}\\\\b([a-z0-9-]{34})\\\\b"
+  },
+  {
+    "name": "places_api_key",
+    "pattern": "places[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "places_apikey",
+    "pattern": "places[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "Plaidkey - 1",
+    "pattern": "(?:plaid).{0,40}\\\\b([a-z0-9]{24})\\\\b"
+  },
+  {
+    "name": "Plaidkey - 2",
+    "pattern": "(?:plaid).{0,40}\\\\b([a-z0-9]{30})\\\\b"
+  },
+  {
+    "name": "Planviewleankit - 1",
+    "pattern": "(?:planviewleankit|planview).{0,40}\\\\b([0-9a-f]{128})\\\\b"
+  },
+  {
+    "name": "Planviewleankit - 2",
+    "pattern": "(?:planviewleankit|planview).{0,40}(?:subdomain).\\\\b([a-zA-Z][a-zA-Z0-9.-]{1,23}[a-zA-Z0-9])\\\\b"
+  },
+  {
+    "name": "Planyo",
+    "pattern": "(?:planyo).{0,40}\\\\b([0-9a-z]{62})\\\\b"
+  },
+  {
+    "name": "Plivo - 1",
+    "pattern": "(?:plivo).{0,40}\\\\b([A-Za-z0-9_-]{40})\\\\b"
+  },
+  {
+    "name": "Plivo - 2",
+    "pattern": "(?:plivo).{0,40}\\\\b([A-Z]{20})\\\\b"
+  },
+  {
+    "name": "plotly_apikey",
+    "pattern": "plotly[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "plugin_password",
+    "pattern": "plugin[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Poloniex - 1",
+    "pattern": "(?:poloniex).{0,40}\\\\b([0-9a-f]{128})\\\\b"
+  },
+  {
+    "name": "Poloniex - 2",
+    "pattern": "(?:poloniex).{0,40}\\\\b([0-9A-Z]{8}-[0-9A-Z]{8}-[0-9A-Z]{8}-[0-9A-Z]{8})\\\\b"
+  },
+  {
+    "name": "Polygon",
+    "pattern": "(?:polygon).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Positionstack",
+    "pattern": "(?:positionstack).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "Postageapp",
+    "pattern": "(?:postageapp).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "postgres_env_postgres_db",
+    "pattern": "postgres[_-]?env[_-]?postgres[_-]?db(=| =|:| :)"
+  },
+  {
+    "name": "postgres_env_postgres_password",
+    "pattern": "postgres[_-]?env[_-]?postgres[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "postgresql_db",
+    "pattern": "postgresql[_-]?db(=| =|:| :)"
+  },
+  {
+    "name": "postgresql_pass",
+    "pattern": "postgresql[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Posthog",
+    "pattern": "\\\\b(phc_[a-zA-Z0-9_]{43})\\\\b"
+  },
+  {
+    "name": "Postman",
+    "pattern": "\\\\b(PMAK-[a-zA-Z-0-9]{59})\\\\b"
+  },
+  {
+    "name": "Postmark",
+    "pattern": "(?:postmark).{0,40}\\\\b([0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Powrbot",
+    "pattern": "(?:powrbot).{0,40}\\\\b([a-z0-9A-Z]{40})\\\\b"
+  },
+  {
+    "name": "prebuild_auth",
+    "pattern": "prebuild[_-]?auth(=| =|:| :)"
+  },
+  {
+    "name": "preferred_username",
+    "pattern": "preferred[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "pring_mail_username",
+    "pattern": "pring[_-]?mail[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "private_key",
+    "pattern": "-----(?:(?:BEGIN|END) )(?:(?:EC|PGP|DSA|RSA|OPENSSH).)?PRIVATE.KEY(.BLOCK)?-----"
+  },
+  {
+    "name": "private_signing_password",
+    "pattern": "private[_-]?signing[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Privatekey",
+    "pattern": "-----\\\\s*?BEGIN[ A-Z0-9_-]*?PRIVATE KEY\\\\s*?-----[\\\\s\\\\S]*?----\\\\s*?END[ A-Z0-9_-]*? PRIVATE KEY\\\\s*?-----"
+  },
+  {
+    "name": "prod_access_key_id",
+    "pattern": "prod[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "prod_password",
+    "pattern": "prod[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "prod_secret_key",
+    "pattern": "prod[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "project_config",
+    "pattern": "project[_-]?config(=| =|:| :)"
+  },
+  {
+    "name": "Prospectcrm",
+    "pattern": "(?:prospect).{0,40}\\\\b([a-z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Prospectio",
+    "pattern": "(?:prospect).{0,40}\\\\b([a-z0-9A-Z-]{50})\\\\b"
+  },
+  {
+    "name": "Protocolsio",
+    "pattern": "(?:protocols).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Proxycrawl",
+    "pattern": "(?:proxycrawl).{0,40}\\\\b([a-zA-Z0-9_]{22})\\\\b"
+  },
+  {
+    "name": "publish_access",
+    "pattern": "publish[_-]?access(=| =|:| :)"
+  },
+  {
+    "name": "publish_key",
+    "pattern": "publish[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "publish_secret",
+    "pattern": "publish[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Pubnubpublishkey - 1",
+    "pattern": "\\\\b(sub-c-[0-9a-z]{8}-[a-z]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Pubnubpublishkey - 2",
+    "pattern": "\\\\b(pub-c-[0-9a-z]{8}-[0-9a-z]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Purestake",
+    "pattern": "(?:purestake).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Pushbulletapikey",
+    "pattern": "(?:pushbullet).{0,40}\\\\b([A-Za-z0-9_\\\\.]{34})\\\\b"
+  },
+  {
+    "name": "Pusherchannelkey - 1",
+    "pattern": "(?:key).{0,40}\\\\b([a-z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Pusherchannelkey - 2",
+    "pattern": "(?:pusher).{0,40}\\\\b([a-z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Pusherchannelkey - 3",
+    "pattern": "(?:pusher).{0,40}\\\\b([0-9]{7})\\\\b"
+  },
+  {
+    "name": "pushover_token",
+    "pattern": "pushover[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "PyPI upload token",
+    "pattern": "pypi-AgEIcHlwaS5vcmc[A-Za-z0-9-_]{50,1000}"
+  },
+  {
+    "name": "pypi_passowrd",
+    "pattern": "pypi[_-]?passowrd(=| =|:| :)"
+  },
+  {
+    "name": "PyPI_Upload_Token",
+    "pattern": "pypi-AgEIcHlwaS5vcmc[A-Za-z0-9\\-_]{50,1000}"
+  },
+  {
+    "name": "qiita_token",
+    "pattern": "qiita[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Qualaroo",
+    "pattern": "(?:qualaroo).{0,40}\\\\b([a-z0-9A-Z=]{64})"
+  },
+  {
+    "name": "Qubole",
+    "pattern": "(?:qubole).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Quickmetrics",
+    "pattern": "(?:quickmetrics).{0,40}\\\\b([a-zA-Z0-9_-]{22})\\\\b"
+  },
+  {
+    "name": "quip_token",
+    "pattern": "quip[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "rabbitmq_password",
+    "pattern": "rabbitmq[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "randrmusicapiaccesstoken",
+    "pattern": "randrmusicapiaccesstoken(=| =|:| :)"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0020_ServerName_21454193_CEP2_0",
+    "pattern": "(?i)(tcp:)?([a-z\\-_0-9:\\.]{1,50}(\\.database\\.azure\\.com|\\.database(\\.secure)?\\.windows\\.net|\\.cloudapp\\.net|\\.database\\.usgovcloudapi\\.net|\\.database\\.chinacloudapi\\.cn|\\.database\\.cloudapi\\.de))"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0030_9beb734f_ba2b_452b_b422_589f5ac467ef_43332040_CEP2_0",
+    "pattern": "(?i)Shared(Access(Policy)?Key|SecretValue)\\s?="
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0050_Partial_8305ad49_df2a_4e1e_a008_fc63cb1db966_49652976_CEP2_0",
+    "pattern": "(?i)iotHub"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_17ba94a9_a24c_4c84_a838_22a1c0c192e7_26987408_CEP2_0",
+    "pattern": "(?i)Key|Credential"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_AccountKey_41560081_CEP2_0",
+    "pattern": "(?i)(Storage)?.?Account.?Key"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_AccountName_40041277_CEP2_0",
+    "pattern": "(?i)AccountName=([a-z0-9_]+);"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0",
+    "pattern": "(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_Endpoint_24827179_CEP2_0",
+    "pattern": "(?i)Endpoint=(https?://[a-z0-9_]{3,50}\\.(table|blob|queue|file)\\.[a-z0-9\\.]{10,50})/?;"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_EndpointSuffix_64844482_CEP2_0",
+    "pattern": "(?i)^\\Wcore\\.windows\\.net"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0070_EndpointSuffix_22118023",
+    "pattern": "\\(\\?i\\)EndpointSuffix=\\(\\[a\\-z0\\-9\\._\\]\\{10,50\\}\\)\\[;\"\\\\"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0080_AccountEndpoint_38496415",
+    "pattern": "\\(\\?i\\)AccountEndpoint=\\(https\\?://\\[a\\-z0\\-9_\\.\\]\\+\\\\\\.documents\\\\\\.azure\\\\\\.com\\(:\\\\d\\+\\)\\?\\)/\\?\\[;\"\\\\"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0080_Partial_1eb5757c_210e_46a5_876e_b0ad231103e9_10923418_CEP2_0",
+    "pattern": "(?i)(Doc(ument)?|cosmos)Db(Conn(ection)?Str(ing)?|(Access)?Key)"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0090_b08f98f2_d980_4598_814b_67c29887ebff_33624151_CEP2_0",
+    "pattern": "userPWD="
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0130_AzureBatch_a5d6121e_e9af_4b7d_a7da_9aad47e4c66d_53046711_CEP2_0",
+    "pattern": "(?i)batch\\.azure\\.com"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0130_Prefix_a853ad91_d200_41b2_8dc4_4ce41dda3b81_3056034_CEP2_0",
+    "pattern": "(?i)((SharedAccess(Policy)?|SAS|Primary|Secondary)Key|SharedAccessSignature|SharedKey)[ -~]{0,50}$"
+  },
+  {
+    "name": "Ranker_CSCAN_AZURE0140_RefreshToken_74aa94f2_34ed_40bf_ba88_0bc17398a9cf_9381496_CEP2_0",
+    "pattern": "(?i)\\Wrefresh.?token"
+  },
+  {
+    "name": "Ranker_CSCAN_GENERAL0030_ServerName_53517805",
+    "pattern": "\\(\\?i\\)\\(\\^\\|\\[\\^a\\-z\\]\\)\\(\\(Remote\\ \\?LU\\(\\ \\?Alias\\)\\?\\|host\\(name\\)\\?\\|data\\ source\\|server\\|addr\\|\\(network\\ \\)\\?address\\)\\(\\\\s\\{0,4\\}=\\\\s\\{0,4\\}\\|:\\\\s\\{0,4\\}\\[\"\\\\"
+  },
+  {
+    "name": "Rapidapi",
+    "pattern": "(?:rapidapi).{0,40}\\\\b([A-Za-z0-9_-]{50})\\\\b"
+  },
+  {
+    "name": "Raven",
+    "pattern": "(?:raven).{0,40}\\\\b([A-Z0-9-]{16})\\\\b"
+  },
+  {
+    "name": "Rawg",
+    "pattern": "(?:rawg).{0,40}\\\\b([0-9Aa-z]{32})\\\\b"
+  },
+  {
+    "name": "Razorpay - 1",
+    "pattern": "\\\\brzp_\\\\w{2,6}_\\\\w{10,20}\\\\b"
+  },
+  {
+    "name": "Readme",
+    "pattern": "(?:readme).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "Reallysimplesystems",
+    "pattern": "\\\\b(ey[a-zA-Z0-9-._]{153}.ey[a-zA-Z0-9-._]{916,1000})\\\\b"
+  },
+  {
+    "name": "Rebrandly",
+    "pattern": "(?:rebrandly).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "redis_stunnel_urls",
+    "pattern": "redis[_-]?stunnel[_-]?urls(=| =|:| :)"
+  },
+  {
+    "name": "REDIS_URL",
+    "pattern": "(REDIS_URL).+"
+  },
+  {
+    "name": "rediscloud_url",
+    "pattern": "rediscloud[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "Refiner",
+    "pattern": "(?:refiner).{0,40}\\\\b([0-9Aa-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "refresh_token",
+    "pattern": "refresh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "registry_pass",
+    "pattern": "registry[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "registry_secure",
+    "pattern": "registry[_-]?secure(=| =|:| :)"
+  },
+  {
+    "name": "release_gh_token",
+    "pattern": "release[_-]?gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "release_token",
+    "pattern": "release[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Repairshopr - 1",
+    "pattern": "(?:repairshopr).{0,40}\\\\b([a-zA-Z0-9_.!+$#^*]{3,32})\\\\b"
+  },
+  {
+    "name": "Repairshopr - 2",
+    "pattern": "(?:repairshopr).{0,40}\\\\b([a-zA-Z0-9-]{51})\\\\b"
+  },
+  {
+    "name": "reporting_webdav_pwd",
+    "pattern": "reporting[_-]?webdav[_-]?pwd(=| =|:| :)"
+  },
+  {
+    "name": "reporting_webdav_url",
+    "pattern": "reporting[_-]?webdav[_-]?url(=| =|:| :)"
+  },
+  {
+    "name": "repotoken",
+    "pattern": "repotoken(=| =|:| :)"
+  },
+  {
+    "name": "rest_api_key",
+    "pattern": "rest[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Restpack",
+    "pattern": "(?:restpack).{0,40}\\\\b([a-zA-Z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Restpackhtmltopdfapi",
+    "pattern": "(?:restpack).{0,40}\\\\b([0-9A-Za-z]{48})\\\\b"
+  },
+  {
+    "name": "Rev - 1",
+    "pattern": "(?:rev).{0,40}\\\\b([0-9a-zA-Z\\\\/\\\\+]{27}\\\\=[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Rev - 2",
+    "pattern": "(?:rev).{0,40}\\\\b([0-9a-zA-Z\\\\-]{27}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Revampcrm - 1",
+    "pattern": "(?:revamp).{0,40}\\\\b([a-zA-Z0-9]{40}\\\\b)"
+  },
+  {
+    "name": "Revampcrm - 2",
+    "pattern": "(?:revamp).{0,40}\\\\b([a-zA-Z0-9.-@]{25,30})\\\\b"
+  },
+  {
+    "name": "Ringcentral - 1",
+    "pattern": "(?:ringcentral).{0,40}\\\\b(https://www.[0-9A-Za-z_-]{1,}.com)\\\\b"
+  },
+  {
+    "name": "Ringcentral - 2",
+    "pattern": "(?:ringcentral).{0,40}\\\\b([0-9A-Za-z_-]{22})\\\\b"
+  },
+  {
+    "name": "rinkeby_private_key",
+    "pattern": "rinkeby[_-]?private[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Riot_Games_Developer_API_Key",
+    "pattern": "RGAPI-[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"
+  },
+  {
+    "name": "Ritekit",
+    "pattern": "(?:ritekit).{0,40}\\\\b([0-9a-f]{44})\\\\b"
+  },
+  {
+    "name": "RKCS8",
+    "pattern": "-----BEGIN PRIVATE KEY-----"
+  },
+  {
+    "name": "Roaring",
+    "pattern": "(?:roaring).{0,40}\\\\b([0-9A-Za-z_-]{28})\\\\b"
+  },
+  {
+    "name": "Rocketreach",
+    "pattern": "(?:rocketreach).{0,40}\\\\b([a-z0-9-]{39})\\\\b"
+  },
+  {
+    "name": "Roninapp - 1",
+    "pattern": "(?:ronin).{0,40}\\\\b([0-9Aa-zA-Z]{3,32})\\\\b"
+  },
+  {
+    "name": "Roninapp - 2",
+    "pattern": "(?:ronin).{0,40}\\\\b([0-9a-zA-Z]{26})\\\\b"
+  },
+  {
+    "name": "ropsten_private_key",
+    "pattern": "ropsten[_-]?private[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Route4me",
+    "pattern": "(?:route4me).{0,40}\\\\b([0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "route53_access_key_id",
+    "pattern": "route53[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "Rownd - 1",
+    "pattern": "(?:rownd).{0,40}\\\\b([a-z0-9]{8}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Rownd - 2",
+    "pattern": "(?:rownd).{0,40}\\\\b([a-z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Rownd - 3",
+    "pattern": "(?:rownd).{0,40}\\\\b([0-9]{18})\\\\b"
+  },
+  {
+    "name": "RSA private key",
+    "pattern": "-----BEGIN RSA PRIVATE KEY-----"
+  },
+  {
+    "name": "RSA_Private_Key",
+    "pattern": "-----BEGIN RSA PRIVATE KEY-----"
+  },
+  {
+    "name": "rtd_key_pass",
+    "pattern": "rtd[_-]?key[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "rtd_store_pass",
+    "pattern": "rtd[_-]?store[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Rubygems",
+    "pattern": "\\\\b(rubygems_[a-zA0-9]{48})\\\\b"
+  },
+  {
+    "name": "rubygems_auth_token",
+    "pattern": "rubygems[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Runrunit - 1",
+    "pattern": "(?:runrunit).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "Runrunit - 2",
+    "pattern": "(?:runrunit).{0,40}\\\\b([0-9A-Za-z]{18,20})\\\\b"
+  },
+  {
+    "name": "Russian_Passport_Number_International",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((\\d{2}[ -]?\\d{7}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "s3_access_key",
+    "pattern": "s3[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "s3_access_key_id",
+    "pattern": "s3[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "s3_bucket_name_app_logs",
+    "pattern": "s3[_-]?bucket[_-]?name[_-]?app[_-]?logs(=| =|:| :)"
+  },
+  {
+    "name": "s3_bucket_name_assets",
+    "pattern": "s3[_-]?bucket[_-]?name[_-]?assets(=| =|:| :)"
+  },
+  {
+    "name": "s3_external_3_amazonaws_com",
+    "pattern": "s3[_-]?external[_-]?3[_-]?amazonaws[_-]?com(=| =|:| :)"
+  },
+  {
+    "name": "s3_key",
+    "pattern": "s3[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "s3_key_app_logs",
+    "pattern": "s3[_-]?key[_-]?app[_-]?logs(=| =|:| :)"
+  },
+  {
+    "name": "s3_key_assets",
+    "pattern": "s3[_-]?key[_-]?assets(=| =|:| :)"
+  },
+  {
+    "name": "s3_secret_app_logs",
+    "pattern": "s3[_-]?secret[_-]?app[_-]?logs(=| =|:| :)"
+  },
+  {
+    "name": "s3_secret_assets",
+    "pattern": "s3[_-]?secret[_-]?assets(=| =|:| :)"
+  },
+  {
+    "name": "s3_secret_key",
+    "pattern": "s3[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "s3_user_secret",
+    "pattern": "s3[_-]?user[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "sacloud_access_token",
+    "pattern": "sacloud[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "sacloud_access_token_secret",
+    "pattern": "sacloud[_-]?access[_-]?token[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "sacloud_api",
+    "pattern": "sacloud[_-]?api(=| =|:| :)"
+  },
+  {
+    "name": "Salesblink",
+    "pattern": "(?:salesblink).{0,40}\\\\b([a-zA-Z]{16})\\\\b"
+  },
+  {
+    "name": "Salescookie",
+    "pattern": "(?:salescookie).{0,40}\\\\b([a-zA-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Salesflare",
+    "pattern": "(?:salesflare).{0,40}\\\\b([a-zA-Z0-9_]{45})\\\\b"
+  },
+  {
+    "name": "salesforce_bulk_test_password",
+    "pattern": "salesforce[_-]?bulk[_-]?test[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "salesforce_bulk_test_security_token",
+    "pattern": "salesforce[_-]?bulk[_-]?test[_-]?security[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "sandbox_access_token",
+    "pattern": "sandbox[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "sandbox_aws_access_key_id",
+    "pattern": "sandbox[_-]?aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "sandbox_aws_secret_access_key",
+    "pattern": "sandbox[_-]?aws[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Satismeterprojectkey - 1",
+    "pattern": "(?:satismeter).{0,40}\\\\b([a-zA-Z0-9]{4,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,12})\\\\b"
+  },
+  {
+    "name": "Satismeterprojectkey - 2",
+    "pattern": "(?:satismeter).{0,40}\\\\b([a-zA-Z0-9]{24})\\\\b"
+  },
+  {
+    "name": "Satismeterprojectkey - 3",
+    "pattern": "(?:satismeter).{0,40}\\\\b([a-zA-Z0-9!=@#$%^]{6,32})"
+  },
+  {
+    "name": "Satismeterwritekey",
+    "pattern": "(?:satismeter).{0,40}\\\\b([a-z0-9A-Z]{16})\\\\b"
+  },
+  {
+    "name": "sauce_access_key",
+    "pattern": "sauce[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "sauce_token",
+    "pattern": "(sauce.{0,50}(\"|')?[0-9a-f-]{36}(\"|')?)"
+  },
+  {
+    "name": "Saucelabs - 1",
+    "pattern": "\\\\b(oauth\\\\-[a-z0-9]{8,}\\\\-[a-z0-9]{5})\\\\b"
+  },
+  {
+    "name": "Saucelabs - 2",
+    "pattern": "(?:saucelabs).{0,40}\\\\b([a-z0-9]{8}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{4}\\\\-[a-z0-9]{12})\\\\b"
+  },
+  {
+    "name": "Scalewaykey",
+    "pattern": "(?:scaleway).{0,40}\\\\b([0-9a-z]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Scanner_SymmetricKey128_SymmetricKey_61027830_CEP2_0",
+    "pattern": "\\(\\?i\\)\\[\\^\\\\w/\\\\\\+\\\\\\._\\$,\\\\\\]\\(\\[a\\-z0\\-9/\\\\\\+\\]\\{22\\}==\\)\\(\\[\\^\\\\w/\\\\\\+\\\\\\.\\$\\]\\|\\$\\)"
+  },
+  {
+    "name": "Scanner_SymmetricKey360_SymmetricKey_31201899_CEP2_0",
+    "pattern": "\\(\\?i\\)\\[\\^\\\\w/\\\\\\+\\\\\\.\\\\\\-\\$,\\\\\\]\\(\\[a\\-z0\\-9/\\\\\\+\\]\\{60\\}\\)\\[\\^\\\\w/\\\\\\+\\\\\\.\\\\\\-\\$,\\\\\\]"
+  },
+  {
+    "name": "Scrapeowl",
+    "pattern": "(?:scrapeowl).{0,40}\\\\b([0-9a-z]{30})\\\\b"
+  },
+  {
+    "name": "Scraperapi",
+    "pattern": "(?:scraperapi).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Scraperbox",
+    "pattern": "(?:scraperbox).{0,40}\\\\b([A-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Scrapersite",
+    "pattern": "(?:scrapersite).{0,40}\\\\b([a-zA-Z0-9]{45})\\\\b"
+  },
+  {
+    "name": "Scrapestack",
+    "pattern": "(?:scrapestack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Scrapfly",
+    "pattern": "(?:scrapfly).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Scrapingant",
+    "pattern": "(?:scrapingant).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Scrapingbee",
+    "pattern": "(?:scrapingbee).{0,40}\\\\b([A-Z0-9]{80})\\\\b"
+  },
+  {
+    "name": "Screenshotapi",
+    "pattern": "(?:screenshotapi).{0,40}\\\\b([0-9A-Z]{7}\\\\-[0-9A-Z]{7}\\\\-[0-9A-Z]{7}\\\\-[0-9A-Z]{7})\\\\b"
+  },
+  {
+    "name": "Screenshotlayer",
+    "pattern": "(?:screenshotlayer).{0,40}\\\\b([a-zA-Z0-9_]{32})\\\\b"
+  },
+  {
+    "name": "scrutinizer_token",
+    "pattern": "scrutinizer[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "sdr_token",
+    "pattern": "sdr[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "secret_0",
+    "pattern": "secret[_-]?0(=| =|:| :)"
+  },
+  {
+    "name": "secret_1",
+    "pattern": "secret[_-]?1(=| =|:| :)"
+  },
+  {
+    "name": "secret_10",
+    "pattern": "secret[_-]?10(=| =|:| :)"
+  },
+  {
+    "name": "secret_11",
+    "pattern": "secret[_-]?11(=| =|:| :)"
+  },
+  {
+    "name": "secret_2",
+    "pattern": "secret[_-]?2(=| =|:| :)"
+  },
+  {
+    "name": "secret_3",
+    "pattern": "secret[_-]?3(=| =|:| :)"
+  },
+  {
+    "name": "secret_4",
+    "pattern": "secret[_-]?4(=| =|:| :)"
+  },
+  {
+    "name": "secret_5",
+    "pattern": "secret[_-]?5(=| =|:| :)"
+  },
+  {
+    "name": "secret_6",
+    "pattern": "secret[_-]?6(=| =|:| :)"
+  },
+  {
+    "name": "secret_7",
+    "pattern": "secret[_-]?7(=| =|:| :)"
+  },
+  {
+    "name": "secret_8",
+    "pattern": "secret[_-]?8(=| =|:| :)"
+  },
+  {
+    "name": "secret_9",
+    "pattern": "secret[_-]?9(=| =|:| :)"
+  },
+  {
+    "name": "secret_key_base",
+    "pattern": "secret[_-]?key[_-]?base(=| =|:| :)"
+  },
+  {
+    "name": "secretaccesskey",
+    "pattern": "secretaccesskey(=| =|:| :)"
+  },
+  {
+    "name": "secretkey",
+    "pattern": "secretkey(=| =|:| :)"
+  },
+  {
+    "name": "Securitytrails",
+    "pattern": "(?:securitytrails).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "segment_api_key",
+    "pattern": "segment[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Segmentapikey",
+    "pattern": "(?:segment).{0,40}\\\\b([A-Za-z0-9_\\\\-a-zA-Z]{43}\\\\.[A-Za-z0-9_\\\\-a-zA-Z]{43})\\\\b"
+  },
+  {
+    "name": "Selectpdf",
+    "pattern": "(?:selectpdf).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "selion_log_level_dev",
+    "pattern": "selion[_-]?log[_-]?level[_-]?dev(=| =|:| :)"
+  },
+  {
+    "name": "selion_selenium_host",
+    "pattern": "selion[_-]?selenium[_-]?host(=| =|:| :)"
+  },
+  {
+    "name": "Semaphore",
+    "pattern": "(?:semaphore).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Sendbird - 1",
+    "pattern": "(?:sendbird).{0,40}\\\\b([0-9a-f]{40})\\\\b"
+  },
+  {
+    "name": "Sendbird - 2",
+    "pattern": "(?:sendbird).{0,40}\\\\b([0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12})\\\\b"
+  },
+  {
+    "name": "Sendbirdorganizationapi",
+    "pattern": "(?:sendbird).{0,40}\\\\b([0-9a-f]{24})\\\\b"
+  },
+  {
+    "name": "Sendgrid",
+    "pattern": "(SG\\\\.[\\\\w\\\\-_]{20,24}\\\\.[\\\\w\\\\-_]{39,50})\\\\b"
+  },
+  {
+    "name": "sendgrid - 2",
+    "pattern": "sendgrid(=| =|:| :)"
+  },
+  {
+    "name": "SendGrid API Key",
+    "pattern": "SG\\\\.[\\\\w\\\\-_]{20,24}\\\\.[\\\\w\\\\-_]{39,50}"
+  },
+  {
+    "name": "SendGrid_API_Key",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(SG\\.[a-zA-Z0-9-_]{22,})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "sendgrid_api_key - 1",
+    "pattern": "sendgrid[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "sendgrid_key",
+    "pattern": "sendgrid[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "sendgrid_password",
+    "pattern": "sendgrid[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "SendGrid_Token",
+    "pattern": "SG\\.[0-9A-Za-z\\-_]{22}\\.[0-9A-Za-z\\-_]{43}"
+  },
+  {
+    "name": "sendgrid_user",
+    "pattern": "sendgrid[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "sendgrid_username",
+    "pattern": "sendgrid[_-]?username(=| =|:| :)"
+  },
+  {
+    "name": "Sendinbluev2",
+    "pattern": "\\\\b(xkeysib\\\\-[A-Za-z0-9_-]{81})\\\\b"
+  },
+  {
+    "name": "sendwithus_key",
+    "pattern": "sendwithus[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Sentiment - 1",
+    "pattern": "(?:sentiment).{0,40}\\\\b([0-9]{17})\\\\b"
+  },
+  {
+    "name": "Sentiment - 2",
+    "pattern": "(?:sentiment).{0,40}\\\\b([a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "sentry_auth_token",
+    "pattern": "sentry[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "sentry_default_org",
+    "pattern": "sentry[_-]?default[_-]?org(=| =|:| :)"
+  },
+  {
+    "name": "sentry_endpoint",
+    "pattern": "sentry[_-]?endpoint(=| =|:| :)"
+  },
+  {
+    "name": "sentry_key",
+    "pattern": "sentry[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Sentrytoken",
+    "pattern": "(?:sentry).{0,40}\\\\b([a-f0-9]{64})\\\\b"
+  },
+  {
+    "name": "SerpAPI",
+    "pattern": "[a-f0-9]{64}"
+  },
+  {
+    "name": "Serphouse",
+    "pattern": "(?:serphouse).{0,40}\\\\b([0-9A-Za-z]{60})\\\\b"
+  },
+  {
+    "name": "Serpstack",
+    "pattern": "(?:serpstack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "service_account_secret",
+    "pattern": "service[_-]?account[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "ses_access_key",
+    "pattern": "ses[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "ses_secret_key",
+    "pattern": "ses[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "setdstaccesskey",
+    "pattern": "setdstaccesskey(=| =|:| :)"
+  },
+  {
+    "name": "setdstsecretkey",
+    "pattern": "setdstsecretkey(=| =|:| :)"
+  },
+  {
+    "name": "setsecretkey",
+    "pattern": "setsecretkey(=| =|:| :)"
+  },
+  {
+    "name": "Sheety - 1",
+    "pattern": "(?:sheety).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Sheety - 2",
+    "pattern": "(?:sheety).{0,40}\\\\b([0-9a-z]{64})\\\\b"
+  },
+  {
+    "name": "Sherpadesk",
+    "pattern": "(?:sherpadesk).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Shipday",
+    "pattern": "(?:shipday).{0,40}\\\\b([a-zA-Z0-9.]{11}[a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Shodankey",
+    "pattern": "(?:shodan).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Shopify access token",
+    "pattern": "shpat_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify custom app access token",
+    "pattern": "shpca_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify private app access token",
+    "pattern": "shppa_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify shared secret",
+    "pattern": "shpss_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify_Access_Token",
+    "pattern": "shpat_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify_Custom_App_Access_Token",
+    "pattern": "shpca_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify_Private_App_Access_Token",
+    "pattern": "shppa_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shopify_Shared_Secret",
+    "pattern": "shpss_[a-fA-F0-9]{32}"
+  },
+  {
+    "name": "Shoppable Service Auth",
+    "pattern": "data-shoppable-auth-token.+"
+  },
+  {
+    "name": "Shortcut",
+    "pattern": "(?:shortcut).{0,40}\\\\b([0-9a-f-]{36})\\\\b"
+  },
+  {
+    "name": "Shotstack",
+    "pattern": "(?:shotstack).{0,40}\\\\b([a-zA-Z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Shutterstock - 1",
+    "pattern": "(?:shutterstock).{0,40}\\\\b([0-9a-zA-Z]{32})\\\\b"
+  },
+  {
+    "name": "Shutterstock - 2",
+    "pattern": "(?:shutterstock).{0,40}\\\\b([0-9a-zA-Z]{16})\\\\b"
+  },
+  {
+    "name": "Shutterstockoauth",
+    "pattern": "(?:shutterstock).{0,40}\\\\b(v2/[0-9A-Za-z]{388})\\\\b"
+  },
+  {
+    "name": "Signalwire - 1",
+    "pattern": "\\\\b([0-9a-z-]{3,64}.signalwire.com)\\\\b"
+  },
+  {
+    "name": "Signalwire - 2",
+    "pattern": "(?:signalwire).{0,40}\\\\b([0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "Signalwire - 3",
+    "pattern": "(?:signalwire).{0,40}\\\\b([0-9A-Za-z]{50})\\\\b"
+  },
+  {
+    "name": "Signaturit",
+    "pattern": "(?:signaturit).{0,40}\\\\b([0-9A-Za-z]{86})\\\\b"
+  },
+  {
+    "name": "signing_key",
+    "pattern": "signing[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "signing_key_password",
+    "pattern": "signing[_-]?key[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "signing_key_secret",
+    "pattern": "signing[_-]?key[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "signing_key_sid",
+    "pattern": "signing[_-]?key[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "Signupgenius",
+    "pattern": "(?:signupgenius).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Sigopt",
+    "pattern": "(?:sigopt).{0,40}\\\\b([A-Z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Simplesat",
+    "pattern": "(?:simplesat).{0,40}\\\\b([a-z0-9]{40})"
+  },
+  {
+    "name": "Simplynoted",
+    "pattern": "(?:simplynoted).{0,40}\\\\b([a-zA-Z0-9\\\\S]{340,360})\\\\b"
+  },
+  {
+    "name": "Simvoly",
+    "pattern": "(?:simvoly).{0,40}\\\\b([a-z0-9]{33})\\\\b"
+  },
+  {
+    "name": "Sinchmessage",
+    "pattern": "(?:sinch).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Sirv - 1",
+    "pattern": "(?:sirv).{0,40}\\\\b([a-zA-Z0-9\\\\S]{88})"
+  },
+  {
+    "name": "Sirv - 2",
+    "pattern": "(?:sirv).{0,40}\\\\b([a-zA-Z0-9]{26})\\\\b"
+  },
+  {
+    "name": "Siteleaf",
+    "pattern": "(?:siteleaf).{0,40}\\\\b([0-9Aa-z]{32})\\\\b"
+  },
+  {
+    "name": "Skrappio",
+    "pattern": "(?:skrapp).{0,40}\\\\b([a-z0-9A-Z]{42})\\\\b"
+  },
+  {
+    "name": "Skybiometry",
+    "pattern": "(?:skybiometry).{0,40}\\\\b([0-9a-z]{25,26})\\\\b"
+  },
+  {
+    "name": "Slack",
+    "pattern": "xox[baprs]-[0-9a-zA-Z-]{10,72}"
+  },
+  {
+    "name": "Slack access token",
+    "pattern": "xoxb-[0-9A-Za-z\\\\-]{51}"
+  },
+  {
+    "name": "Slack Token",
+    "pattern": "(xox[pborsa]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})"
+  },
+  {
+    "name": "Slack User token",
+    "pattern": "xoxp-[0-9A-Za-z\\\\-]{72}"
+  },
+  {
+    "name": "Slack Webhook",
+    "pattern": "https://hooks.slack.com/services/T[a-zA-Z0-9_]{8,10}/B[a-zA-Z0-9_]{8,12}/[a-zA-Z0-9_]{23,24}"
+  },
+  {
+    "name": "Slack_API_token",
+    "pattern": "(xox[p|b|o|a]\\-[0-9]{12}\\-[0-9]{12}\\-[0-9]{12}\\-[a-z0-9]{32})"
+  },
+  {
+    "name": "Slack_Bot_Token",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(xoxb-[a-zA-Z0-9]{10,})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Slack_Token",
+    "pattern": "(xox[p|b|o|a]-[0-9]{12}-[0-9]{12}-[0-9]{12}-[a-z0-9]{32})"
+  },
+  {
+    "name": "Slack_Webhook",
+    "pattern": "https://hooks\\.slack\\.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}"
+  },
+  {
+    "name": "Slack_Webhook",
+    "pattern": "https://hooks\\.slack\\.com/services/T[a-zA-Z0-9_]{8}/B[a-zA-Z0-9_]{8}/[a-zA-Z0-9_]{24}"
+  },
+  {
+    "name": "slack_webhook_url",
+    "pattern": "(hooks.slack.com/services/T[A-Z0-9]{8}/B[A-Z0-9]{8}/[a-zA-Z0-9]{1,})"
+  },
+  {
+    "name": "Slackwebhook",
+    "pattern": "(https:\\\\/\\\\/hooks.slack.com\\\\/services\\\\/[A-Za-z0-9+\\\\/]{44,46})"
+  },
+  {
+    "name": "slash_developer_space",
+    "pattern": "slash[_-]?developer[_-]?space(=| =|:| :)"
+  },
+  {
+    "name": "slash_developer_space_key",
+    "pattern": "slash[_-]?developer[_-]?space[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "slate_user_email",
+    "pattern": "slate[_-]?user[_-]?email(=| =|:| :)"
+  },
+  {
+    "name": "Smartsheets",
+    "pattern": "(?:smartsheets).{0,40}\\\\b([a-zA-Z0-9]{37})\\\\b"
+  },
+  {
+    "name": "Smartystreets - 1",
+    "pattern": "(?:smartystreets).{0,40}\\\\b([a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Smartystreets - 2",
+    "pattern": "(?:smartystreets).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Smooch - 1",
+    "pattern": "(?:smooch).{0,40}\\\\b(act_[0-9a-z]{24})\\\\b"
+  },
+  {
+    "name": "Smooch - 2",
+    "pattern": "(?:smooch).{0,40}\\\\b([0-9a-zA-Z_-]{86})\\\\b"
+  },
+  {
+    "name": "Snipcart",
+    "pattern": "(?:snipcart).{0,40}\\\\b([0-9A-Za-z_]{75})\\\\b"
+  },
+  {
+    "name": "snoowrap_client_secret",
+    "pattern": "snoowrap[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "snoowrap_password",
+    "pattern": "snoowrap[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "snoowrap_refresh_token",
+    "pattern": "snoowrap[_-]?refresh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "snyk_api_token",
+    "pattern": "snyk[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "snyk_token",
+    "pattern": "snyk[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Snykkey",
+    "pattern": "(?:snyk).{0,40}\\\\b([0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12})\\\\b"
+  },
+  {
+    "name": "socrata_app_token",
+    "pattern": "socrata[_-]?app[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "socrata_password",
+    "pattern": "socrata[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "sonar_organization_key",
+    "pattern": "sonar[_-]?organization[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "sonar_project_key",
+    "pattern": "sonar[_-]?project[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "sonar_token",
+    "pattern": "sonar[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "SonarQube Token",
+    "pattern": "sonar.{0,50}(?:\"|'|`)?[0-9a-f]{40}(?:\"|'|`)?"
+  },
+  {
+    "name": "sonarqube_docs_api_key",
+    "pattern": "(sonar.{0,50}(\"|')?[0-9a-f]{40}(\"|')?)"
+  },
+  {
+    "name": "sonatype_gpg_key_name",
+    "pattern": "sonatype[_-]?gpg[_-]?key[_-]?name(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_gpg_passphrase",
+    "pattern": "sonatype[_-]?gpg[_-]?passphrase(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_nexus_password",
+    "pattern": "sonatype[_-]?nexus[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_pass",
+    "pattern": "sonatype[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_password",
+    "pattern": "sonatype[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_token_password",
+    "pattern": "sonatype[_-]?token[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "sonatype_token_user",
+    "pattern": "sonatype[_-]?token[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "sonatypepassword",
+    "pattern": "sonatypepassword(=| =|:| :)"
+  },
+  {
+    "name": "soundcloud_client_secret",
+    "pattern": "soundcloud[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "soundcloud_password",
+    "pattern": "soundcloud[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "spaces_access_key_id",
+    "pattern": "spaces[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "spaces_secret_access_key",
+    "pattern": "spaces[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Splunkobservabilitytoken",
+    "pattern": "(?:splunk).{0,40}\\\\b([a-z0-9A-Z]{22})\\\\b"
+  },
+  {
+    "name": "Spoonacular",
+    "pattern": "(?:spoonacular).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Sportsmonk",
+    "pattern": "(?:sportsmonk).{0,40}\\\\b([0-9a-zA-Z]{60})\\\\b"
+  },
+  {
+    "name": "spotify_api_access_token",
+    "pattern": "spotify[_-]?api[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "spotify_api_client_secret",
+    "pattern": "spotify[_-]?api[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "spring_mail_password",
+    "pattern": "spring[_-]?mail[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "sqsaccesskey",
+    "pattern": "sqsaccesskey(=| =|:| :)"
+  },
+  {
+    "name": "sqssecretkey",
+    "pattern": "sqssecretkey(=| =|:| :)"
+  },
+  {
+    "name": "Square",
+    "pattern": "(?:square).{0,40}(EAAA[a-zA-Z0-9\\\\-\\\\+\\\\=]{60})"
+  },
+  {
+    "name": "Square access token",
+    "pattern": "sq0atp-[0-9A-Za-z\\\\-_]{22}"
+  },
+  {
+    "name": "Square API Key",
+    "pattern": "sq0(atp|csp)-[0-9a-z-_]{22,43}"
+  },
+  {
+    "name": "Square OAuth Secret",
+    "pattern": "sq0csp-[0-9A-Za-z\\\\-_]{43}"
+  },
+  {
+    "name": "Square_Access_Token",
+    "pattern": "sq0atp-[0-9A-Za-z\\-_]{22}"
+  },
+  {
+    "name": "Square_Access_Token",
+    "pattern": "sqOatp\\-[0-9A-Za-z\\-_]{22}"
+  },
+  {
+    "name": "square_app_secret",
+    "pattern": "(sq0[a-z]{3}-[0-9A-Za-z-_]{20,50})"
+  },
+  {
+    "name": "Square_Application_Secret",
+    "pattern": "sandbox\\-?sq0csp\\-[0-9A-Za-z\\-_]{43}|sq0[a-z]{3}\\-[0-9A-Za-z\\-_]{22,43}"
+  },
+  {
+    "name": "Square_OAuth_Secret",
+    "pattern": "sq0csp-[0-9A-Za-z\\-_]{43}"
+  },
+  {
+    "name": "square_reader_sdk_repository_password",
+    "pattern": "square[_-]?reader[_-]?sdk[_-]?repository[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Squareapp - 1",
+    "pattern": "[\\\\w\\\\-]*sq0i[a-z]{2}-[0-9A-Za-z\\\\-_]{22,43}"
+  },
+  {
+    "name": "Squareapp - 2",
+    "pattern": "[\\\\w\\\\-]*sq0c[a-z]{2}-[0-9A-Za-z\\\\-_]{40,50}"
+  },
+  {
+    "name": "Squarespace",
+    "pattern": "(?:squarespace).{0,40}\\\\b([0-9Aa-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Squareup",
+    "pattern": "\\\\b(sq0idp-[0-9A-Za-z]{22})\\\\b"
+  },
+  {
+    "name": "srcclr_api_token",
+    "pattern": "srcclr[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "SSH",
+    "pattern": "-----BEGIN OPENSSH PRIVATE KEY-----"
+  },
+  {
+    "name": "SSH (DSA) private key",
+    "pattern": "-----BEGIN DSA PRIVATE KEY-----"
+  },
+  {
+    "name": "SSH_DSA_Private_Key",
+    "pattern": "-----BEGIN DSA PRIVATE KEY-----"
+  },
+  {
+    "name": "SSH_EC_Private_Key",
+    "pattern": "-----BEGIN EC PRIVATE KEY-----"
+  },
+  {
+    "name": "ssh_password",
+    "pattern": "(sshpass -p.*['|\"])"
+  },
+  {
+    "name": "sshpass",
+    "pattern": "sshpass(=| =|:| :)"
+  },
+  {
+    "name": "Sslmate",
+    "pattern": "(?:sslmate).{0,40}\\\\b([a-zA-Z0-9]{36})\\\\b"
+  },
+  {
+    "name": "ssmtp_config",
+    "pattern": "ssmtp[_-]?config(=| =|:| :)"
+  },
+  {
+    "name": "StackHawk_API_Key",
+    "pattern": "hawk\\.[0-9A-Za-z\\-_]{20}\\.[0-9A-Za-z\\-_]{20}"
+  },
+  {
+    "name": "staging_base_url_runscope",
+    "pattern": "staging[_-]?base[_-]?url[_-]?runscope(=| =|:| :)"
+  },
+  {
+    "name": "star_test_aws_access_key_id",
+    "pattern": "star[_-]?test[_-]?aws[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "star_test_bucket",
+    "pattern": "star[_-]?test[_-]?bucket(=| =|:| :)"
+  },
+  {
+    "name": "star_test_location",
+    "pattern": "star[_-]?test[_-]?location(=| =|:| :)"
+  },
+  {
+    "name": "star_test_secret_access_key",
+    "pattern": "star[_-]?test[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "starship_account_sid",
+    "pattern": "starship[_-]?account[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "starship_auth_token",
+    "pattern": "starship[_-]?auth[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "statement_number",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((Statement No\\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\\b))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Stgeorge_bank_statement_supporting_regex",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])((112|113|114|115|116|117|118|119|330|332|333|334|335|336)[ -]?\\d{3})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Stitchdata",
+    "pattern": "(?:stitchdata).{0,40}\\\\b([0-9a-z_]{35})\\\\b"
+  },
+  {
+    "name": "Stockdata",
+    "pattern": "(?:stockdata).{0,40}\\\\b([0-9A-Za-z]{40})\\\\b"
+  },
+  {
+    "name": "Storecove",
+    "pattern": "(?:storecove).{0,40}\\\\b([a-zA-Z0-9_-]{43})\\\\b"
+  },
+  {
+    "name": "Stormglass",
+    "pattern": "(?:stormglass).{0,40}\\\\b([0-9Aa-z-]{73})\\\\b"
+  },
+  {
+    "name": "stormpath_api_key_id",
+    "pattern": "stormpath[_-]?api[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "stormpath_api_key_secret",
+    "pattern": "stormpath[_-]?api[_-]?key[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Storyblok",
+    "pattern": "(?:storyblok).{0,40}\\\\b([0-9A-Za-z]{22}t{2})\\\\b"
+  },
+  {
+    "name": "Storychief",
+    "pattern": "(?:storychief).{0,40}\\\\b([a-zA-Z0-9_\\\\-.]{940,1000})"
+  },
+  {
+    "name": "Strava - 1",
+    "pattern": "(?:strava).{0,40}\\\\b([0-9]{5})\\\\b"
+  },
+  {
+    "name": "Strava - 2",
+    "pattern": "(?:strava).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Streak",
+    "pattern": "(?:streak).{0,40}\\\\b([0-9Aa-f]{32})\\\\b"
+  },
+  {
+    "name": "strip_publishable_key",
+    "pattern": "strip[_-]?publishable[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "strip_secret_key",
+    "pattern": "strip[_-]?secret[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Stripe",
+    "pattern": "[rs]k_live_[a-zA-Z0-9]{20,30}"
+  },
+  {
+    "name": "Stripe API Key - 1",
+    "pattern": "sk_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe API key - 2",
+    "pattern": "stripe[sr]k_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe API key - 3",
+    "pattern": "stripe[sk|rk]_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe Public Live Key",
+    "pattern": "pk_live_[0-9a-z]{24}"
+  },
+  {
+    "name": "Stripe Public Test Key",
+    "pattern": "pk_test_[0-9a-z]{24}"
+  },
+  {
+    "name": "Stripe Restriced Key",
+    "pattern": "rk_(?:live|test)_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe Restricted API Key",
+    "pattern": "rk_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe Secret Key",
+    "pattern": "sk_(?:live|test)_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe Secret Live Key",
+    "pattern": "(sk|rk)_live_[0-9a-z]{24}"
+  },
+  {
+    "name": "Stripe Secret Test Key",
+    "pattern": "(sk|rk)_test_[0-9a-z]{24}"
+  },
+  {
+    "name": "Stripe_API_Key",
+    "pattern": "sk_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "stripe_private",
+    "pattern": "stripe[_-]?private(=| =|:| :)"
+  },
+  {
+    "name": "stripe_public",
+    "pattern": "stripe[_-]?public(=| =|:| :)"
+  },
+  {
+    "name": "Stripe_Publishable_Key",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(pk_(live|test)_[a-zA-Z0-9]{24})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "stripe_restricted_api",
+    "pattern": "(rk_live_[0-9a-zA-Z]{24,34})"
+  },
+  {
+    "name": "Stripe_Restricted_API_Key",
+    "pattern": "rk_live_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stripe_Restricted_API_Token",
+    "pattern": "rk_live\\_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "stripe_standard_api",
+    "pattern": "(sk_live_[0-9a-zA-Z]{24,34})"
+  },
+  {
+    "name": "Stripe_Standard_API_Token",
+    "pattern": "sk_live\\_[0-9a-zA-Z]{24}"
+  },
+  {
+    "name": "Stytch - 1",
+    "pattern": "(?:stytch).{0,40}\\\\b([a-zA-Z0-9-_]{47}=)"
+  },
+  {
+    "name": "Stytch - 2",
+    "pattern": "(?:stytch).{0,40}\\\\b([a-z0-9-]{49})\\\\b"
+  },
+  {
+    "name": "Sugester - 1",
+    "pattern": "(?:sugester).{0,40}\\\\b([a-zA-Z0-9_.!+$#^*%]{3,32})\\\\b"
+  },
+  {
+    "name": "Sugester - 2",
+    "pattern": "(?:sugester).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Sumologickey - 1",
+    "pattern": "(?:sumo).{0,40}\\\\b([A-Za-z0-9]{14})\\\\b"
+  },
+  {
+    "name": "Sumologickey - 2",
+    "pattern": "(?:sumo).{0,40}\\\\b([A-Za-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Supernotesapi",
+    "pattern": "(?:supernotes).{0,40}([ \\\\r\\\\n]{0,1}[0-9A-Za-z\\\\-_]{43}[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "surge_login",
+    "pattern": "surge[_-]?login(=| =|:| :)"
+  },
+  {
+    "name": "surge_token",
+    "pattern": "surge[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Surveyanyplace - 1",
+    "pattern": "(?:survey).{0,40}\\\\b([a-z0-9A-Z-]{36})\\\\b"
+  },
+  {
+    "name": "Surveyanyplace - 2",
+    "pattern": "(?:survey).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Surveybot",
+    "pattern": "(?:surveybot).{0,40}\\\\b([A-Za-z0-9-]{80})\\\\b"
+  },
+  {
+    "name": "Surveysparrow",
+    "pattern": "(?:surveysparrow).{0,40}\\\\b([a-zA-Z0-9-_]{88})\\\\b"
+  },
+  {
+    "name": "Survicate",
+    "pattern": "(?:survicate).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "svn_pass",
+    "pattern": "svn[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Swell - 1",
+    "pattern": "(?:swell).{0,40}\\\\b([a-zA-Z0-9]{6,24})\\\\b"
+  },
+  {
+    "name": "Swell - 2",
+    "pattern": "(?:swell).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "swift",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\\w{2}|\\w{5})))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Swiftype",
+    "pattern": "(?:swiftype).{0,40}\\\\b([a-zA-z-0-9]{6}\\\\_[a-zA-z-0-9]{6}\\\\-[a-zA-z-0-9]{6})\\\\b"
+  },
+  {
+    "name": "Tallyfy",
+    "pattern": "(?:tallyfy).{0,40}\\\\b([0-9A-Za-z]{36}\\\\.[0-9A-Za-z]{264}\\\\.[0-9A-Za-z\\\\-\\\\_]{683})\\\\b"
+  },
+  {
+    "name": "Tatumio",
+    "pattern": "(?:tatum).{0,40}\\\\b([0-9a-z-]{36})\\\\b"
+  },
+  {
+    "name": "Taxjar",
+    "pattern": "(?:taxjar).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Teamgate - 1",
+    "pattern": "(?:teamgate).{0,40}\\\\b([a-z0-9]{40})\\\\b"
+  },
+  {
+    "name": "Teamgate - 2",
+    "pattern": "(?:teamgate).{0,40}\\\\b([a-zA-Z0-9]{80})\\\\b"
+  },
+  {
+    "name": "Teamworkcrm",
+    "pattern": "(?:teamwork|teamworkcrm).{0,40}\\\\b(tkn\\\\.v1_[0-9A-Za-z]{71}=[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Teamworkdesk",
+    "pattern": "(?:teamwork|teamworkdesk).{0,40}\\\\b(tkn\\\\.v1_[0-9A-Za-z]{71}=[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Teamworkspaces",
+    "pattern": "(?:teamwork|teamworkspaces).{0,40}\\\\b(tkn\\\\.v1_[0-9A-Za-z]{71}=[ \\\\r\\\\n]{1})"
+  },
+  {
+    "name": "Technicalanalysisapi",
+    "pattern": "(?:technicalanalysisapi).{0,40}\\\\b([A-Z0-9]{48})\\\\b"
+  },
+  {
+    "name": "Telegram Bot API Key",
+    "pattern": "[0-9]+:AA[0-9A-Za-z\\\\-_]{33}"
+  },
+  {
+    "name": "Telegram Secret",
+    "pattern": "d{5,}:A[0-9a-z_-]{34,34}"
+  },
+  {
+    "name": "Telegrambottoken",
+    "pattern": "(?:telegram).{0,40}\\\\b([0-9]{8,10}:[a-zA-Z0-9_-]{35})\\\\b"
+  },
+  {
+    "name": "Telnyx",
+    "pattern": "(?:telnyx).{0,40}\\\\b(KEY[0-9A-Za-z_-]{55})\\\\b"
+  },
+  {
+    "name": "temp_robert_ferguson",
+    "pattern": "Robert Ferguson"
+  },
+  {
+    "name": "Terraformcloudpersonaltoken",
+    "pattern": "\\\\b([A-Za-z0-9]{14}.atlasv1.[A-Za-z0-9]{67})\\\\b"
+  },
+  {
+    "name": "tesco_api_key",
+    "pattern": "tesco[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "test_github_token",
+    "pattern": "test[_-]?github[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "test_test",
+    "pattern": "test[_-]?test(=| =|:| :)"
+  },
+  {
+    "name": "tester_keys_password",
+    "pattern": "tester[_-]?keys[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Text2data",
+    "pattern": "(?:text2data).{0,40}\\\\b([0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12})\\\\b"
+  },
+  {
+    "name": "Textmagic - 1",
+    "pattern": "(?:textmagic).{0,40}\\\\b([0-9A-Za-z]{30})\\\\b"
+  },
+  {
+    "name": "Textmagic - 2",
+    "pattern": "(?:textmagic).{0,40}\\\\b([0-9A-Za-z]{1,25})\\\\b"
+  },
+  {
+    "name": "Theoddsapi",
+    "pattern": "(?:theoddsapi|the-odds-api).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "thera_oss_access_key",
+    "pattern": "thera[_-]?oss[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Thinkific - 1",
+    "pattern": "(?:thinkific).{0,40}\\\\b([0-9a-f]{32})\\\\b"
+  },
+  {
+    "name": "Thinkific - 2",
+    "pattern": "(?:thinkific).{0,40}\\\\b([0-9A-Za-z]{4,40})\\\\b"
+  },
+  {
+    "name": "Thousandeyes - 1",
+    "pattern": "(?:thousandeyes).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Thousandeyes - 2",
+    "pattern": "(?:thousandeyes).{0,40}\\\\b([a-zA-Z0-9]{3,20}@[a-zA-Z0-9]{2,12}.[a-zA-Z0-9]{2,5})\\\\b"
+  },
+  {
+    "name": "Ticketmaster",
+    "pattern": "(?:ticketmaster).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Tiingo",
+    "pattern": "(?:tiingo).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Timezoneapi",
+    "pattern": "(?:timezoneapi).{0,40}\\\\b([a-zA-Z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Tly",
+    "pattern": "(?:tly).{0,40}\\\\b([0-9A-Za-z]{60})\\\\b"
+  },
+  {
+    "name": "Tmetric",
+    "pattern": "(?:tmetric).{0,40}\\\\b([0-9A-Z]{64})\\\\b"
+  },
+  {
+    "name": "Todoist",
+    "pattern": "(?:todoist).{0,40}\\\\b([0-9a-z]{40})\\\\b"
+  },
+  {
+    "name": "Toggltrack",
+    "pattern": "(?:toggl).{0,40}\\\\b([0-9Aa-z]{32})\\\\b"
+  },
+  {
+    "name": "token_core_java",
+    "pattern": "token[_-]?core[_-]?java(=| =|:| :)"
+  },
+  {
+    "name": "Tomorrowio",
+    "pattern": "(?:tomorrow).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Tomtom",
+    "pattern": "(?:tomtom).{0,40}\\\\b([0-9Aa-zA-Z]{32})\\\\b"
+  },
+  {
+    "name": "Tradier",
+    "pattern": "(?:tradier).{0,40}\\\\b([a-zA-Z0-9]{28})\\\\b"
+  },
+  {
+    "name": "transaction_amount",
+    "pattern": "\\\\b\\(\\$\\?\\-\\?\\\\d\\{1,3\\}\\(,\\\\d\\{3\\}\\)\\{0,3\\}\\\\\\.\\\\d\\{2\\}\\\\b\\)\\\\b"
+  },
+  {
+    "name": "Travelpayouts",
+    "pattern": "(?:travelpayouts).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "travis_access_token",
+    "pattern": "travis[_-]?access[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "travis_api_token",
+    "pattern": "travis[_-]?api[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "travis_branch",
+    "pattern": "travis[_-]?branch(=| =|:| :)"
+  },
+  {
+    "name": "travis_com_token",
+    "pattern": "travis[_-]?com[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "travis_e2e_token",
+    "pattern": "travis[_-]?e2e[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "travis_gh_token",
+    "pattern": "travis[_-]?gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "travis_pull_request",
+    "pattern": "travis[_-]?pull[_-]?request(=| =|:| :)"
+  },
+  {
+    "name": "travis_secure_env_vars",
+    "pattern": "travis[_-]?secure[_-]?env[_-]?vars(=| =|:| :)"
+  },
+  {
+    "name": "travis_token",
+    "pattern": "travis[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Travisci",
+    "pattern": "(?:travis).{0,40}\\\\b([a-zA-Z0-9A-Z_]{22})\\\\b"
+  },
+  {
+    "name": "Trello URL",
+    "pattern": "https://trello.com/b/[0-9a-z]/[0-9a-z_-]+"
+  },
+  {
+    "name": "Trelloapikey - 2",
+    "pattern": "(?:trello).{0,40}\\\\b([a-zA-Z-0-9]{32})\\\\b"
+  },
+  {
+    "name": "trex_client_token",
+    "pattern": "trex[_-]?client[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "trex_okta_client_token",
+    "pattern": "trex[_-]?okta[_-]?client[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Twelvedata",
+    "pattern": "(?:twelvedata).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Twilio - 1",
+    "pattern": "\\\\bAC[0-9a-f]{32}\\\\b"
+  },
+  {
+    "name": "Twilio API Key",
+    "pattern": "SK[0-9a-fA-F]{32}"
+  },
+  {
+    "name": "Twilio_Account_SID",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(AC[a-zA-Z0-9]{32})(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Twilio_API_Key",
+    "pattern": "SK[0-9a-fA-F]{32}"
+  },
+  {
+    "name": "Twilio_API_Key",
+    "pattern": "(?i)twilio(.{0,20})?SK[0-9a-f]{32}"
+  },
+  {
+    "name": "twilio_api_key",
+    "pattern": "twilio[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "twilio_api_secret",
+    "pattern": "twilio[_-]?api[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "twilio_chat_account_api_service",
+    "pattern": "twilio[_-]?chat[_-]?account[_-]?api[_-]?service(=| =|:| :)"
+  },
+  {
+    "name": "twilio_configuration_sid",
+    "pattern": "twilio[_-]?configuration[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "twilio_sid",
+    "pattern": "twilio[_-]?sid(=| =|:| :)"
+  },
+  {
+    "name": "twilio_token",
+    "pattern": "twilio[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "twine_password",
+    "pattern": "twine[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Twitter Access Token",
+    "pattern": "[tT][wW][iI][tT][tT][eE][rR].*[1-9][0-9]+-[0-9a-zA-Z]{40}"
+  },
+  {
+    "name": "Twitter Client ID",
+    "pattern": "twitter[0-9a-z]{18,25}"
+  },
+  {
+    "name": "Twitter OAuth",
+    "pattern": "[tT][wW][iI][tT][tT][eE][rR].*['|\"][0-9a-zA-Z]{35,44}['|\"]"
+  },
+  {
+    "name": "Twitter Secret Key",
+    "pattern": "twitter[0-9a-z]{35,44}"
+  },
+  {
+    "name": "Twitter_Access_Token",
+    "pattern": "[t|T][w|W][i|I][t|T][t|T][e|E][r|R].*[1-9][0-9]+-[0-9a-zA-Z]{40}"
+  },
+  {
+    "name": "twitter_consumer_key",
+    "pattern": "twitter[_-]?consumer[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "twitter_consumer_secret",
+    "pattern": "twitter[_-]?consumer[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "twitteroauthaccesssecret",
+    "pattern": "twitteroauthaccesssecret(=| =|:| :)"
+  },
+  {
+    "name": "twitteroauthaccesstoken",
+    "pattern": "twitteroauthaccesstoken(=| =|:| :)"
+  },
+  {
+    "name": "Tyntec",
+    "pattern": "(?:tyntec).{0,40}\\\\b([a-zA-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Typeform",
+    "pattern": "(?:typeform).{0,40}\\\\b([0-9A-Za-z]{44})\\\\b"
+  },
+  {
+    "name": "Ubidots",
+    "pattern": "\\\\b(BBFF-[0-9a-zA-Z]{30})\\\\b"
+  },
+  {
+    "name": "Unifyid",
+    "pattern": "(?:unify).{0,40}\\\\b([0-9A-Za-z_=-]{44})"
+  },
+  {
+    "name": "unity_password",
+    "pattern": "unity[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "unity_serial",
+    "pattern": "unity[_-]?serial(=| =|:| :)"
+  },
+  {
+    "name": "Unplugg",
+    "pattern": "(?:unplu).{0,40}\\\\b([a-z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Unsplash",
+    "pattern": "(?:unsplash).{0,40}\\\\b([0-9A-Za-z_]{43})\\\\b"
+  },
+  {
+    "name": "Upcdatabase",
+    "pattern": "(?:upcdatabase).{0,40}\\\\b([A-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Uplead",
+    "pattern": "(?:uplead).{0,40}\\\\b([a-z0-9-]{32})\\\\b"
+  },
+  {
+    "name": "Uploadcare",
+    "pattern": "(?:uploadcare).{0,40}\\\\b([a-z0-9]{20})\\\\b"
+  },
+  {
+    "name": "Upwave",
+    "pattern": "(?:upwave).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "urban_key",
+    "pattern": "urban[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "urban_master_secret",
+    "pattern": "urban[_-]?master[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "urban_secret",
+    "pattern": "urban[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "Uri",
+    "pattern": "\\\\b[a-zA-Z]{1,10}:?\\\\/\\\\/[-.%\\\\w{}]{1,50}:([-.%\\\\S]{3,50})@[-.%\\\\w\\\\/:]+\\\\b"
+  },
+  {
+    "name": "URL",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(https?:\\/\\/[^\\s]*)(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "URL_Password",
+    "pattern": "\\[a\\-zA\\-Z\\]\\{3,10\\}://\\[\\^/\\\\s:@\\]\\{3,20\\}:\\[\\^/\\\\s:@\\]\\{3,20\\}@\\.\\{1,100\\}\\[\"\\\\"
+  },
+  {
+    "name": "Urlscan",
+    "pattern": "(?:urlscan).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "us_east_1_elb_amazonaws_com",
+    "pattern": "us[_-]?east[_-]?1[_-]?elb[_-]?amazonaws[_-]?com(=| =|:| :)"
+  },
+  {
+    "name": "use_ssh",
+    "pattern": "use[_-]?ssh(=| =|:| :)"
+  },
+  {
+    "name": "user_assets_access_key_id",
+    "pattern": "user[_-]?assets[_-]?access[_-]?key[_-]?id(=| =|:| :)"
+  },
+  {
+    "name": "user_assets_secret_access_key",
+    "pattern": "user[_-]?assets[_-]?secret[_-]?access[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Userstack",
+    "pattern": "(?:userstack).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "usertravis",
+    "pattern": "usertravis(=| =|:| :)"
+  },
+  {
+    "name": "v_sfdc_client_secret",
+    "pattern": "v[_-]?sfdc[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "v_sfdc_password",
+    "pattern": "v[_-]?sfdc[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Vatlayer",
+    "pattern": "(?:vatlayer).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Vercel",
+    "pattern": "(?:vercel).{0,40}\\\\b([a-zA-Z0-9]{24})\\\\b"
+  },
+  {
+    "name": "Verifier - 1",
+    "pattern": "(?:verifier).{0,40}\\\\b([a-zA-Z-0-9-]{5,16}\\\\@[a-zA-Z-0-9]{4,16}\\\\.[a-zA-Z-0-9]{3,6})\\\\b"
+  },
+  {
+    "name": "Verifier - 2",
+    "pattern": "(?:verifier).{0,40}\\\\b([a-z0-9]{96})\\\\b"
+  },
+  {
+    "name": "Verimail",
+    "pattern": "(?:verimail).{0,40}\\\\b([A-Z0-9]{32})\\\\b"
+  },
+  {
+    "name": "Veriphone",
+    "pattern": "(?:veriphone).{0,40}\\\\b([0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "Versioneye",
+    "pattern": "(?:versioneye).{0,40}\\\\b([a-zA-Z0-9-]{40})\\\\b"
+  },
+  {
+    "name": "Viewneo",
+    "pattern": "(?:viewneo).{0,40}\\\\b([a-z0-9A-Z]{120,300}.[a-z0-9A-Z]{150,300}.[a-z0-9A-Z-_]{600,800})"
+  },
+  {
+    "name": "vip_github_build_repo_deploy_key",
+    "pattern": "vip[_-]?github[_-]?build[_-]?repo[_-]?deploy[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "vip_github_deploy_key",
+    "pattern": "vip[_-]?github[_-]?deploy[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "vip_github_deploy_key_pass",
+    "pattern": "vip[_-]?github[_-]?deploy[_-]?key[_-]?pass(=| =|:| :)"
+  },
+  {
+    "name": "Virustotal",
+    "pattern": "(?:virustotal).{0,40}\\\\b([a-f0-9]{64})\\\\b"
+  },
+  {
+    "name": "virustotal_apikey",
+    "pattern": "virustotal[_-]?apikey(=| =|:| :)"
+  },
+  {
+    "name": "visual_recognition_api_key",
+    "pattern": "visual[_-]?recognition[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Visualcrossing",
+    "pattern": "(?:visualcrossing).{0,40}\\\\b([0-9A-Z]{25})\\\\b"
+  },
+  {
+    "name": "Voicegain",
+    "pattern": "(?:voicegain).{0,40}\\\\b(ey[0-9a-zA-Z_-]{34}.ey[0-9a-zA-Z_-]{108}.[0-9a-zA-Z_-]{43})\\\\b"
+  },
+  {
+    "name": "Vouchery - 1",
+    "pattern": "(?:vouchery).{0,40}\\\\b([a-z0-9-]{36})\\\\b"
+  },
+  {
+    "name": "Vouchery - 2",
+    "pattern": "(?:vouchery).{0,40}\\\\b([a-zA-Z0-9-\\\\S]{2,20})\\\\b"
+  },
+  {
+    "name": "Vpnapi",
+    "pattern": "(?:vpnapi).{0,40}\\\\b([a-z0-9A-Z]{32})\\\\b"
+  },
+  {
+    "name": "vscetoken",
+    "pattern": "vscetoken(=| =|:| :)"
+  },
+  {
+    "name": "Vultrapikey",
+    "pattern": "(?:vultr).{0,40} \\\\b([A-Z0-9]{36})\\\\b"
+  },
+  {
+    "name": "Vyte",
+    "pattern": "(?:vyte).{0,40}\\\\b([0-9a-z]{50})\\\\b"
+  },
+  {
+    "name": "wakatime_api_key",
+    "pattern": "wakatime[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Walkscore",
+    "pattern": "(?:walkscore).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "watson_conversation_password",
+    "pattern": "watson[_-]?conversation[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "watson_device_password",
+    "pattern": "watson[_-]?device[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "watson_password",
+    "pattern": "watson[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "Weatherbit",
+    "pattern": "(?:weatherbit).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Weatherstack",
+    "pattern": "(?:weatherstack).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Webex - 1",
+    "pattern": "(?:error).{0,40}(redirect_uri_mismatch)"
+  },
+  {
+    "name": "Webex - 2",
+    "pattern": "(?:webex).{0,40}\\\\b([A-Za-z0-9_-]{65})\\\\b"
+  },
+  {
+    "name": "Webex - 3",
+    "pattern": "(?:webex).{0,40}\\\\b([A-Za-z0-9_-]{64})\\\\b"
+  },
+  {
+    "name": "Webflow",
+    "pattern": "(?:webflow).{0,40}\\\\b([a-zA0-9]{64})\\\\b"
+  },
+  {
+    "name": "Webscraper",
+    "pattern": "(?:webscraper).{0,40}\\\\b([a-zA-Z0-9]{60})\\\\b"
+  },
+  {
+    "name": "Webscraping",
+    "pattern": "(?:webscraping).{0,40}\\\\b([0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Wepay - 2",
+    "pattern": "(?:wepay).{0,40}\\\\b([a-zA-Z0-9_?]{62})\\\\b"
+  },
+  {
+    "name": "Westpac_statement_bsb_regex",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((03[2-9]|73[0-9])[ -]?\\d{3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Westpac_statement_supporting_regex",
+    "pattern": "(?:^|[\\s,;:\\(\\)\\[\\]\"\\'\\'])(((03[2-9]|73[0-9])[ -]?\\d{3}))(?:$|[\\s,;:\\(\\)\\[\\]\"\\'\\']|\\.\\s|\\.$)"
+  },
+  {
+    "name": "Whoxy",
+    "pattern": "(?:whoxy).{0,40}\\\\b([0-9a-z]{33})\\\\b"
+  },
+  {
+    "name": "widget_basic_password",
+    "pattern": "widget[_-]?basic[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "widget_basic_password_2",
+    "pattern": "widget[_-]?basic[_-]?password[_-]?2(=| =|:| :)"
+  },
+  {
+    "name": "widget_basic_password_3",
+    "pattern": "widget[_-]?basic[_-]?password[_-]?3(=| =|:| :)"
+  },
+  {
+    "name": "widget_basic_password_4",
+    "pattern": "widget[_-]?basic[_-]?password[_-]?4(=| =|:| :)"
+  },
+  {
+    "name": "widget_basic_password_5",
+    "pattern": "widget[_-]?basic[_-]?password[_-]?5(=| =|:| :)"
+  },
+  {
+    "name": "widget_fb_password",
+    "pattern": "widget[_-]?fb[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "widget_fb_password_2",
+    "pattern": "widget[_-]?fb[_-]?password[_-]?2(=| =|:| :)"
+  },
+  {
+    "name": "widget_fb_password_3",
+    "pattern": "widget[_-]?fb[_-]?password[_-]?3(=| =|:| :)"
+  },
+  {
+    "name": "widget_test_server",
+    "pattern": "widget[_-]?test[_-]?server(=| =|:| :)"
+  },
+  {
+    "name": "wincert_password",
+    "pattern": "wincert[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "wordpress_db_password",
+    "pattern": "wordpress[_-]?db[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "wordpress_db_user",
+    "pattern": "wordpress[_-]?db[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "Worksnaps",
+    "pattern": "(?:worksnaps).{0,40}\\\\b([0-9A-Za-z]{40})\\\\b"
+  },
+  {
+    "name": "Workstack",
+    "pattern": "(?:workstack).{0,40}\\\\b([0-9Aa-zA-Z]{60})\\\\b"
+  },
+  {
+    "name": "Worldcoinindex",
+    "pattern": "(?:worldcoinindex).{0,40}\\\\b([a-zA-Z0-9]{35})\\\\b"
+  },
+  {
+    "name": "Worldweather",
+    "pattern": "(?:worldweather).{0,40}\\\\b([0-9a-z]{31})\\\\b"
+  },
+  {
+    "name": "wpjm_phpunit_google_geocode_api_key",
+    "pattern": "wpjm[_-]?phpunit[_-]?google[_-]?geocode[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "wporg_password",
+    "pattern": "wporg[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "wpt_db_password",
+    "pattern": "wpt[_-]?db[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "wpt_db_user",
+    "pattern": "wpt[_-]?db[_-]?user(=| =|:| :)"
+  },
+  {
+    "name": "wpt_prepare_dir",
+    "pattern": "wpt[_-]?prepare[_-]?dir(=| =|:| :)"
+  },
+  {
+    "name": "wpt_report_api_key",
+    "pattern": "wpt[_-]?report[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "wpt_ssh_connect",
+    "pattern": "wpt[_-]?ssh[_-]?connect(=| =|:| :)"
+  },
+  {
+    "name": "wpt_ssh_private_key_base64",
+    "pattern": "wpt[_-]?ssh[_-]?private[_-]?key[_-]?base64(=| =|:| :)"
+  },
+  {
+    "name": "Wrike",
+    "pattern": "(?:wrike).{0,40}\\\\b(ey[a-zA-Z0-9-._]{333})\\\\b"
+  },
+  {
+    "name": "www_googleapis_com",
+    "pattern": "www[_-]?googleapis[_-]?com(=| =|:| :)"
+  },
+  {
+    "name": "Yandex",
+    "pattern": "(?:yandex).{0,40}\\\\b([a-z0-9A-Z.]{83})\\\\b"
+  },
+  {
+    "name": "yangshun_gh_password",
+    "pattern": "yangshun[_-]?gh[_-]?password(=| =|:| :)"
+  },
+  {
+    "name": "yangshun_gh_token",
+    "pattern": "yangshun[_-]?gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Youneedabudget",
+    "pattern": "(?:youneedabudget).{0,40}\\\\b([0-9a-f]{64})\\\\b"
+  },
+  {
+    "name": "Yousign",
+    "pattern": "(?:yousign).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Youtubeapikey - 1",
+    "pattern": "(?:youtube).{0,40}\\\\b([a-zA-Z-0-9_]{39})\\\\b"
+  },
+  {
+    "name": "yt_account_client_secret",
+    "pattern": "yt[_-]?account[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "yt_account_refresh_token",
+    "pattern": "yt[_-]?account[_-]?refresh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "yt_api_key",
+    "pattern": "yt[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "yt_client_secret",
+    "pattern": "yt[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "yt_partner_client_secret",
+    "pattern": "yt[_-]?partner[_-]?client[_-]?secret(=| =|:| :)"
+  },
+  {
+    "name": "yt_partner_refresh_token",
+    "pattern": "yt[_-]?partner[_-]?refresh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "yt_server_api_key",
+    "pattern": "yt[_-]?server[_-]?api[_-]?key(=| =|:| :)"
+  },
+  {
+    "name": "Zapier Webhook",
+    "pattern": "https://(?:www.)?hooks\\\\.zapier\\\\.com/hooks/catch/[A-Za-z0-9]+/[A-Za-z0-9]+/"
+  },
+  {
+    "name": "Zapier_Webhook",
+    "pattern": "https://(?:www\\.)?hooks\\.zapier\\.com/hooks/catch/[A-Za-z0-9]+/[A-Za-z0-9]+/"
+  },
+  {
+    "name": "Zapierwebhook",
+    "pattern": "(https:\\\\/\\\\/hooks.zapier.com\\\\/hooks\\\\/catch\\\\/[A-Za-z0-9\\\\/]{16})"
+  },
+  {
+    "name": "zendesk_travis_github",
+    "pattern": "zendesk[_-]?travis[_-]?github(=| =|:| :)"
+  },
+  {
+    "name": "Zendeskapi - 3",
+    "pattern": "(?:zendesk).{0,40}([A-Za-z0-9_-]{40})"
+  },
+  {
+    "name": "Zenkitapi",
+    "pattern": "(?:zenkit).{0,40}\\\\b([0-9a-z]{8}\\\\-[0-9A-Za-z]{32})\\\\b"
+  },
+  {
+    "name": "Zenscrape",
+    "pattern": "(?:zenscrape).{0,40}\\\\b([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\\\\b"
+  },
+  {
+    "name": "Zenserp",
+    "pattern": "(?:zenserp).{0,40}\\\\b([0-9a-z-]{36})\\\\b"
+  },
+  {
+    "name": "zensonatypepassword",
+    "pattern": "zensonatypepassword(=| =|:| :)"
+  },
+  {
+    "name": "Zeplin",
+    "pattern": "(?:zeplin).{0,40}\\\\b([a-zA-Z0-9-.]{350,400})\\\\b"
+  },
+  {
+    "name": "Zerobounce",
+    "pattern": "(?:zerobounce).{0,40}\\\\b([a-z0-9]{32})\\\\b"
+  },
+  {
+    "name": "zhuliang_gh_token",
+    "pattern": "zhuliang[_-]?gh[_-]?token(=| =|:| :)"
+  },
+  {
+    "name": "Zipapi - 1",
+    "pattern": "(?:zipapi).{0,40}\\\\b([a-zA-Z0-9!=@#$%^]{7,})"
+  },
+  {
+    "name": "Zipapi - 3",
+    "pattern": "(?:zipapi).{0,40}\\\\b([0-9a-z]{32})\\\\b"
+  },
+  {
+    "name": "Zipcodeapi",
+    "pattern": "(?:zipcodeapi).{0,40}\\\\b([a-zA-Z0-9]{64})\\\\b"
+  },
+  {
+    "name": "Zoho Webhook",
+    "pattern": "https://creator\\\\.zoho\\\\.com/api/[A-Za-z0-9/\\\\-_\\\\.]+\\\\?authtoken=[A-Za-z0-9]+"
+  },
+  {
+    "name": "Zoho_Webhook_Token",
+    "pattern": "https://creator\\.zoho\\.com/api/[A-Za-z0-9/\\-_\\.]+\\?authtoken=[A-Za-z0-9]+"
+  },
+  {
+    "name": "Zonkafeedback",
+    "pattern": "(?:zonka).{0,40}\\\\b([A-Za-z0-9]{36})\\\\b"
+  },
+  {
+    "name": "zopim_account_key",
+    "pattern": "zopim[_-]?account[_-]?key(=| =|:| :)"
+  }
+]
