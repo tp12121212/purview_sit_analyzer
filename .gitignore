@@ -8,6 +8,7 @@ env/
 purview_env/
 */purview_env/
 adresss_extraction/adresss_extraction/
+wordlists/lexicon_dict/lexicon_env/
 
 # Other
 v3/output*/
