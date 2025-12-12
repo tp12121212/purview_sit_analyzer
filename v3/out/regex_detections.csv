@@ -1,0 +1,632 @@
+Regex_Name,Regex_Pattern,Detected_Text,Line_Number,Match_Count,File_Name,File_Path
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", UPGRADES ,12,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0048 2.pdf,input/Invoice INV-0048 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",628 046 033,2,1,Solvency Resolution - G Munusamy Pty Ltd.pdf,input/Solvency Resolution - G Munusamy Pty Ltd.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",628 046 033,2,1,Solvency Resolution - G Munusamy Pty Ltd.pdf,input/Solvency Resolution - G Munusamy Pty Ltd.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", MUNUSAMY ,1,2,Solvency Resolution - G Munusamy Pty Ltd.pdf,input/Solvency Resolution - G Munusamy Pty Ltd.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",075 330 497,2,1,Rigpro Pty ltd - Solvency Resolution 2.pdf,input/Rigpro Pty ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",075 330 497,2,1,Rigpro Pty ltd - Solvency Resolution 2.pdf,input/Rigpro Pty ltd - Solvency Resolution 2.pdf
+Stgeorge_bank_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])((112|113|114|115|116|117|118|119|330|332|333|334|335|336)[ -]?\d{3})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 330 497
+",2,1,Rigpro Pty ltd - Solvency Resolution 2.pdf,input/Rigpro Pty ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",606 449 601,2,1,La Luna Nominees Pty Ltd - Solvency Resolution.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",606 449 601,2,1,La Luna Nominees Pty Ltd - Solvency Resolution.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", NOMINEES ,1,1,La Luna Nominees Pty Ltd - Solvency Resolution.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",146 528 832,2,1,Fresh Jasmines Pty Ltd - Solvency Resolution 2.pdf,input/Fresh Jasmines Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",146 528 832,2,1,Fresh Jasmines Pty Ltd - Solvency Resolution 2.pdf,input/Fresh Jasmines Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",614 133 416,2,1,Mackie Transport And Logistics Pty Ltd - Solvency Resolution 2.pdf,input/Mackie Transport And Logistics Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",614 133 416,2,1,Mackie Transport And Logistics Pty Ltd - Solvency Resolution 2.pdf,input/Mackie Transport And Logistics Pty Ltd - Solvency Resolution 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",39177124,12,4,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",39177124,12,4,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+301 Clarendon Street
+",4,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,23,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 21 ,37,4,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4710  statement 21    30 oct 15 - 29 april 16.pdf,input/4710  statement 21    30 oct 15 - 29 april 16.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",111 581 778,2,1,Spices'n Things Pty Ltd - Solvency Resolution.pdf,input/Spices'n Things Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",111 581 778,2,1,Spices'n Things Pty Ltd - Solvency Resolution.pdf,input/Spices'n Things Pty Ltd - Solvency Resolution.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+12 Watkins Road 7 Victoria Street
+",3,1,eBay-packing-sendle.pdf,input/eBay-packing-sendle.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",600 485 416,2,1,Solvency Resolution - HARP Trading Pty Ltd 2.pdf,input/Solvency Resolution - HARP Trading Pty Ltd 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",600 485 416,2,1,Solvency Resolution - HARP Trading Pty Ltd 2.pdf,input/Solvency Resolution - HARP Trading Pty Ltd 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",14169092,11,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",14169092,11,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01/07/2017 ,7,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",144 551 860,1,2,ABN_69144551860.pdf,input/ABN_69144551860.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",144 551 860,1,2,ABN_69144551860.pdf,input/ABN_69144551860.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+MCBAKERS ",7,1,ABN_69144551860.pdf,input/ABN_69144551860.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",39177124,12,4,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",39177124,12,4,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+301 Clarendon Street
+",4,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,23,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 17 ,37,4,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,4729  statement 17     31 March 16 - 30 sept 16.pdf,input/4729  statement 17     31 March 16 - 30 sept 16.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,2,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,2,Invoice INV-0039.pdf,input/Invoice INV-0039.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",627 005 396,2,1,My Aust Holdings Pty Ltd - Solvency Resolution.pdf,input/My Aust Holdings Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",627 005 396,2,1,My Aust Holdings Pty Ltd - Solvency Resolution.pdf,input/My Aust Holdings Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",606 449 601,2,1,La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",606 449 601,2,1,La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", NOMINEES ,1,1,La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf,input/La Luna Nominees Pty Ltd - Solvency Resolution 2.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+7 Bedlington St 7 Victoria Street
+",3,1,eBay-packing-new.pdf,input/eBay-packing-new.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",606 782 978,2,1,Yogathas Pty Ltd - Solvency Resolution 2.pdf,input/Yogathas Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",606 782 978,2,1,Yogathas Pty Ltd - Solvency Resolution 2.pdf,input/Yogathas Pty Ltd - Solvency Resolution 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", YOGATHAS ,1,1,Yogathas Pty Ltd - Solvency Resolution 2.pdf,input/Yogathas Pty Ltd - Solvency Resolution 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",39177124,12,4,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",39177124,12,4,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+301 Clarendon Street
+",4,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,23,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 17 ,37,4,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729 2.pdf,input/17 estatement _4729 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",197 491 819,4,17,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",197 491 819,4,17,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 11 211 Warrigal Rd
+",47,2,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+01/07/2012 ",35,11,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 24733524
+",203,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,21,8,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+Stgeorge_bank_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])((112|113|114|115|116|117|118|119|330|332|333|334|335|336)[ -]?\d{3})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 335 170 ,273,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", HOSPITAL ,76,1,Ranil Rajapaksha 2013 ITR.pdf,input/Ranil Rajapaksha 2013 ITR.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",39177124,12,4,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",39177124,12,4,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+301 Clarendon Street
+",4,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+39177124 ",11,1,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,23,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 17 ,37,4,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-305 ",7,10,17 estatement _4729.pdf,input/17 estatement _4729.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",614 133 416,2,1,Mackie Transport And Logistics Pty Ltd - Solvency Resolution.pdf,input/Mackie Transport And Logistics Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",614 133 416,2,1,Mackie Transport And Logistics Pty Ltd - Solvency Resolution.pdf,input/Mackie Transport And Logistics Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",624 161 860,2,1,Possimpible Pty Ltd - Solvency Resolution 2.pdf,input/Possimpible Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",624 161 860,2,1,Possimpible Pty Ltd - Solvency Resolution 2.pdf,input/Possimpible Pty Ltd - Solvency Resolution 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", POSSIMPIBLE ,1,1,Possimpible Pty Ltd - Solvency Resolution 2.pdf,input/Possimpible Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",146 528 832,2,1,Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",146 528 832,2,1,Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", JASMINES ,1,1,Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd 2.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", UPGRADES ,12,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0048.pdf,input/Invoice INV-0048.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,12,128.pdf,input/128.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,128.pdf,input/128.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",83132202,13,17,128.pdf,input/128.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",83132202,13,17,128.pdf,input/128.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+156 Glenferrie Road
+",4,1,128.pdf,input/128.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+austria_eu_passport_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([a-zA-Z]\s?\d{7}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+T3013139 ",66,1,128.pdf,input/128.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+canada_bank_account_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{7}|\d{12}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 2564575
+",36,12,128.pdf,input/128.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,128.pdf,input/128.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,21,128.pdf,input/128.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 128 ,49,4,128.pdf,input/128.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+RIGHETTI ",9,7,128.pdf,input/128.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,128.pdf,input/128.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,128.pdf,input/128.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,38,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 037-157 ,7,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",83696263,12,39,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",83696263,12,39,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+25 Pierson Street
+",4,1,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+belgium_eu_passport_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([a-zA-Z]{2}\d{6}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", DR555200 ,52,2,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+canada_bank_account_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{7}|\d{12}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+6822908 ",66,30,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+canada_passport_number_Copy,(?ix)\b([A-Z]{2}\d{6})\b,DR555200,52,2,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+09/01/12 ",86,3,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83696263 ",11,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,35,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", INTEREST ,51,10,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 037-157 ,7,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 037-157 ,7,6,Statement 17 - 1Feb 2012.pdf,input/Statement 17 - 1Feb 2012.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",616 025 355,2,1,Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf,input/Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",616 025 355,2,1,Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf,input/Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", AGRICULTURE ,1,2,Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf,input/Solvency Resolution - COOLART AGRICULTURE PTY LTD 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution 3.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution 3.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution 3.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution 3.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,14,127 2.pdf,input/127 2.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,127 2.pdf,input/127 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",83132202,13,17,127 2.pdf,input/127 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",83132202,13,17,127 2.pdf,input/127 2.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+156 Glenferrie Road
+",4,2,127 2.pdf,input/127 2.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+austria_eu_passport_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([a-zA-Z]\s?\d{7}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+T3013139 ",68,1,127 2.pdf,input/127 2.pdf
+austria_eu_ssn_or_equivalent,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{4}([0]?[1-9]|1[0-9]|2[0-9]|3[0-1])([0]?[1-9]|1[0-9])\d{2}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+canada_bank_account_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{7}|\d{12}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 2743653
+",34,10,127 2.pdf,input/127 2.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+83132202 ",12,1,127 2.pdf,input/127 2.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,7,20,127 2.pdf,input/127 2.pdf
+statement_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((Statement No\. (?:[1-9]|[1-9][0-9]|1[0-9]{2}|200)\b))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", Statement No. 127 ,51,4,127 2.pdf,input/127 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+RIGHETTI ",9,7,127 2.pdf,input/127 2.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,127 2.pdf,input/127 2.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+033-059 ",7,6,127 2.pdf,input/127 2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0403303386
+",10,2,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",SZ4194,3,3,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",SZ4194,3,3,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+7 Victoria Street
+",13,1,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+australian_mobile_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:\+61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|04\d{2}[\s\-]?\d{3}[\s\-]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0403303386
+",10,1,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+belgium_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0403303386
+",10,2,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+canada_health_service_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0403303386
+",10,2,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+Ecuador_Unique_Identification_Number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((0[1-9]|[1-2][0-9]|30|90|99)\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0403303386
+",10,1,eBay-Philips-shipping.pdf,input/eBay-Philips-shipping.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",627 005 396,2,1,My Aust Holdings Pty Ltd - Solvency Resolution 2.pdf,input/My Aust Holdings Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",627 005 396,2,1,My Aust Holdings Pty Ltd - Solvency Resolution 2.pdf,input/My Aust Holdings Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf
+nab_bank_statements,"(?:^|[\s,;:\(\)\[\]""\'\'])(08[2-4](?:[- ]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 082 820
+",2,1,23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 3.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf
+nab_bank_statements,"(?:^|[\s,;:\(\)\[\]""\'\'])(08[2-4](?:[- ]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 082 820
+",2,1,23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",14169092,11,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",14169092,11,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01/07/2017 ,7,3,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+14169092
+",10,1,14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf,input/14169092 WorkCover Insurance Certificate of Currency 14 Jun 2017 2.pdf
+argentina_national_id,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{2}\.\d{3}\.\d{3}|\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01072020 ,23,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 210921 ,20,16,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",01072020,23,7,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",01072020,23,7,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+austria_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01072020 ,23,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+belgium_eu_passport_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([a-zA-Z]{2}\d{6}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", BC653532 ,56,5,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+canada_passport_number_Copy,(?ix)\b([A-Z]{2}\d{6})\b,BC653532,56,5,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+colombia_national_id_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((\d{2}((\.\d{3}){2}|(,\d{3}){2}|\d{6}))|(1((\.\d{3}){3}|(,\d{3}){3}|\d{9}))))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01072020 ,23,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+croatia_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01072020 ,23,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01/07/21 ,6,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+NSW_Drivers_Licence_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:[0-9]{8}|(?-i:[0-9]{4}[A-Z]{2})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 01072020 ,23,4,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,1,6,Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf,input/Fresh Jasmines Pty Ltd - 2022 Fixed Assets Schedule.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution 2.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution 2.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+SIVATHAS ",9,1,MKS Talkies Pty Ltd - Solvency Resolution 2.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution 2.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,3,2,Meeting 14.03.2019 2.pdf,input/Meeting 14.03.2019 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", JUSINESS ,1,2,Meeting 14.03.2019 2.pdf,input/Meeting 14.03.2019 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",2016-2017,7,1,S-31533-32663-170710161047950-TAX25-1.pdf,input/S-31533-32663-170710161047950-TAX25-1.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",2016-2017,7,1,S-31533-32663-170710161047950-TAX25-1.pdf,input/S-31533-32663-170710161047950-TAX25-1.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+2/18 Alsace St
+",1,1,S-31533-32663-170710161047950-TAX25-1.pdf,input/S-31533-32663-170710161047950-TAX25-1.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 01/07/2017
+",4,1,S-31533-32663-170710161047950-TAX25-1.pdf,input/S-31533-32663-170710161047950-TAX25-1.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",144 551 860,1,2,ABN_69144551860 2.pdf,input/ABN_69144551860 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",144 551 860,1,2,ABN_69144551860 2.pdf,input/ABN_69144551860 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+MCBAKERS ",7,1,ABN_69144551860 2.pdf,input/ABN_69144551860 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",628 046 033,2,1,Solvency Resolution - G Munusamy Pty Ltd 2.pdf,input/Solvency Resolution - G Munusamy Pty Ltd 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",628 046 033,2,1,Solvency Resolution - G Munusamy Pty Ltd 2.pdf,input/Solvency Resolution - G Munusamy Pty Ltd 2.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", MUNUSAMY ,1,2,Solvency Resolution - G Munusamy Pty Ltd 2.pdf,input/Solvency Resolution - G Munusamy Pty Ltd 2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",600 485 416,2,1,Solvency Resolution - HARP Trading Pty Ltd.pdf,input/Solvency Resolution - HARP Trading Pty Ltd.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",600 485 416,2,1,Solvency Resolution - HARP Trading Pty Ltd.pdf,input/Solvency Resolution - HARP Trading Pty Ltd.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",146 528 832,2,1,Solvency Resolution - Fresh Jasmine Pty Ltd.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",146 528 832,2,1,Solvency Resolution - Fresh Jasmine Pty Ltd.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", JASMINES ,1,1,Solvency Resolution - Fresh Jasmine Pty Ltd.pdf,input/Solvency Resolution - Fresh Jasmine Pty Ltd.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",146 528 832,2,1,Fresh Jasmines Pty Ltd - Solvency Resolution.pdf,input/Fresh Jasmines Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",146 528 832,2,1,Fresh Jasmines Pty Ltd - Solvency Resolution.pdf,input/Fresh Jasmines Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",626 727 160,2,1,MKS Talkies Pty Ltd - Solvency Resolution.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+SIVATHAS ",9,1,MKS Talkies Pty Ltd - Solvency Resolution.pdf,input/MKS Talkies Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",373 298 997,3,10,2010 Financial Statements - Peter Righetti FT.pdf,input/2010 Financial Statements - Peter Righetti FT.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",373 298 997,3,10,2010 Financial Statements - Peter Righetti FT.pdf,input/2010 Financial Statements - Peter Righetti FT.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+1 Avlona Street ",308,1,2010 Financial Statements - Peter Righetti FT.pdf,input/2010 Financial Statements - Peter Righetti FT.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,88,16,2010 Financial Statements - Peter Righetti FT.pdf,input/2010 Financial Statements - Peter Righetti FT.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," POLICIES
+",140,1,2010 Financial Statements - Peter Righetti FT.pdf,input/2010 Financial Statements - Peter Righetti FT.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",624 161 860,2,1,Possimpible Pty Ltd - Solvency Resolution.pdf,input/Possimpible Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",624 161 860,2,1,Possimpible Pty Ltd - Solvency Resolution.pdf,input/Possimpible Pty Ltd - Solvency Resolution.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", POSSIMPIBLE ,1,1,Possimpible Pty Ltd - Solvency Resolution.pdf,input/Possimpible Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",627 082 820,2,1,23 Pultney Street Pty Ltd - Solvency Resolution.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution.pdf
+nab_bank_statements,"(?:^|[\s,;:\(\)\[\]""\'\'])(08[2-4](?:[- ]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 082 820
+",2,1,23 Pultney Street Pty Ltd - Solvency Resolution.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+SIVATHAS ",9,1,23 Pultney Street Pty Ltd - Solvency Resolution.pdf,input/23 Pultney Street Pty Ltd - Solvency Resolution.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+SAMPFORD ",11,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0022.pdf,input/Invoice INV-0022.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0023.pdf,input/Invoice INV-0023.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",650 837 255,2,1,23 Hardys Road Pty Ltd- Solvency Resolution.pdf,input/23 Hardys Road Pty Ltd- Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",650 837 255,2,1,23 Hardys Road Pty Ltd- Solvency Resolution.pdf,input/23 Hardys Road Pty Ltd- Solvency Resolution.pdf
+auspost_tracking,"(?:^|[\s,;:\(\)\[\]""\'\'])((EBA|EA|LP|33|62|99)\d{11,20})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+EBA02717949801004220905
+",24,1,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0418729504
+",9,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",0418729504,9,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",0418729504,9,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+90 Hoys Road
+",2,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+australian_mobile_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:\+61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|04\d{2}[\s\-]?\d{3}[\s\-]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0418729504
+",9,1,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+belgium_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0418729504
+",9,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+canada_health_service_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0418729504
+",9,2,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+Ecuador_Unique_Identification_Number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((0[1-9]|[1-2][0-9]|30|90|99)\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0418729504
+",9,1,eBay-shipping-20250520-1.pdf,input/eBay-shipping-20250520-1.pdf
+auspost_tracking,"(?:^|[\s,;:\(\)\[\]""\'\'])((EBA|EA|LP|33|62|99)\d{11,20})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+EBA02717935901004900900
+",24,1,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",0407000621,9,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",0407000621,9,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+73 Garrett Road
+",2,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australian_mobile_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:\+61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|04\d{2}[\s\-]?\d{3}[\s\-]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,1,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+belgium_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+canada_health_service_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+Ecuador_Unique_Identification_Number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((0[1-9]|[1-2][0-9]|30|90|99)\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,1,eBay-shipping-20250520-2.pdf,input/eBay-shipping-20250520-2.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 545000
+",4,2,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",2009 2010,54,8,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",2009 2010,54,8,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+Date,"(?:^|[\s,;:\(\)\[\]""\'\'])(\d{1,2}[-/]\d{1,2}[-/]\d{2,4})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)", 09/12/2011 ,7,17,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_17ba94a9_a24c_4c84_a838_22a1c0c192e7_26987408_CEP2_0,(?i)Key|Credential,Key,52,1,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Primary ,60,1,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+URL,"(?:^|[\s,;:\(\)\[\]""\'\'])(https?:\/\/[^\s]*)(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," https://www.ato.gov.au/law/view/view.htm?docid=EV/1051863055762&PiT=99991231235958
+",7,8,Praveen Nagappan - 2021 CGT Calculation.pdf,input/Praveen Nagappan - 2021 CGT Calculation.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",075 330 497,2,1,Rigpro Pty ltd - Solvency Resolution.pdf,input/Rigpro Pty ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",075 330 497,2,1,Rigpro Pty ltd - Solvency Resolution.pdf,input/Rigpro Pty ltd - Solvency Resolution.pdf
+Stgeorge_bank_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])((112|113|114|115|116|117|118|119|330|332|333|334|335|336)[ -]?\d{3})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 330 497
+",2,1,Rigpro Pty ltd - Solvency Resolution.pdf,input/Rigpro Pty ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",3467-0054,33,2,PGH Tas prop dir cons JW.pdf,input/PGH Tas prop dir cons JW.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",3467-0054,33,2,PGH Tas prop dir cons JW.pdf,input/PGH Tas prop dir cons JW.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",107 321 906,2,1,Matjo Pty Ltd - Solvency Resolution.pdf,input/Matjo Pty Ltd - Solvency Resolution.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",107 321 906,2,1,Matjo Pty Ltd - Solvency Resolution.pdf,input/Matjo Pty Ltd - Solvency Resolution.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+swift,"(?:^|[\s,;:\(\)\[\]""\'\'])(([A-Z]{4}(AF|AX|AL|DZ|AS|AD|AO|AI|AQ|AG|AR|AM|AW|AU|AT|AZ|BS|BH|BD|BB|BY|BE|BZ|BJ|BM|BT|BO|BQ|BA|BW|BV|BR|IO|BN|BG|BF|BI|KH|CM|CA|CV|KY|CF|TD|CL|CN|CX|CC|CO|KM|CG|CD|CK|CR|CI|HR|CU|CW|CY|CZ|DK|DJ|DM|DO|EC|EG|SV|GQ|ER|EE|ET|FK|FO|FJ|FI|FR|GF|PF|TF|GA|GM|GE|DE|GH|GI|GR|GL|GD|GP|GU|GT|GG|GN|GW|GY|HT|HM|VA|HN|HK|HU|IS|IN|ID|IR|IQ|IE|IM|IL|IT|JM|JP|JE|JO|KZ|KE|KI|KP|KR|KW|KG|LA|LV|LB|LS|LR|LY|LI|LT|LU|MO|MK|MG|MW|MY|MV|ML|MT|MH|MQ|MR|MU|YT|MX|FM|MD|MC|MN|ME|MS|MA|MZ|MM|NA|NR|NP|NL|NC|NZ|NI|NE|NG|NU|NF|MP|NO|OM|PK|PW|PS|PA|PG|PY|PE|PH|PN|PL|PT|PR|QA|RE|RO|RU|RW|BL|SH|KN|LC|MF|PM|VC|WS|SM|ST|SA|SN|RS|SC|SL|SG|SX|SK|SI|SB|SO|ZA|GS|SS|ES|LK|SD|SR|SJ|SZ|SE|CH|SY|TW|TJ|TZ|TH|TL|TG|TK|TO|TT|TN|TR|TM|TC|TV|UG|UA|AE|GB|US|UM|UY|UZ|VU|VE|VN|VG|VI|WF|EH|YE|ZM|ZW)(\w{2}|\w{5})))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+TELETHON ",11,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0024.pdf,input/Invoice INV-0024.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0019.pdf,input/Invoice INV-0019.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",21,1,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0025.pdf,input/Invoice INV-0025.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",3467-0054,33,2,PGH Tas prop dir cons JW 2.pdf,input/PGH Tas prop dir cons JW 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",3467-0054,33,2,PGH Tas prop dir cons JW 2.pdf,input/PGH Tas prop dir cons JW 2.pdf
+auspost_tracking,"(?:^|[\s,;:\(\)\[\]""\'\'])((EBA|EA|LP|33|62|99)\d{11,20})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+EBA02718175601004300900
+",24,1,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0402821550
+",9,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",0402821550,9,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",0402821550,9,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+31/49 Lachlan Street
+",2,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australian_mobile_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:\+61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|04\d{2}[\s\-]?\d{3}[\s\-]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0402821550
+",9,1,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+belgium_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0402821550
+",9,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+canada_health_service_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0402821550
+",9,2,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+Ecuador_Unique_Identification_Number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((0[1-9]|[1-2][0-9]|30|90|99)\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0402821550
+",9,1,eBay-shipping-20250520-5.pdf,input/eBay-shipping-20250520-5.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",111 581 778,2,1,Spices'n Things Pty Ltd - Solvency Resolution 2.pdf,input/Spices'n Things Pty Ltd - Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",111 581 778,2,1,Spices'n Things Pty Ltd - Solvency Resolution 2.pdf,input/Spices'n Things Pty Ltd - Solvency Resolution 2.pdf
+australia_bank_account_number_bsb,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{3}-\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 062-197
+",20,1,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",613 035 733,9,2,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",613 035 733,9,2,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+530 Little Collins St
+",4,1,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+Email,"(?:^|[\s,;:\(\)\[\]""\'\'])([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," finance@dracomedia.com.au
+",2,1,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+Ranker_CSCAN_AZURE0070_combined_ranker_CEP2_0_d37929c5_be80_4f59_951f_5dc6f21d8892_17911681_CEP2_0,(?i)Account|Storage|Access|Primary[^v]|Secondary[^v]|Blob,Account,4,3,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+Westpac_statement_bsb_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+Westpac_statement_supporting_regex,"(?:^|[\s,;:\(\)\[\]""\'\'])(((03[2-9]|73[0-9])[ -]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 035 733
+",9,1,Invoice INV-0032.pdf,input/Invoice INV-0032.pdf
+auspost_tracking,"(?:^|[\s,;:\(\)\[\]""\'\'])((EBA|EA|LP|33|62|99)\d{11,20})(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+EBA02718061101004300903
+",24,1,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australia_bank_account_number,"(?:^|[\s,;:\(\)\[\]""\'\'])(([0-9]{6,10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",0407000621,9,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",0407000621,9,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australian_address,"(?:^|[\s,;:\(\)\[\]""\'\'])((((Unit\s[0-9]+|U[0-9]+|Level\s[0-9]+|L[0-9]+)\s*)?[0-9]{1,5}(/[0-9]{1,5})?\s[A-Za-z0-9\s]+(St|Street|Rd|Road|Ave|Avenue|Ln|Lane|Dr|Drive|Pl|Place|Ct|Court|Boulevard|Blvd|Cres|Crescent|Way|Terrace|Tce)))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)","
+73 Garrett Road
+",2,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australian_mobile_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((?:\+61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|61[\s\-]?4\d{2}[\s\-]?\d{3}[\s\-]?\d{3}|04\d{2}[\s\-]?\d{3}[\s\-]?\d{3}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,1,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+belgium_eu_drivers_license_number,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+canada_health_service_number_Copy,"(?:^|[\s,;:\(\)\[\]""\'\'])((\d{10}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,2,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+Ecuador_Unique_Identification_Number,"(?:^|[\s,;:\(\)\[\]""\'\'])(((0[1-9]|[1-2][0-9]|30|90|99)\d{8}))(?:$|[\s,;:\(\)\[\]""\'\']|\.\s|\.$)"," 0407000621
+",9,1,eBay-shipping-20250520-4.pdf,input/eBay-shipping-20250520-4.pdf
+australia_drivers_license_number_Copy,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7})|(\d{4}[A-Za-z]{2}))\b",650 837 255,2,1,23 Hardys Road Pty Ltd- Solvency Resolution 2.pdf,input/23 Hardys Road Pty Ltd- Solvency Resolution 2.pdf
+australia_drivers_license_number_Custom_v2,"(?i)\b((\d{2}[ -]?\d{2}[ -]?\d{4})|(\d{3}[ -]?\d{3}[ -]?\d{3,4})|(\d{1}[ -]?\d{3}[ -]?\d{3}[ -]?\d{3})|([A-Za-z]\d{5})|([A-Za-z]{2}\d{4})|(\d{7}))\b",650 837 255,2,1,23 Hardys Road Pty Ltd- Solvency Resolution 2.pdf,input/23 Hardys Road Pty Ltd- Solvency Resolution 2.pdf
