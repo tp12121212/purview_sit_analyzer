@@ -560,10 +560,3 @@ Efficient: [a-f]
 
 ---
 
-## REFERENCES
-
-- Microsoft Learn: Sensitive Information Type Entity Definitions
-- Microsoft Learn: DLP Functions
-- Microsoft Learn: Exact Data Match (EDM)
-- Purview Compliance Portal Documentation
-- Regular Expressions.info: Advanced Techniques
