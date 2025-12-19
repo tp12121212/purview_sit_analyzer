@@ -165,7 +165,7 @@ def main():
             writer.writerow([word])
 
     logging.info(
-        "Done. Extracted %s unique valid dictionary words \u2192 %s",
+        "Done. Extracted %s unique valid dictionary words → %s",
         len(word_counts),
         outfile,
     )

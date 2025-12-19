@@ -1,0 +1,3 @@
+/Users/toddparker/Library/CloudStorage/OneDrive-KillerCloud/Applications/gits/purview_sit_analyzer/v4/engine/build/CMakeFiles/boost_regex_runner.dir
+/Users/toddparker/Library/CloudStorage/OneDrive-KillerCloud/Applications/gits/purview_sit_analyzer/v4/engine/build/CMakeFiles/edit_cache.dir
+/Users/toddparker/Library/CloudStorage/OneDrive-KillerCloud/Applications/gits/purview_sit_analyzer/v4/engine/build/CMakeFiles/rebuild_cache.dir
