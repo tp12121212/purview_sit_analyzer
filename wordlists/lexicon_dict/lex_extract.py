@@ -31,7 +31,8 @@ WORD_RE = re.compile(r"[a-z]{5,}")  # minimum 5 letters
 # Minimum lexical score: 2.0 = uncommon but real word
 # 4.0 = moderately common word
 LEXICON_MIN_SCORE = 2.0
-SUPPORTED_EXTENSIONS = (".pdf", ".csv", ".docx")
+SUPPORTED_EXTENSIONS = (".pdf", ".csv", ".docx", ".txt")
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -89,6 +90,16 @@ def extract_from_docx(path):
     return " ".join(parts)
 
 
+def extract_from_txt(path):
+    parts = []
+    try:
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            parts.append(f.read())
+    except Exception:
+        pass
+    return " ".join(parts)
+
+
 def extract_text_from_file(path):
     ext = path.lower()
     try:
@@ -98,6 +109,8 @@ def extract_text_from_file(path):
             return extract_from_csv(path)
         if ext.endswith(".docx"):
             return extract_from_docx(path)
+        if ext.endswith(".txt"):
+            return extract_from_txt(path)
     except Exception:
         return ""
     return ""
@@ -126,7 +139,9 @@ def walk_directory(indir):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Extract meaningful lexicon words from PDF/DOCX/CSV files.")
+    parser = argparse.ArgumentParser(
+        description="Extract meaningful lexicon words from PDF/DOCX/CSV/TXT files."
+    )
     parser.add_argument("--indir", required=True, help="Input directory")
     parser.add_argument("--outdir", required=True, help="Output directory")
     parser.add_argument(
