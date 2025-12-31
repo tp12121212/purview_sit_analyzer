@@ -1,6 +1,6 @@
 # Microsoft Purview PowerShell Management
 
-## oberview
+## Overview
 
 Managing Microsoft Purview using PowerShell, inclusing Data Loss Prevention (DLP), Information Protection, custom Sensitive Information Types (SITs), and enterprise automation frameworks.
 
