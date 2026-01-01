@@ -648,10 +648,8 @@ $ExtractionResult.ExtractedResults | Select-Object -First 5
 $PdfFile = "C:\TestData\financial_report.pdf"
 $PdfData = [System.IO.File]::ReadAllBytes($PdfFile)
 $PdfExtraction = Test-TextExtraction -FileData $PdfData
+$PdfExtraction | select * | ConvertTo-Json -Depth 9
 
-# Store extraction results for classification testing
-$ExtractionPath = $PdfExtraction.Path
-$ExtractedText = $ExtractionResult.ExtractedResults
 ```
 
 ### 5.2 Data Classification Testing
