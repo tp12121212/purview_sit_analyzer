@@ -1,11 +1,5 @@
 # Advanced Regex Patterns for Microsoft Purview Custom Sensitive Information Types
 
-## Executive Summary
-
-This guide focuses on advanced regex pattern design and custom sensitive information type (SIT) configuration techniques for Microsoft Purview, moving beyond basic pattern matching to achieve production-grade accuracy and minimal false positives. The Purview regex engine operates on .NET Regular Expression (Regex 5.1.3) principles with specific constraints and optimizations for document classification at scale.
-
----
-
 ## 1. Advanced Regex Pattern Architecture
 
 ### 1.1 Negative Lookahead/Lookbehind for Exclusion
